@@ -31,7 +31,7 @@ This project follows a workspace structure with the following services:
 3. **Deploy your first agent graph:**
    ```bash
    # Navigate to your project's graph directory
-   cd src/default/
+   cd src/<project-name>/
    
    # Push the weather graph to create it
    inkeep push weather.graph.ts
@@ -44,7 +44,7 @@ This project follows a workspace structure with the following services:
 ```
 test/
 ├── src/
-│   ├── /default              # Agent configurations
+│   ├── /<project-name>              # Agent configurations
 ├── apps/
 │   ├── manage-api/          # Agents Manage API service
 │   ├── run-api/             # Agents Run API service
@@ -63,7 +63,7 @@ Environment variables are defined in the following places:
 
 - `apps/manage-api/.env`: Agents Manage API environment variables
 - `apps/run-api/.env`: Agents Run API environment variables
-- `src/default/.env`: Inkeep CLI environment variables
+- `src/<project-name>/.env`: Inkeep CLI environment variables
 - `.env`: Root environment variables 
 
 To change the API keys used by your agents modify `apps/run-api/.env`. You are required to define at least one LLM provider key.
@@ -78,11 +78,11 @@ OPENAI_API_KEY=your-openai-key-here
 
 ### Agent Configuration
 
-Your graphs are defined in `src/default/weather.graph.ts`. The default setup includes:
+Your graphs are defined in `src<project-name>weather.graph.ts`. The default setup includes:
 
 - **Weather Graph**: A graph that can forecast the weather in a given location.
 
-Your inkeep configuration is defined in `src/default/inkeep.config.ts`. The inkeep configuration is used to configure defaults for the inkeep CLI. The configuration includes:
+Your inkeep configuration is defined in `src/<project-name>/inkeep.config.ts`. The inkeep configuration is used to configure defaults for the inkeep CLI. The configuration includes:
 
 - `tenantId`: The tenant ID
 - `projectId`: The project ID
@@ -94,7 +94,7 @@ Your inkeep configuration is defined in `src/default/inkeep.config.ts`. The inke
 
 ### Updating Your Agents
 
-1. Edit `src/default/weather.graph.ts`
+1. Edit `src/<project-name>/weather.graph.ts`
 2. Push the graph to the platform to update: `inkeep pus weather.graph.ts` 
 
 ### API Documentation
@@ -112,9 +112,9 @@ Once services are running, view the OpenAPI documentation:
 
 ## Inkeep CLI commands
 
-- Ensure you are runnning commands from `cd src/default`.
+- Ensure you are runnning commands from `cd src/<project-name>`.
 - Validate the `inkeep.config.ts` file has the correct api urls.
-- Validate that the `.env` file in `src/default` has the correct `DB_FILE_NAME`.
+- Validate that the `.env` file in `src/<project-name>` has the correct `DB_FILE_NAME`.
 
 ### Services won't start
 
