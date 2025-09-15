@@ -1,5 +1,5 @@
 {
-  "name": "@test/manage-api",
+  "name": "manage-api-quickstart",
   "version": "0.1.0",
   "description": "Manage API for agents",
   "type": "module",

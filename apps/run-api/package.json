@@ -1,5 +1,5 @@
 {
-  "name": "@test/run-api",
+  "name": "run-api-quickstart",
   "version": "0.1.0",
   "description": "Run API for agents",
   "type": "module",
