@@ -1,0 +1,23 @@
+{
+  "name": "@test/run-api",
+  "version": "0.1.0",
+  "description": "Run API for agents",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@inkeep/agents-run-api": "^0.1.1",
+    "@inkeep/agents-core": "^0.1.0",
+    "@hono/node-server": "^1.14.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=22.x"
+  }
+}
