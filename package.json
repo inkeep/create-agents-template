@@ -5,11 +5,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "turbo dev",
-    "db:push": "drizzle-kit push",
-    "setup": "node scripts/setup.js",
-    "dev:setup": "node scripts/dev-setup.js",
-    "start": "pnpm dev:setup"
+    "dev":  "concurrently \"turbo dev\" \"inkeep dev\" \"sleep 3 && open http://localhost:3000\" --names \"APIs,UI,Browser\" --prefix-colors \"blue,green,yellow\" --success first",
+    "dev:apis": "turbo dev",
+    "dev:ui": "inkeep dev",
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
     "@inkeep/agents-core": "^0.2.0",
