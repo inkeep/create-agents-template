@@ -5,10 +5,11 @@ import { credentialStores } from '../../shared/credential-stores.js';
 
 const logger = getLogger('management-api');
 
+const inkeep_manage_api_port = 3002;
 // Create the Hono app
 const app = createManagementApp({
   serverConfig: {
-    port: Number(process.env.MANAGE_API_PORT) || 3002,
+    port: inkeep_manage_api_port,
     serverOptions: {
       requestTimeout: 60000,
       keepAliveTimeout: 60000,
@@ -18,16 +19,14 @@ const app = createManagementApp({
   credentialStores,
 });
 
-const port = Number(process.env.MANAGE_API_PORT) || 3002;
 
 // Start the server using @hono/node-server
 serve(
   {
     fetch: app.fetch,
-    port,
+    port: inkeep_manage_api_port,
   },
   (info) => {
-    logger.info({}, `📝 Management API running on http://localhost:${info.port}`);
-    logger.info({}, `📝 OpenAPI documentation available at http://localhost:${info.port}/openapi.json`);
+    logger.info({}, `📝 Management API running on http://localhost:${inkeep_manage_api_port}`);
+    logger.info({}, `📝 OpenAPI documentation available at http://localhost:${inkeep_manage_api_port}/openapi.json`);
   }
-);

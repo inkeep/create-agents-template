@@ -6,10 +6,12 @@ import { getLogger } from '@inkeep/agents-core';
 const logger = getLogger('execution-api');
 
 
+const inkeep_run_api_port = 3003;
+
 // Create the Hono app
 const app = createExecutionApp({
   serverConfig: {
-    port: Number(process.env.RUN_API_PORT) || 3003,
+    port: inkeep_run_api_port,
     serverOptions: {
       requestTimeout: 120000,
       keepAliveTimeout: 60000,
@@ -19,16 +21,14 @@ const app = createExecutionApp({
   credentialStores,
 });
 
-const port = Number(process.env.RUN_API_PORT) || 3003;
-
 // Start the server using @hono/node-server
 serve(
   {
     fetch: app.fetch,
-    port,
+    port: inkeep_run_api_port,
   },
   (info) => {
-    logger.info({}, `📝 Run API running on http://localhost:${info.port}`);
-    logger.info({}, `📝 OpenAPI documentation available at http://localhost:${info.port}/openapi.json`);
+    logger.info({}, `📝 Run API running on http://localhost:${inkeep_run_api_port}`);
+    logger.info({}, `📝 OpenAPI documentation available at http://localhost:${inkeep_run_api_port}/openapi.json`);
   }
 );
