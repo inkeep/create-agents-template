@@ -30,3 +30,4 @@ serve(
     logger.info({}, `📝 Management API running on http://localhost:${inkeep_manage_api_port}`);
     logger.info({}, `📝 OpenAPI documentation available at http://localhost:${inkeep_manage_api_port}/openapi.json`);
   }
+)
