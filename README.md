@@ -128,7 +128,12 @@ Once services are running, view the OpenAPI documentation:
 
 1. Ensure that the Agents Run API is running and includes a valid Anthropic or OpenAI API key in its .env file
 
-## Docker
+## Deploy using Vercel
+
+> [!NOTE]  
+> Instructions coming soon.
+
+## Deploy using Docker
 
 This repostory contains a template `Dockerfile`. Follow these steps to build and run the app locally.
 
