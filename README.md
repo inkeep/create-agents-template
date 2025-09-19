@@ -127,3 +127,22 @@ Once services are running, view the OpenAPI documentation:
 ### Agents won't respond
 
 1. Ensure that the Agents Run API is running and includes a valid Anthropic or OpenAI API key in its .env file
+
+## Docker
+
+This repostory contains a template `Dockerfile`. Follow these steps to build and run the app locally.
+
+### Prerequisites
+- [Install Docker Desktop](https://www.docker.com/)
+
+### Build locally
+
+```
+docker build -t inkeep-agents .
+```
+
+### Run locally
+
+```
+docker run -d inkeep-agents
+```
