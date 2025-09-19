@@ -1,4 +1,4 @@
-# test
+# Inkeep Agent Framework Template 
 
 An Inkeep Agent Framework project with multi-service architecture.
 
@@ -21,6 +21,9 @@ This project follows a workspace structure with the following services:
 
 1. **Start services:**
    ```bash
+   # Install dependencies
+   pnpm install
+   
    # Start Agents Manage API and Agents Run API
    pnpm dev
    
