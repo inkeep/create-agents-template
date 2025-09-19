@@ -1,0 +1,14 @@
+services:
+  inkeep-agents:
+    build: .
+    ports:
+      - "3000:3000"
+      - "3002:3002"
+      - "3003:3003"
+    environment:
+      - DB_FILE_NAME=file:/inkeep-agents/db/local.db
+    volumes:
+      - inkeep-db:/inkeep-agents/db
+
+volumes:
+  inkeep-db:
