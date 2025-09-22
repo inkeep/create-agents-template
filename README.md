@@ -180,8 +180,14 @@ This repostory contains a `docker-compose.yml` and template `Dockerfile` for eac
 - `Dockerfile.manage-ui`
 - `Dockerfile.manage-api`
 - `Dockerfile.run-ui`
+- `Dockerfile.migrate` (for first-time setup)
   
-To build and run the app locally, run this command in your root project directory:
+On your first-time setup, you only need to run this migration once to prepare the database:
+```
+docker compose --profile migrate run --rm inkeep-agents-migrate
+```
+
+To run the Inkeep Agent Framework services:
 ```
 docker-compose up -d
 ```

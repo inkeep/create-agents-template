@@ -6,7 +6,6 @@ COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY turbo.json drizzle.config.ts ./
 
 COPY apps/ ./apps/
-COPY scripts/ ./scripts/
 
 RUN npm install -g pnpm@10.17.0
 
@@ -16,4 +15,4 @@ WORKDIR /inkeep-agents/apps/manage-api
 
 EXPOSE 3002
 
-CMD ["pnpm", "dev"]
+CMD ["pnpm", "dev", "--host", "0.0.0.0"]
