@@ -1,25 +1,30 @@
 services:
+  inkeep-agents-manage-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.manage-ui
+    ports:
+      - "3000:3000"
   inkeep-agents-manage-api:
     build:
       context: .
       dockerfile: Dockerfile.manage-api
-    ports:
-      - "3002:3002"
     environment:
       - DB_FILE_NAME=file:/inkeep-agents/db/local.db
     volumes:
       - inkeep-agents-db:/inkeep-agents/db
+    ports:
+      - "3002:3002"
   inkeep-agents-run-api:
     build:
       context: .
       dockerfile: Dockerfile.run-api
-    ports:
-      - "3003:3003"
     environment:
       - DB_FILE_NAME=file:/inkeep-agents/db/local.db
       - ANTHROPIC_API_KEY
     volumes:
       - inkeep-agents-db:/inkeep-agents/db
-
+    ports:
+      - "3003:3003"
 volumes:
   inkeep-agents-db:
