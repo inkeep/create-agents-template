@@ -135,19 +135,16 @@ Once services are running, view the OpenAPI documentation:
 
 ## Deploy using Docker
 
-This repostory contains a template `Dockerfile`. Follow these steps to build and run the app locally.
-
 ### Prerequisites
 - [Install Docker Desktop](https://www.docker.com/)
 
-### Build locally
-
+### Build and run locally
+This repostory contains a `docker-compose.yml` and template `Dockerfile` for each service:
+- `Dockerfile.manage-ui`
+- `Dockerfile.manage-api`
+- `Dockerfile.run-ui`
+  
+To build and run the app locally, run this command in your root project directory:
 ```
-docker build -t inkeep-agents .
-```
-
-### Run locally
-
-```
-docker run -d inkeep-agents
+docker-compose up -d
 ```
