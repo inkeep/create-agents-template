@@ -135,10 +135,42 @@ Once services are running, view the OpenAPI documentation:
 
 ## Deploy using Docker
 
-### Prerequisites
+### 1. Prerequisites
 - [Install Docker Desktop](https://www.docker.com/)
 
-### Build and run locally
+#### Optional: Self-host SigNoz and Nango
+
+For full functionality, the **Inkeep Agent Framework** requires [**SigNoz**](https://signoz.io/) and [**Nango**](https://www.nango.dev/). You can sign up for a cloud hosted account with them directly, or you can self host them.
+
+Follow these instructions to self-host **SigNoz** and **Nango**:
+
+1. Clone the docker repo
+```
+git clone https://github.com/inkeep/agents-optional-local-dev.git
+cd agents-optional-local-dev
+```
+
+2. Initialize environment variables
+```
+cp .env.example .env && encryption_key=$(openssl rand -base64 32) && sed -i '' "s|REPLACE_WITH_BASE64_256BIT_ENCRYPTION_KEY|$encryption_key|" .env && echo "Docker environment file created with auto-generated encryption key"
+```
+
+3. Build and deploy **SigNoz and Nango** (it also includes a deployment of an **OTEL Collector** and **Jaeger**):
+```
+docker-compose up -d
+```
+
+> [!NOTE]  
+> SigNoz and Nango run separately. You can get them running before proceeding with running the Inkeep Agent Framework   
+
+### 2. Setup Environment Variables
+
+Copy and complete your environment variables from the example:
+```
+cp .env.example .env
+```
+
+### 3. Build and run the Inkeep Agent Framework locally
 This repostory contains a `docker-compose.yml` and template `Dockerfile` for each service:
 - `Dockerfile.manage-ui`
 - `Dockerfile.manage-api`
