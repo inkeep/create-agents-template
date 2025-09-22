@@ -4,18 +4,18 @@
   "description": "Run API for agents",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "vite",
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@inkeep/agents-run-api": "^0.3.0",
-    "@inkeep/agents-core": "^0.3.0",
-    "@hono/node-server": "^1.14.3"
+    "@inkeep/agents-run-api": "^0.3.0"
   },
   "devDependencies": {
+    "@hono/vite-dev-server": "^0.21.0",
     "@types/node": "^20.12.0",
-    "tsx": "^4.19.0",
-    "typescript": "^5.4.0"
+    "hono": "^4.9.8",
+    "typescript": "^5.4.0",
+    "vite": "^7.1.7"
   },
   "engines": {
     "node": ">=22.x"

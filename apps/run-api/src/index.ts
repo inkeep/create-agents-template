@@ -1,15 +1,11 @@
-import { serve } from '@hono/node-server';
-import { createExecutionApp } from '@inkeep/agents-run-api';
-import { credentialStores } from '../../shared/credential-stores.js';
-import { getLogger } from '@inkeep/agents-core';
-
-const logger = getLogger('execution-api');
-
+import { createExecutionApp } from "@inkeep/agents-run-api";
+import { credentialStores } from "../../shared/credential-stores.js";
+import type { Hono } from "hono";
 
 const inkeep_run_api_port = 3003;
 
 // Create the Hono app
-const app = createExecutionApp({
+const app: Hono = createExecutionApp({
   serverConfig: {
     port: inkeep_run_api_port,
     serverOptions: {
@@ -21,14 +17,4 @@ const app = createExecutionApp({
   credentialStores,
 });
 
-// Start the server using @hono/node-server
-serve(
-  {
-    fetch: app.fetch,
-    port: inkeep_run_api_port,
-  },
-  (info) => {
-    logger.info({}, `📝 Run API running on http://localhost:${inkeep_run_api_port}`);
-    logger.info({}, `📝 OpenAPI documentation available at http://localhost:${inkeep_run_api_port}/openapi.json`);
-  }
-);
+export default app;
