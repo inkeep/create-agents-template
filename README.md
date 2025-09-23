@@ -147,22 +147,27 @@ For full functionality, the **Inkeep Agent Framework** requires [**SigNoz**](htt
 Follow these instructions to self-host both **SigNoz** and **Nango**:
 
 1. Clone our repo with the optional docker files for the agent framework:
-```
+```bash
 git clone https://github.com/inkeep/agents-optional-local-dev.git
 cd agents-optional-local-dev
 ```
 
 2. Create a `.env` file from the example with an auto-generated `NANGO_ENCRYPTION_KEY`:
-```
+```bash
 cp .env.example .env && \
   encryption_key=$(openssl rand -base64 32) && \
   sed -i '' "s|<REPLACE_WITH_BASE64_256BIT_ENCRYPTION_KEY>|$encryption_key|" .env && \
   echo "Docker environment file created with auto-generated encryption key"
 ```
 
-3. Build and deploy **SigNoz and Nango** (it also includes a deployment of an **OTEL Collector** and **Jaeger**):
-```
-docker-compose up -d
+3. Build and deploy **SigNoz**, **Nango**, **OTEL Collector**, and **Jaeger**:
+```bash
+docker compose \
+  --profile nango \
+  --profile signoz \
+  --profile otel-collector \
+  --profile jaeger \
+  up -d
 ```
 
 > [!NOTE]  
@@ -171,7 +176,7 @@ docker-compose up -d
 ### 2. Setup Environment Variables
 
 To get started from scratch, generate a `.env` file from the example:
-```
+```bash
 cp .env.example .env
 ```
 Then update the `.env` file with values specific to your environment.
@@ -184,11 +189,11 @@ This repostory contains a `docker-compose.yml` and template `Dockerfile` for eac
 - `Dockerfile.migrate` (for first-time setup)
   
 On your first-time setup, you only need to run this migration once to prepare the database:
-```
+```bash
 docker compose --profile migrate run --rm inkeep-agents-migrate
 ```
 
 To run the Inkeep Agent Framework services:
-```
+```bash
 docker-compose up -d
 ```
