@@ -136,23 +136,28 @@ Once services are running, view the OpenAPI documentation:
 ## Deploy using Docker
 
 ### 1. Prerequisites
+
+#### Required: Docker
 - [Install Docker Desktop](https://www.docker.com/)
 
 #### Optional: Self-host SigNoz and Nango
 
 For full functionality, the **Inkeep Agent Framework** requires [**SigNoz**](https://signoz.io/) and [**Nango**](https://www.nango.dev/). You can sign up for a cloud hosted account with them directly, or you can self host them.
 
-Follow these instructions to self-host **SigNoz** and **Nango**:
+Follow these instructions to self-host both **SigNoz** and **Nango**:
 
-1. Clone the docker repo
+1. Clone our repo with the optional docker files for the agent framework:
 ```
 git clone https://github.com/inkeep/agents-optional-local-dev.git
 cd agents-optional-local-dev
 ```
 
-2. Initialize environment variables
+2. Create a `.env` file from the example with an auto-generated `NANGO_ENCRYPTION_KEY`:
 ```
-cp .env.example .env && encryption_key=$(openssl rand -base64 32) && sed -i '' "s|REPLACE_WITH_BASE64_256BIT_ENCRYPTION_KEY|$encryption_key|" .env && echo "Docker environment file created with auto-generated encryption key"
+cp .env.example .env && \
+  encryption_key=$(openssl rand -base64 32) && \
+  sed -i '' "s|<REPLACE_WITH_BASE64_256BIT_ENCRYPTION_KEY>|$encryption_key|" .env && \
+  echo "Docker environment file created with auto-generated encryption key"
 ```
 
 3. Build and deploy **SigNoz and Nango** (it also includes a deployment of an **OTEL Collector** and **Jaeger**):
