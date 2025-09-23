@@ -165,15 +165,11 @@ docker-compose up -d
 
 ### 2. Setup Environment Variables
 
-To get started from scratch, run this command to generate a `.env` file from the template:
+To get started from scratch, generate a `.env` file from the example:
 ```
-cp .env.example .env \
-  && encryption_key=$(openssl rand -base64 32) \
-  && sed -i '' "s|<REPLACE_WITH_BASE64_256BIT_ENCRYPTION_KEY>|$encryption_key|" .env \
-  && echo "✅ .env file created with auto-generated encryption key"
+cp .env.example .env
 ```
-
-Update the `.env` file with values specific to your environment.
+Then update the `.env` file with values specific to your environment.
 
 ### 3. Build and run the Inkeep Agent Framework locally
 This repostory contains a `docker-compose.yml` and template `Dockerfile` for each service:
