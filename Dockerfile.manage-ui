@@ -13,4 +13,4 @@ RUN pnpm install --frozen-lockfile
 
 EXPOSE 3000
 
-CMD ["pnpm", "dev:ui"]
+CMD ["pnpm", "dev:ui", "--host", "0.0.0.0"]
