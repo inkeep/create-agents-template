@@ -5,20 +5,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev":  "concurrently \"turbo dev\" \"inkeep dev\" \"sleep 3 && open http://localhost:3000\" --names \"APIs,UI,Browser\" --prefix-colors \"blue,green,yellow\" --success first",
+    "dev": "concurrently \"turbo dev\" \"inkeep dev\" \"sleep 3 && open http://localhost:3000\" --names \"APIs,UI,Browser\" --prefix-colors \"blue,green,yellow\" --success first",
     "dev:apis": "turbo dev",
     "dev:ui": "inkeep dev",
     "db:push": "drizzle-kit push"
   },
   "dependencies": {
-    "@inkeep/agents-core": "^0.3.0",
-    "@inkeep/agents-sdk": "^0.3.0",
+    "@inkeep/agents-core": "^0.5.0",
+    "@inkeep/agents-sdk": "^0.5.0",
     "dotenv": "^16.0.0",
     "zod": "^4.1.5"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.0",
-    "@inkeep/agents-cli": "^0.3.0",
+    "@inkeep/agents-cli": "^0.5.0",
     "concurrently": "^8.2.0",
     "drizzle-kit": "^0.31.4",
     "tsx": "^4.19.0",
