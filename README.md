@@ -130,6 +130,12 @@ Once services are running, view the OpenAPI documentation:
 
 ## Deploy using Vercel
 
+### 1. Prerequisites
+Sign up for a cloud hosted deployment for these services:
+- [**Turso Cloud**](https://vercel.com/marketplace/tursocloud)
+- [**SigNoz**](https://signoz.io/)
+- [**Nango**](https://www.nango.dev/)
+
 > [!NOTE]  
 > Instructions coming soon.
 
