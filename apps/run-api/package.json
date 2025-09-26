@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "tsc",
     "start": "node dist/index.js"
   },
   "dependencies": {
