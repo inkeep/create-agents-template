@@ -1,0 +1,12 @@
+{
+  "name": "manage-api-quickstart",
+  "version": "0.1.0",
+  "description": "Manage API for agents",
+  "type": "module",
+  "devDependencies": {
+    "next": "^15.5.4"
+  },
+  "engines": {
+    "node": ">=22.x"
+  }
+}
