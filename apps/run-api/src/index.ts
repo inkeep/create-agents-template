@@ -1,4 +1,4 @@
-import "./instrumentation";
+import "./instrumentation.js";
 import "hono";
 
 import { createExecutionApp } from "@inkeep/agents-run-api";

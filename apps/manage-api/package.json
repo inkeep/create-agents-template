@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/manage-api/src/index.js"
   },
   "dependencies": {
     "@inkeep/agents-manage-api": "^0.8.7"
