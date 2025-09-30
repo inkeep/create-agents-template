@@ -9,11 +9,7 @@
     "start": "node dist/run-api/src/index.js"
   },
   "dependencies": {
-<<<<<<< Updated upstream
-    "@inkeep/agents-run-api": "^0.8.7"
-=======
     "@inkeep/agents-run-api": "^0.9.0"
->>>>>>> Stashed changes
   },
   "devDependencies": {
     "@hono/vite-dev-server": "^0.21.0",
