@@ -1,0 +1,14 @@
+{
+  "name": "manage-ui-quickstart",
+  "version": "0.1.0",
+  "description": "Manage UI for agents",
+  "type": "module",
+  "scripts": {
+    "postinstall": "if [ \"$VERCEL\" = \"1\" ]; then cd .. && inkeep dev --export --output-dir ./manage-ui; fi",
+    "build": "next build",
+    "start": "next start"
+  },
+  "engines": {
+    "node": ">=22.x"
+  }
+}
