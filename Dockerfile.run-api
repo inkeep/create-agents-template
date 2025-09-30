@@ -13,6 +13,8 @@ RUN pnpm install --frozen-lockfile
 
 WORKDIR /inkeep-agents/apps/run-api
 
+RUN pnpm build
+
 EXPOSE 3003
 
-CMD ["pnpm", "dev", "--host", "0.0.0.0"]
+CMD ["pnpm", "start"]
