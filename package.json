@@ -9,7 +9,7 @@
     "dev:apis": "turbo dev",
     "dev:ui": "inkeep dev",
     "db:push": "drizzle-kit push",
-    "postinstall": "if [ \"$VERCEL\" = \"1\" ]; then pnpm --dir ../ inkeep dev --export --output-dir ./apps/manage-ui; fi"
+    "postinstall": "if [ \"$VERCEL\" = \"1\" ]; then pnpm inkeep dev --export --output-dir ./apps/manage-ui; fi"
 
   },
   "dependencies": {
