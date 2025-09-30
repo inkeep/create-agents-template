@@ -4,7 +4,7 @@
   "description": "Manage UI for agents",
   "type": "module",
   "scripts": {
-    "postinstall": "if [ \"$VERCEL\" = \"1\" ]; then cd .. && inkeep dev --export --output-dir ./manage-ui; fi && ls -la ./",
+    "postinstall": "if [ \"$VERCEL\" = \"1\" ]; then cd .. && inkeep dev --export --output-dir ./manage-ui; fi && ls -la ./manage-ui",
     "build": "next build",
     "start": "next start"
   },
