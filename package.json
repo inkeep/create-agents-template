@@ -8,18 +8,19 @@
     "dev": "concurrently \"turbo dev\" \"inkeep dev\" \"sleep 3 && open http://localhost:3000\" --names \"APIs,UI,Browser\" --prefix-colors \"blue,green,yellow\" --success first",
     "dev:apis": "turbo dev",
     "dev:ui": "inkeep dev",
+    "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "postinstall": "if [ \"$VERCEL\" = \"1\" ] && [ \"$SKIP_APP_INSTALL\" != \"1\" ]; then inkeep dev --export --output-dir ./apps/manage-ui && SKIP_APP_INSTALL=1 pnpm -C apps/manage-ui install --no-frozen-lockfile --ignore-scripts; fi"
   },
   "dependencies": {
-    "@inkeep/agents-core": "^0.11.2",
-    "@inkeep/agents-sdk": "^0.11.2",
+    "@inkeep/agents-core": "^0.11.3",
+    "@inkeep/agents-sdk": "^0.11.3",
     "dotenv": "^16.0.0",
     "zod": "^4.1.5"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.0",
-    "@inkeep/agents-cli": "^0.11.2",
+    "@inkeep/agents-cli": "^0.11.3",
     "concurrently": "^8.2.0",
     "drizzle-kit": "^0.31.4",
     "tsx": "^4.19.0",

@@ -9,7 +9,7 @@
 		"start": "node dist/manage-api/src/index.js"
 	},
 	"dependencies": {
-		"@inkeep/agents-manage-api": "^0.11.2"
+		"@inkeep/agents-manage-api": "^0.11.3"
 	},
 	"devDependencies": {
 		"@hono/vite-dev-server": "^0.21.0",
