@@ -1,0 +1,72 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:recommended"],
+	"timezone": "America/Los_Angeles",
+	"schedule": ["after 9am and before 5pm every weekday"],
+	"prConcurrentLimit": 10,
+	"prHourlyLimit": 0,
+	"separateMinorPatch": false,
+	"separateMajorMinor": true,
+	"packageRules": [
+		{
+			"description": "Group all @inkeep package updates together",
+			"groupName": "@inkeep packages",
+			"matchPackagePatterns": ["^@inkeep/"],
+			"automerge": false,
+			"rangeStrategy": "bump",
+			"semanticCommits": "enabled",
+			"semanticCommitType": "chore",
+			"semanticCommitScope": "deps",
+			"prCreation": "immediate",
+			"schedule": ["at any time"],
+			"enabled": true,
+			"commitMessageTopic": "@inkeep packages",
+			"labels": ["dependencies", "inkeep-packages"],
+			"reviewers": [],
+			"assignees": [],
+			"addLabels": ["automated"],
+			"prBodyColumns": ["Package", "Change", "Type"],
+			"prBodyDefinitions": {
+				"Change": "{{#if displayFrom}}`{{{displayFrom}}}` -> `{{{displayTo}}}`{{else}}`{{{displayTo}}}`{{/if}}",
+				"Type": "{{updateType}}"
+			},
+			"prBodyNotes": [
+				"🤖 This PR updates all @inkeep packages to their latest versions.",
+				"",
+				"Since these packages are published with changesets, semantic versioning is followed:",
+				"- **Major** updates (X.0.0) may contain breaking changes",
+				"- **Minor** updates (0.X.0) add new features in a backward-compatible manner",
+				"- **Patch** updates (0.0.X) include backward-compatible bug fixes",
+				"",
+				"Please review the changelog for each package before merging."
+			]
+		},
+		{
+			"description": "Separate major updates for @inkeep packages",
+			"matchPackagePatterns": ["^@inkeep/"],
+			"matchUpdateTypes": ["major"],
+			"groupName": "@inkeep packages (major)",
+			"labels": ["dependencies", "inkeep-packages", "major-update"],
+			"prBodyNotes": [
+				"⚠️ **Major Version Update** - This may contain breaking changes!",
+				"",
+				"Please carefully review:",
+				"1. The changelog for breaking changes",
+				"2. Migration guides (if provided)",
+				"3. Test the changes thoroughly before merging",
+				"",
+				"Consider updating in a separate PR and testing in a staging environment first."
+			]
+		}
+	],
+	"lockFileMaintenance": {
+		"enabled": true,
+		"automerge": true,
+		"schedule": ["before 5am on monday"]
+	},
+	"vulnerabilityAlerts": {
+		"enabled": true,
+		"labels": ["security"],
+		"automerge": false
+	}
+}

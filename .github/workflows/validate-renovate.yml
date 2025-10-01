@@ -1,0 +1,35 @@
+name: Validate Renovate Config
+
+on:
+    pull_request:
+        paths:
+            - ".github/renovate.json"
+    push:
+        paths:
+            - ".github/renovate.json"
+        branches:
+            - main
+    workflow_dispatch:
+
+jobs:
+    validate:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+
+            - name: Install Renovate
+              run: npm install -g renovate
+
+            - name: Validate Renovate config
+              run: renovate-config-validator .github/renovate.json
+
+            - name: Config validation passed
+              run: |
+                  echo "✅ Renovate configuration is valid!"
+                  echo "You can now enable Renovate on this repository."
