@@ -1,39 +1,37 @@
 {
-  "name": "inkeep-agents-quickstart",
-  "version": "0.1.0",
-  "description": "An Inkeep Agent Framework directory",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "concurrently \"turbo dev\" \"inkeep dev\" \"sleep 3 && open http://localhost:3000\" --names \"APIs,UI,Browser\" --prefix-colors \"blue,green,yellow\" --success first",
-    "dev:apis": "turbo dev",
-    "dev:ui": "inkeep dev",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
-    "postinstall": "if [ \"$VERCEL\" = \"1\" ] && [ \"$SKIP_APP_INSTALL\" != \"1\" ]; then inkeep dev --export --output-dir ./apps/manage-ui && SKIP_APP_INSTALL=1 pnpm -C apps/manage-ui install --no-frozen-lockfile --ignore-scripts; fi"
-  },
-  "dependencies": {
-    "@inkeep/agents-core": "^0.12.0",
-    "@inkeep/agents-sdk": "^0.12.0",
-    "dotenv": "^16.0.0",
-    "zod": "^4.1.5"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.8.0",
-    "@inkeep/agents-cli": "^0.12.0",
-    "concurrently": "^8.2.0",
-    "drizzle-kit": "^0.31.4",
-    "tsx": "^4.19.0",
-    "turbo": "^2.5.5",
-    "wait-on": "^8.0.0"
-  },
-  "engines": {
-    "node": ">=22.x"
-  },
-  "packageManager": "pnpm@10.10.0",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "keytar"
-    ]
-  }
+	"name": "inkeep-agents-quickstart",
+	"version": "0.1.0",
+	"description": "An Inkeep Agent Framework directory",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "concurrently \"turbo dev\" \"inkeep dev\" \"sleep 3 && open http://localhost:3000\" --names \"APIs,UI,Browser\" --prefix-colors \"blue,green,yellow\" --success first",
+		"dev:apis": "turbo dev",
+		"dev:ui": "inkeep dev",
+		"db:generate": "drizzle-kit generate",
+		"db:migrate": "drizzle-kit migrate",
+		"postinstall": "if [ \"$VERCEL\" = \"1\" ] && [ \"$SKIP_APP_INSTALL\" != \"1\" ]; then inkeep dev --export --output-dir ./apps/manage-ui && SKIP_APP_INSTALL=1 pnpm -C apps/manage-ui install --no-frozen-lockfile --ignore-scripts; fi"
+	},
+	"dependencies": {
+		"@inkeep/agents-core": "^0.12.1",
+		"@inkeep/agents-sdk": "^0.12.1",
+		"dotenv": "^16.0.0",
+		"zod": "^4.1.5"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.0",
+		"@inkeep/agents-cli": "^0.12.1",
+		"concurrently": "^8.2.0",
+		"drizzle-kit": "^0.31.4",
+		"tsx": "^4.19.0",
+		"turbo": "^2.5.5",
+		"wait-on": "^8.0.0"
+	},
+	"engines": {
+		"node": ">=22.x"
+	},
+	"packageManager": "pnpm@10.10.0",
+	"pnpm": {
+		"onlyBuiltDependencies": ["keytar"]
+	}
 }
