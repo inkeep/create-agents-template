@@ -44,7 +44,7 @@
       ],
       "cache": false
     },
-    "db:push": {
+    "db:migrate": {
       "cache": false,
       "inputs": [
         "drizzle.config.ts",

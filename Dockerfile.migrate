@@ -11,4 +11,4 @@ RUN npm install -g pnpm@10.17.0
 
 RUN pnpm install --frozen-lockfile
 
-CMD ["pnpm", "db:push"]
+CMD ["pnpm", "db:migrate"]
