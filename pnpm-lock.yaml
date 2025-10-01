@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@inkeep/agents-core':
-        specifier: ^0.9.0
-        version: 0.9.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+        specifier: ^0.10.1
+        version: 0.10.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@inkeep/agents-sdk':
-        specifier: ^0.9.0
-        version: 0.9.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+        specifier: ^0.10.1
+        version: 0.10.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       dotenv:
         specifier: ^16.0.0
         version: 16.6.1
@@ -25,8 +25,8 @@ importers:
         specifier: ^1.8.0
         version: 1.9.4
       '@inkeep/agents-cli':
-        specifier: ^0.9.0
-        version: 0.9.0(@babel/runtime@7.28.4)(@codemirror/autocomplete@6.18.7)(@codemirror/language@6.11.3)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@codemirror/view@6.38.4)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.6.0)(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.5.0(react@19.1.1))(zod@4.1.11)
+        specifier: ^0.10.1
+        version: 0.10.1(@babel/runtime@7.28.4)(@codemirror/autocomplete@6.18.7)(@codemirror/language@6.11.3)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@codemirror/view@6.38.4)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.6.1)(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.5.0(react@19.1.1))(zod@4.1.11)
       concurrently:
         specifier: ^8.2.0
         version: 8.2.2
@@ -46,24 +46,24 @@ importers:
   apps/manage-api:
     dependencies:
       '@inkeep/agents-manage-api':
-        specifier: ^0.9.0
-        version: 0.9.0(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+        specifier: ^0.10.1
+        version: 0.10.1(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
     devDependencies:
       '@hono/vite-dev-server':
         specifier: ^0.21.0
         version: 0.21.1(hono@4.9.9)
       '@types/node':
         specifier: ^20.12.0
-        version: 20.19.18
+        version: 20.19.19
       hono:
         specifier: ^4.9.8
         version: 4.9.9
       typescript:
         specifier: ^5.4.0
-        version: 5.9.2
+        version: 5.9.3
       vite:
         specifier: ^7.1.7
-        version: 7.1.7(@types/node@20.19.18)(tsx@4.20.6)(yaml@2.8.1)
+        version: 7.1.7(@types/node@20.19.19)(tsx@4.20.6)(yaml@2.8.1)
 
   apps/manage-ui:
     devDependencies:
@@ -74,24 +74,24 @@ importers:
   apps/run-api:
     dependencies:
       '@inkeep/agents-run-api':
-        specifier: ^0.9.0
-        version: 0.9.0(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
+        specifier: ^0.10.1
+        version: 0.10.1(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
     devDependencies:
       '@hono/vite-dev-server':
         specifier: ^0.21.0
         version: 0.21.1(hono@4.9.9)
       '@types/node':
         specifier: ^20.12.0
-        version: 20.19.18
+        version: 20.19.19
       hono:
         specifier: ^4.9.8
         version: 4.9.9
       typescript:
         specifier: ^5.4.0
-        version: 5.9.2
+        version: 5.9.3
       vite:
         specifier: ^7.1.7
-        version: 7.1.7(@types/node@20.19.18)(tsx@4.20.6)(yaml@2.8.1)
+        version: 7.1.7(@types/node@20.19.19)(tsx@4.20.6)(yaml@2.8.1)
 
 packages:
 
@@ -869,31 +869,31 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@inkeep/agents-cli@0.9.0':
-    resolution: {integrity: sha512-qbNInuqu5vDBwk3wN4/ELNp1t/7cr3R/pcKFWaAp1iInV6TQh0ijq5EjSqO/aMQP+ee5Cfb2I3/tQdHjCN/apg==}
+  '@inkeep/agents-cli@0.10.1':
+    resolution: {integrity: sha512-NcRlzOatMGU2CqgDdmJGD3kywJeLgPEz+gUk+OsIIoqs9X7f/FplUPt+Hav9HOH14yFKiWEvwpisbAqVXEaFQw==}
     engines: {node: '>=22.0.0'}
     hasBin: true
     peerDependencies:
       zod: ^4.1.5
 
-  '@inkeep/agents-core@0.9.0':
-    resolution: {integrity: sha512-T4Dxj4uOKXR6lnpqe7X29bIB5B5LvprZo3ExPbApjCKAb212UsMTuimNVlrPWwFchb7XiGLcw7dDO9HXTr5p1g==}
+  '@inkeep/agents-core@0.10.1':
+    resolution: {integrity: sha512-n3QgJjpLpH5UPxwRtAzoCOWNTHw7zmK95xY3QhQN8/CqTTn/u0+NYmFP2YAbQXseyUM6Ep2CW4kbFbbAXGbF5Q==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-manage-api@0.9.0':
-    resolution: {integrity: sha512-9M552/YbzCex1ZLqz9gPsLUuDJmO/ojGk4NQTkiNgZRnen6ESiuJ5jeI06qGUYe37FioR+S0YZMQPhs8qx8mkQ==}
+  '@inkeep/agents-manage-api@0.10.1':
+    resolution: {integrity: sha512-x2ndRoAm/8Y8Z6N0nHDe5u+5bdeFgC/l5RxeERh0FslVuZdlLPN+4QQIimasOnuBVLpydbcgiEpbfFLZ82VHGg==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-manage-ui@0.9.0':
-    resolution: {integrity: sha512-eEBeuCKyqJi7PQ/mkf6jWgHO23L2l85pmmUUkWJNQLVu9E+L+szLk2K9WEWU9LzFhw/OtRHjq+hdGtJV2FadBA==}
+  '@inkeep/agents-manage-ui@0.10.1':
+    resolution: {integrity: sha512-4B/ExcRkSNOe4ox3zn92UVDjcgxEDActB0soBfzzYSY+N3HEAYiSbuuRUsuOe8DcF5znDaTOQ9WcO34we5Admg==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-run-api@0.9.0':
-    resolution: {integrity: sha512-kaLyRHE9fdIKIF8lu2ustLbrLVkDPVqUrRQfrXGb2MsJlRpGizeP8hZojLQja4jzzLdwijYzAxIkkicU8yaIWQ==}
+  '@inkeep/agents-run-api@0.10.1':
+    resolution: {integrity: sha512-37BFHCECkej8+eB7aL0tFZctDmv28GjNCRTuD2yi4s/Ze7jLvWCdEVw45MQfAiLL/Egk0meN4e+3PTGpCp4YCQ==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-sdk@0.9.0':
-    resolution: {integrity: sha512-/2OoWiLj51jrhLPOgjb5Cqi3R3WrRN+vKhneGabHr81XqfqlUU1YfzpPp81sv8FxX96hr6kofRrFdWwBqtSFKg==}
+  '@inkeep/agents-sdk@0.10.1':
+    resolution: {integrity: sha512-cYqVo4lc9p1wq5DPgdlB/F9ZbVElaouMCs5OvSMmqgu0ngplTzqqP/NDI688iyjU+wLfCOBp54ia5JLMSTkJDQ==}
     engines: {node: '>=22.0.0'}
 
   '@inkeep/cxkit-react-oss@0.5.105':
@@ -3109,14 +3109,14 @@ packages:
   '@types/node-fetch@2.6.13':
     resolution: {integrity: sha512-QGpRVpzSaUs30JBSGPjOg4Uveu384erbHBoT1zeONvyCfwQxIkUshLAOqN/k9EjGviPRmWTTe6aH2qySWKTVSw==}
 
-  '@types/node@18.19.128':
-    resolution: {integrity: sha512-m7wxXGpPpqxp2QDi/rpih5O772APRuBIa/6XiGqLNoM1txkjI8Sz1V4oSXJxQLTz/yP5mgy9z6UXEO6/lP70Gg==}
+  '@types/node@18.19.129':
+    resolution: {integrity: sha512-hrmi5jWt2w60ayox3iIXwpMEnfUvOLJCRtrOPbHtH15nTjvO7uhnelvrdAs0dO0/zl5DZ3ZbahiaXEVb54ca/A==}
 
-  '@types/node@20.19.18':
-    resolution: {integrity: sha512-KeYVbfnbsBCyKG8e3gmUqAfyZNcoj/qpEbHRkQkfZdKOBrU7QQ+BsTdfqLSWX9/m1ytYreMhpKvp+EZi3UFYAg==}
+  '@types/node@20.19.19':
+    resolution: {integrity: sha512-pb1Uqj5WJP7wrcbLU7Ru4QtA0+3kAXrkutGiD26wUKzSMgNNaPARTUDQmElUXp64kh3cWdou3Q0C7qwwxqSFmg==}
 
-  '@types/node@24.6.0':
-    resolution: {integrity: sha512-F1CBxgqwOMc4GKJ7eY22hWhBVQuMYTtqI8L0FcszYcpYX0fzfDGpez22Xau8Mgm7O9fI+zA/TYIdq3tGWfweBA==}
+  '@types/node@24.6.1':
+    resolution: {integrity: sha512-ljvjjs3DNXummeIaooB4cLBKg2U6SPI6Hjra/9rRIy7CpM0HpLtG9HptkMKAb4HYWy5S7HUvJEuWgr/y0U8SHw==}
 
   '@types/oracledb@6.5.2':
     resolution: {integrity: sha512-kK1eBS/Adeyis+3OlBDMeQQuasIDLUYXsi2T15ccNJ0iyUpQ4xDF7svFu3+bGVrI0CMBUclPciz+lsQR3JX3TQ==}
@@ -4213,6 +4213,10 @@ packages:
     resolution: {integrity: sha512-a4tiq7E0/5fTjxPAaH4jpjkSv/uCaU2p5KC6HVGrvl0cDjA8iBZv4vv1gyzlmK0ZUKqwpOyQMKzZQe3lTit77A==}
     engines: {node: '>=14'}
 
+  generator-function@2.0.1:
+    resolution: {integrity: sha512-SFdFmIJi+ybC0vjlHN0ZGVGHc3lgE0DxPAT0djjVg+kjOnSqclqmj0KQ7ykTOLP6YxoqOvuAODGdcHJn+43q3g==}
+    engines: {node: '>= 0.4'}
+
   get-caller-file@2.0.5:
     resolution: {integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==}
     engines: {node: 6.* || 8.* || >= 10.*}
@@ -4484,8 +4488,8 @@ packages:
     resolution: {integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==}
     engines: {node: '>=8'}
 
-  is-generator-function@1.1.0:
-    resolution: {integrity: sha512-nPUB5km40q9e8UfN/Zc24eLlzdSf9OfKByBw9CIdw4H1giPMeA0OIJvbchsCu4npfI2QcMVBsGEBHKZ7wLTWmQ==}
+  is-generator-function@1.1.2:
+    resolution: {integrity: sha512-upqt1SkGkODW9tsGNG5mtXTXtECizwtS2kA161M+gJPc1xdb/Ax629af6YrTwcOeQHbewrPNlE5Dx7kzvXTizA==}
     engines: {node: '>= 0.4'}
 
   is-glob@4.0.3:
@@ -5957,8 +5961,8 @@ packages:
     resolution: {integrity: sha512-q7QNVDGTdl702bVFiI5eY4l/HkgCM6at9KhcFbgUAzezHFbOVy4+0O/lCjsABEQwbZPravVfBIiBVGo89yzHFg==}
     engines: {node: '>= 0.4'}
 
-  typescript@5.9.2:
-    resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -6941,15 +6945,15 @@ snapshots:
   '@img/sharp-win32-x64@0.34.4':
     optional: true
 
-  '@inkeep/agents-cli@0.9.0(@babel/runtime@7.28.4)(@codemirror/autocomplete@6.18.7)(@codemirror/language@6.11.3)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@codemirror/view@6.38.4)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.6.0)(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.5.0(react@19.1.1))(zod@4.1.11)':
+  '@inkeep/agents-cli@0.10.1(@babel/runtime@7.28.4)(@codemirror/autocomplete@6.18.7)(@codemirror/language@6.11.3)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@codemirror/view@6.38.4)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.6.1)(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.5.0(react@19.1.1))(zod@4.1.11)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.2(zod@4.1.11)
       '@ai-sdk/openai': 2.0.11(zod@4.1.11)
       '@babel/parser': 7.28.4
       '@babel/types': 7.28.4
       '@clack/prompts': 0.11.0
-      '@inkeep/agents-core': 0.9.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
-      '@inkeep/agents-manage-ui': 0.9.0(@babel/runtime@7.28.4)(@codemirror/autocomplete@6.18.7)(@codemirror/language@6.11.3)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@codemirror/view@6.38.4)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.5.0(react@19.1.1))
+      '@inkeep/agents-core': 0.10.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-manage-ui': 0.10.1(@babel/runtime@7.28.4)(@codemirror/autocomplete@6.18.7)(@codemirror/language@6.11.3)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@codemirror/view@6.38.4)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.5.0(react@19.1.1))
       '@libsql/client': 0.15.15
       ai: 5.0.11(zod@4.1.11)
       ast-types: 0.14.2
@@ -6961,8 +6965,8 @@ snapshots:
       drizzle-orm: 0.44.5(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
       find-up: 7.0.0
       fs-extra: 11.3.2
-      inquirer: 9.3.8(@types/node@24.6.0)
-      inquirer-autocomplete-prompt: 3.0.1(inquirer@9.3.8(@types/node@24.6.0))
+      inquirer: 9.3.8(@types/node@24.6.1)
+      inquirer-autocomplete-prompt: 3.0.1(inquirer@9.3.8(@types/node@24.6.1))
       ora: 8.2.0
       picocolors: 1.1.1
       pino: 9.12.0
@@ -7030,7 +7034,7 @@ snapshots:
       - use-sync-external-store
       - utf-8-validate
 
-  '@inkeep/agents-core@0.9.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
+  '@inkeep/agents-core@0.10.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
     dependencies:
       '@hono/node-server': 1.19.5(hono@4.9.9)
       '@hono/zod-openapi': 1.1.3(hono@4.9.9)(zod@4.1.11)
@@ -7058,12 +7062,13 @@ snapshots:
       find-up: 7.0.0
       hono: 4.9.9
       jmespath: 0.16.0
-      keytar: 7.9.0
       nanoid: 5.1.6
       pino: 9.12.0
       pino-pretty: 13.1.1
       ts-pattern: 5.8.0
       zod: 4.1.11
+    optionalDependencies:
+      keytar: 7.9.0
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -7099,23 +7104,24 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-manage-api@0.9.0(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
+  '@inkeep/agents-manage-api@0.10.1(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
     dependencies:
       '@hono/node-server': 1.19.5(hono@4.9.9)
       '@hono/swagger-ui': 0.5.2(hono@4.9.9)
       '@hono/zod-openapi': 1.1.3(hono@4.9.9)(zod@4.1.11)
-      '@inkeep/agents-core': 0.9.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-core': 0.10.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@nangohq/node': 0.66.2
       '@nangohq/types': 0.66.2
       dotenv: 17.2.3
       drizzle-orm: 0.44.5(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
       hono: 4.9.9
       hono-pino: 0.10.2(hono@4.9.9)(pino@9.12.0)
-      keytar: 7.9.0
       nanoid: 5.1.6
       openid-client: 6.8.1
       pino: 9.12.0
       zod: 4.1.11
+    optionalDependencies:
+      keytar: 7.9.0
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -7153,14 +7159,14 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-manage-ui@0.9.0(@babel/runtime@7.28.4)(@codemirror/autocomplete@6.18.7)(@codemirror/language@6.11.3)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@codemirror/view@6.38.4)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.5.0(react@19.1.1))':
+  '@inkeep/agents-manage-ui@0.10.1(@babel/runtime@7.28.4)(@codemirror/autocomplete@6.18.7)(@codemirror/language@6.11.3)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@codemirror/view@6.38.4)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.5.0(react@19.1.1))':
     dependencies:
       '@ai-sdk/react': 2.0.11(react@19.1.1)(zod@4.1.11)
       '@codemirror/lang-json': 6.0.2
       '@hookform/resolvers': 5.2.2(react-hook-form@7.63.0(react@19.1.1))
-      '@inkeep/agents-core': 0.9.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
-      '@inkeep/agents-manage-api': 0.9.0(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
-      '@inkeep/agents-run-api': 0.9.0(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
+      '@inkeep/agents-core': 0.10.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-manage-api': 0.10.1(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-run-api': 0.10.1(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
       '@inkeep/cxkit-react-oss': 0.5.105(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@lezer/highlight': 1.2.1
       '@nangohq/frontend': 0.66.2
@@ -7271,7 +7277,7 @@ snapshots:
       - use-sync-external-store
       - utf-8-validate
 
-  '@inkeep/agents-run-api@0.9.0(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)':
+  '@inkeep/agents-run-api@0.10.1(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.2(zod@4.1.11)
       '@ai-sdk/gateway': 1.0.32(zod@4.1.11)
@@ -7282,7 +7288,7 @@ snapshots:
       '@hono/otel': 0.4.0(hono@4.9.9)
       '@hono/swagger-ui': 0.5.2(hono@4.9.9)
       '@hono/zod-openapi': 1.1.3(hono@4.9.9)(zod@4.1.11)
-      '@inkeep/agents-core': 0.9.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-core': 0.10.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@modelcontextprotocol/sdk': 1.18.2
       '@openrouter/ai-sdk-provider': 1.2.0(ai@5.0.11(zod@4.1.11))(zod@4.1.11)
       '@opentelemetry/api': 1.9.0
@@ -7306,12 +7312,13 @@ snapshots:
       fetch-to-node: 2.1.0
       hono: 4.9.9
       jmespath: 0.16.0
-      keytar: 7.9.0
       nanoid: 5.1.6
       pino: 9.12.0
       traverse: 0.6.11
       ts-pattern: 5.8.0
       zod: 4.1.11
+    optionalDependencies:
+      keytar: 7.9.0
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -7348,9 +7355,9 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-sdk@0.9.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
+  '@inkeep/agents-sdk@0.10.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
     dependencies:
-      '@inkeep/agents-core': 0.9.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-core': 0.10.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       nanoid: 5.1.6
       zod: 4.1.11
     transitivePeerDependencies:
@@ -7455,12 +7462,12 @@ snapshots:
       - react-dom
       - supports-color
 
-  '@inquirer/external-editor@1.0.2(@types/node@24.6.0)':
+  '@inquirer/external-editor@1.0.2(@types/node@24.6.1)':
     dependencies:
       chardet: 2.1.0
       iconv-lite: 0.7.0
     optionalDependencies:
-      '@types/node': 24.6.0
+      '@types/node': 24.6.1
 
   '@inquirer/figures@1.0.13': {}
 
@@ -9863,11 +9870,11 @@ snapshots:
 
   '@types/bunyan@1.8.11':
     dependencies:
-      '@types/node': 24.6.0
+      '@types/node': 24.6.1
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 24.6.0
+      '@types/node': 24.6.1
 
   '@types/d3-array@3.2.2': {}
 
@@ -10012,34 +10019,34 @@ snapshots:
 
   '@types/memcached@2.2.10':
     dependencies:
-      '@types/node': 24.6.0
+      '@types/node': 24.6.1
 
   '@types/ms@2.1.0': {}
 
   '@types/mysql@2.15.27':
     dependencies:
-      '@types/node': 24.6.0
+      '@types/node': 24.6.1
 
   '@types/node-fetch@2.6.13':
     dependencies:
-      '@types/node': 18.19.128
+      '@types/node': 18.19.129
       form-data: 4.0.4
 
-  '@types/node@18.19.128':
+  '@types/node@18.19.129':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@20.19.18':
+  '@types/node@20.19.19':
     dependencies:
       undici-types: 6.21.0
 
-  '@types/node@24.6.0':
+  '@types/node@24.6.1':
     dependencies:
       undici-types: 7.13.0
 
   '@types/oracledb@6.5.2':
     dependencies:
-      '@types/node': 24.6.0
+      '@types/node': 24.6.1
 
   '@types/pg-pool@2.0.6':
     dependencies:
@@ -10047,7 +10054,7 @@ snapshots:
 
   '@types/pg@8.15.5':
     dependencies:
-      '@types/node': 24.6.0
+      '@types/node': 24.6.1
       pg-protocol: 1.10.3
       pg-types: 2.2.0
 
@@ -10061,7 +10068,7 @@ snapshots:
 
   '@types/tedious@4.0.14':
     dependencies:
-      '@types/node': 24.6.0
+      '@types/node': 24.6.1
 
   '@types/trusted-types@2.0.7':
     optional: true
@@ -10072,7 +10079,7 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 24.6.0
+      '@types/node': 24.6.1
 
   '@uiw/codemirror-extensions-basic-setup@4.25.2(@codemirror/autocomplete@6.18.7)(@codemirror/commands@6.8.1)(@codemirror/language@6.11.3)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/view@6.38.4)':
     dependencies:
@@ -10413,7 +10420,8 @@ snapshots:
       '@chevrotain/utils': 11.0.3
       lodash-es: 4.17.21
 
-  chownr@1.1.4: {}
+  chownr@1.1.4:
+    optional: true
 
   cjs-module-lexer@1.4.3: {}
 
@@ -10782,8 +10790,10 @@ snapshots:
   decompress-response@6.0.0:
     dependencies:
       mimic-response: 3.1.0
+    optional: true
 
-  deep-extend@0.6.0: {}
+  deep-extend@0.6.0:
+    optional: true
 
   defaults@1.0.4:
     dependencies:
@@ -10819,7 +10829,8 @@ snapshots:
 
   detect-libc@2.0.2: {}
 
-  detect-libc@2.1.1: {}
+  detect-libc@2.1.1:
+    optional: true
 
   detect-node-es@1.1.0: {}
 
@@ -11052,7 +11063,8 @@ snapshots:
 
   exit-hook@4.0.0: {}
 
-  expand-template@2.0.3: {}
+  expand-template@2.0.3:
+    optional: true
 
   express-rate-limit@7.5.1(express@5.1.0):
     dependencies:
@@ -11186,7 +11198,8 @@ snapshots:
 
   fresh@2.0.0: {}
 
-  fs-constants@1.0.0: {}
+  fs-constants@1.0.0:
+    optional: true
 
   fs-extra@11.3.2:
     dependencies:
@@ -11230,6 +11243,8 @@ snapshots:
       - encoding
       - supports-color
 
+  generator-function@2.0.1: {}
+
   get-caller-file@2.0.5: {}
 
   get-east-asian-width@1.4.0: {}
@@ -11264,7 +11279,8 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  github-from-package@0.0.0: {}
+  github-from-package@0.0.0:
+    optional: true
 
   glob-parent@5.1.2:
     dependencies:
@@ -11498,22 +11514,23 @@ snapshots:
 
   inherits@2.0.4: {}
 
-  ini@1.3.8: {}
+  ini@1.3.8:
+    optional: true
 
   inline-style-parser@0.2.4: {}
 
-  inquirer-autocomplete-prompt@3.0.1(inquirer@9.3.8(@types/node@24.6.0)):
+  inquirer-autocomplete-prompt@3.0.1(inquirer@9.3.8(@types/node@24.6.1)):
     dependencies:
       ansi-escapes: 6.2.1
       figures: 5.0.0
-      inquirer: 9.3.8(@types/node@24.6.0)
+      inquirer: 9.3.8(@types/node@24.6.1)
       picocolors: 1.1.1
       run-async: 2.4.1
       rxjs: 7.8.2
 
-  inquirer@9.3.8(@types/node@24.6.0):
+  inquirer@9.3.8(@types/node@24.6.1):
     dependencies:
-      '@inquirer/external-editor': 1.0.2(@types/node@24.6.0)
+      '@inquirer/external-editor': 1.0.2(@types/node@24.6.1)
       '@inquirer/figures': 1.0.13
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -11597,9 +11614,10 @@ snapshots:
 
   is-fullwidth-code-point@3.0.0: {}
 
-  is-generator-function@1.1.0:
+  is-generator-function@1.1.2:
     dependencies:
       call-bound: 1.0.4
+      generator-function: 2.0.1
       get-proto: 1.0.1
       has-tostringtag: 1.0.2
       safe-regex-test: 1.1.0
@@ -11736,6 +11754,7 @@ snapshots:
     dependencies:
       node-addon-api: 4.3.0
       prebuild-install: 7.1.3
+    optional: true
 
   khroma@2.1.0: {}
 
@@ -12248,7 +12267,8 @@ snapshots:
 
   mimic-function@5.0.1: {}
 
-  mimic-response@3.1.0: {}
+  mimic-response@3.1.0:
+    optional: true
 
   minimatch@10.0.3:
     dependencies:
@@ -12260,7 +12280,8 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  mkdirp-classic@0.5.3: {}
+  mkdirp-classic@0.5.3:
+    optional: true
 
   mlly@1.8.0:
     dependencies:
@@ -12279,7 +12300,8 @@ snapshots:
 
   nanoid@5.1.6: {}
 
-  napi-build-utils@2.0.0: {}
+  napi-build-utils@2.0.0:
+    optional: true
 
   negotiator@1.0.0: {}
 
@@ -12315,8 +12337,10 @@ snapshots:
   node-abi@3.77.0:
     dependencies:
       semver: 7.7.2
+    optional: true
 
-  node-addon-api@4.3.0: {}
+  node-addon-api@4.3.0:
+    optional: true
 
   node-domexception@1.0.0: {}
 
@@ -12384,7 +12408,7 @@ snapshots:
 
   openai@4.78.1(zod@4.1.11):
     dependencies:
-      '@types/node': 18.19.128
+      '@types/node': 18.19.129
       '@types/node-fetch': 2.6.13
       abort-controller: 3.0.0
       agentkeepalive: 4.6.0
@@ -12590,6 +12614,7 @@ snapshots:
       simple-get: 4.0.1
       tar-fs: 2.1.4
       tunnel-agent: 0.6.0
+    optional: true
 
   prism-react-renderer@2.4.1(react@19.1.1):
     dependencies:
@@ -12630,7 +12655,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 24.6.0
+      '@types/node': 24.6.1
       long: 5.3.2
 
   proxy-addr@2.0.7:
@@ -12674,6 +12699,7 @@ snapshots:
       ini: 1.3.8
       minimist: 1.2.8
       strip-json-comments: 2.0.1
+    optional: true
 
   react-day-picker@9.11.0(react@19.1.1):
     dependencies:
@@ -13060,7 +13086,8 @@ snapshots:
 
   secure-json-parse@4.0.0: {}
 
-  semver@7.7.2: {}
+  semver@7.7.2:
+    optional: true
 
   send@1.2.0:
     dependencies:
@@ -13192,13 +13219,15 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-concat@1.0.1: {}
+  simple-concat@1.0.1:
+    optional: true
 
   simple-get@4.0.1:
     dependencies:
       decompress-response: 6.0.0
       once: 1.4.0
       simple-concat: 1.0.1
+    optional: true
 
   sisteransi@1.0.5: {}
 
@@ -13313,7 +13342,8 @@ snapshots:
     dependencies:
       ansi-regex: 6.2.2
 
-  strip-json-comments@2.0.1: {}
+  strip-json-comments@2.0.1:
+    optional: true
 
   strip-json-comments@5.0.3: {}
 
@@ -13360,6 +13390,7 @@ snapshots:
       mkdirp-classic: 0.5.3
       pump: 3.0.3
       tar-stream: 2.2.0
+    optional: true
 
   tar-stream@2.2.0:
     dependencies:
@@ -13368,6 +13399,7 @@ snapshots:
       fs-constants: 1.0.0
       inherits: 2.0.4
       readable-stream: 3.6.2
+    optional: true
 
   thread-stream@3.1.0:
     dependencies:
@@ -13431,6 +13463,7 @@ snapshots:
   tunnel-agent@0.6.0:
     dependencies:
       safe-buffer: 5.2.1
+    optional: true
 
   turbo-darwin-64@2.5.8:
     optional: true
@@ -13513,7 +13546,7 @@ snapshots:
       typed-array-buffer: 1.0.3
       typed-array-byte-offset: 1.0.4
 
-  typescript@5.9.2: {}
+  typescript@5.9.3: {}
 
   ufo@1.6.1: {}
 
@@ -13682,7 +13715,7 @@ snapshots:
       d3-time: 3.1.0
       d3-timer: 3.0.1
 
-  vite@7.1.7(@types/node@20.19.18)(tsx@4.20.6)(yaml@2.8.1):
+  vite@7.1.7(@types/node@20.19.19)(tsx@4.20.6)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.10
       fdir: 6.5.0(picomatch@4.0.3)
@@ -13691,7 +13724,7 @@ snapshots:
       rollup: 4.52.0
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 20.19.18
+      '@types/node': 20.19.19
       fsevents: 2.3.3
       tsx: 4.20.6
       yaml: 2.8.1
@@ -13758,7 +13791,7 @@ snapshots:
       is-async-function: 2.1.1
       is-date-object: 1.1.0
       is-finalizationregistry: 1.1.1
-      is-generator-function: 1.1.0
+      is-generator-function: 1.1.2
       is-regex: 1.2.1
       is-weakref: 1.1.1
       isarray: 2.0.5
