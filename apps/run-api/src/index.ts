@@ -1,3 +1,5 @@
+import { loadEnvironmentFiles } from "@inkeep/agents-core";	
+loadEnvironmentFiles();
 import "./instrumentation.js";
 import "hono";
 
