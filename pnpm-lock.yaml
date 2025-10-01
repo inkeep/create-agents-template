@@ -53,8 +53,8 @@ importers:
         specifier: ^0.21.0
         version: 0.21.1(hono@4.9.9)
       '@types/node':
-        specifier: ^20.12.0
-        version: 20.19.19
+        specifier: ^22.0.0
+        version: 22.18.8
       hono:
         specifier: ^4.9.8
         version: 4.9.9
@@ -63,7 +63,7 @@ importers:
         version: 5.9.3
       vite:
         specifier: ^7.1.7
-        version: 7.1.7(@types/node@20.19.19)(tsx@4.20.6)(yaml@2.8.1)
+        version: 7.1.7(@types/node@22.18.8)(tsx@4.20.6)(yaml@2.8.1)
 
   apps/manage-ui:
     devDependencies:
@@ -81,8 +81,8 @@ importers:
         specifier: ^0.21.0
         version: 0.21.1(hono@4.9.9)
       '@types/node':
-        specifier: ^20.12.0
-        version: 20.19.19
+        specifier: ^22.0.0
+        version: 22.18.8
       hono:
         specifier: ^4.9.8
         version: 4.9.9
@@ -91,7 +91,7 @@ importers:
         version: 5.9.3
       vite:
         specifier: ^7.1.7
-        version: 7.1.7(@types/node@20.19.19)(tsx@4.20.6)(yaml@2.8.1)
+        version: 7.1.7(@types/node@22.18.8)(tsx@4.20.6)(yaml@2.8.1)
 
 packages:
 
@@ -3112,8 +3112,8 @@ packages:
   '@types/node@18.19.129':
     resolution: {integrity: sha512-hrmi5jWt2w60ayox3iIXwpMEnfUvOLJCRtrOPbHtH15nTjvO7uhnelvrdAs0dO0/zl5DZ3ZbahiaXEVb54ca/A==}
 
-  '@types/node@20.19.19':
-    resolution: {integrity: sha512-pb1Uqj5WJP7wrcbLU7Ru4QtA0+3kAXrkutGiD26wUKzSMgNNaPARTUDQmElUXp64kh3cWdou3Q0C7qwwxqSFmg==}
+  '@types/node@22.18.8':
+    resolution: {integrity: sha512-pAZSHMiagDR7cARo/cch1f3rXy0AEXwsVsVH09FcyeJVAzCnGgmYis7P3JidtTUjyadhTeSo8TgRPswstghDaw==}
 
   '@types/node@24.6.1':
     resolution: {integrity: sha512-ljvjjs3DNXummeIaooB4cLBKg2U6SPI6Hjra/9rRIy7CpM0HpLtG9HptkMKAb4HYWy5S7HUvJEuWgr/y0U8SHw==}
@@ -9870,11 +9870,11 @@ snapshots:
 
   '@types/bunyan@1.8.11':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 22.18.8
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 22.18.8
 
   '@types/d3-array@3.2.2': {}
 
@@ -10019,34 +10019,35 @@ snapshots:
 
   '@types/memcached@2.2.10':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 22.18.8
 
   '@types/ms@2.1.0': {}
 
   '@types/mysql@2.15.27':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 22.18.8
 
   '@types/node-fetch@2.6.13':
     dependencies:
-      '@types/node': 18.19.129
+      '@types/node': 22.18.8
       form-data: 4.0.4
 
   '@types/node@18.19.129':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@20.19.19':
+  '@types/node@22.18.8':
     dependencies:
       undici-types: 6.21.0
 
   '@types/node@24.6.1':
     dependencies:
       undici-types: 7.13.0
+    optional: true
 
   '@types/oracledb@6.5.2':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 22.18.8
 
   '@types/pg-pool@2.0.6':
     dependencies:
@@ -10054,7 +10055,7 @@ snapshots:
 
   '@types/pg@8.15.5':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 22.18.8
       pg-protocol: 1.10.3
       pg-types: 2.2.0
 
@@ -10068,7 +10069,7 @@ snapshots:
 
   '@types/tedious@4.0.14':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 22.18.8
 
   '@types/trusted-types@2.0.7':
     optional: true
@@ -10079,7 +10080,7 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 22.18.8
 
   '@uiw/codemirror-extensions-basic-setup@4.25.2(@codemirror/autocomplete@6.18.7)(@codemirror/commands@6.8.1)(@codemirror/language@6.11.3)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/view@6.38.4)':
     dependencies:
@@ -12655,7 +12656,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 24.6.1
+      '@types/node': 22.18.8
       long: 5.3.2
 
   proxy-addr@2.0.7:
@@ -13561,7 +13562,8 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  undici-types@7.13.0: {}
+  undici-types@7.13.0:
+    optional: true
 
   unicorn-magic@0.1.0: {}
 
@@ -13715,7 +13717,7 @@ snapshots:
       d3-time: 3.1.0
       d3-timer: 3.0.1
 
-  vite@7.1.7(@types/node@20.19.19)(tsx@4.20.6)(yaml@2.8.1):
+  vite@7.1.7(@types/node@22.18.8)(tsx@4.20.6)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.10
       fdir: 6.5.0(picomatch@4.0.3)
@@ -13724,7 +13726,7 @@ snapshots:
       rollup: 4.52.0
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 20.19.19
+      '@types/node': 22.18.8
       fsevents: 2.3.3
       tsx: 4.20.6
       yaml: 2.8.1
