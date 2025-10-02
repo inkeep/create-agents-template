@@ -9,6 +9,11 @@
 	"separateMajorMinor": true,
 	"packageRules": [
 		{
+			"description": "Disable all packages by default (only @inkeep packages will be enabled)",
+			"matchPackagePatterns": ["*"],
+			"enabled": false
+		},
+		{
 			"description": "Group all @inkeep package updates together",
 			"groupName": "@inkeep packages",
 			"matchPackagePatterns": ["^@inkeep/"],
