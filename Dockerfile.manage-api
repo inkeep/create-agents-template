@@ -11,6 +11,9 @@ RUN npm install -g pnpm@10.17.0
 
 RUN pnpm install --frozen-lockfile
 
+RUN pnpm db:generate
+RUN pnpm db:migrate
+
 WORKDIR /inkeep-agents/apps/manage-api
 
 RUN pnpm build
