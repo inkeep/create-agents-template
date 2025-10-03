@@ -17,18 +17,21 @@ This project follows a workspace structure with the following services:
 
 [Follow these steps in the docs to get started](https://docs.inkeep.com/quick-start/start-development) with the `npx @inkeep/create-agents` CLI command.
 
-## Deploy using Vercel
+# Deploy using Vercel
 
 ### 1. Prerequisites
 Sign up for a cloud hosted deployment for these services:
-- [**Turso Cloud**](https://vercel.com/marketplace/tursocloud)
+- [**Turso on Vercel**](https://vercel.com/marketplace/tursocloud) or directly at [**Turso Cloud**](https://app.turso.tech)
 - [**SigNoz**](https://signoz.io/)
 - [**Nango**](https://www.nango.dev/)
 
+Follow this guide for how to [Deploy the Inkeep Agent Framework to Vercel](https://docs.inkeep.com/self-hosting/vercel)
+
+# Deploy using Docker
 > [!NOTE]  
 > Instructions coming soon.
 
-## Deploy using Docker
+# Build and run using Docker locally
 
 ### 1. Complete the quickstart or clone this repository
 Follow the quickstart using `npx @inkeep/create-agents` or clone this repository `git clone git@github.com:inkeep/create-agents-template.git` 
