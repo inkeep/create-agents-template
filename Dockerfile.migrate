@@ -4,17 +4,10 @@ WORKDIR /inkeep-agents
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY turbo.json drizzle.config.ts ./
-
 COPY apps/ ./apps/
 
 RUN npm install -g pnpm@10.17.0
 
 RUN pnpm install --frozen-lockfile
 
-WORKDIR /inkeep-agents/apps/manage-api
-
-RUN pnpm build
-
-EXPOSE 3002
-
-CMD ["pnpm", "start"]
+CMD pnpm db:generate && pnpm db:migrate

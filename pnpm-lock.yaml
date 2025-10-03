@@ -45,9 +45,15 @@ importers:
 
   apps/manage-api:
     dependencies:
+      '@hono/node-server':
+        specifier: ^1.19.5
+        version: 1.19.5(hono@4.9.9)
       '@inkeep/agents-manage-api':
         specifier: ^0.14.0
         version: 0.14.0(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      hono:
+        specifier: ^4.9.9
+        version: 4.9.9
     devDependencies:
       '@hono/vite-dev-server':
         specifier: ^0.21.0
@@ -55,9 +61,6 @@ importers:
       '@types/node':
         specifier: ^20.12.0
         version: 20.19.19
-      hono:
-        specifier: ^4.9.8
-        version: 4.9.9
       typescript:
         specifier: ^5.4.0
         version: 5.9.3
@@ -73,9 +76,15 @@ importers:
 
   apps/run-api:
     dependencies:
+      '@hono/node-server':
+        specifier: ^1.19.5
+        version: 1.19.5(hono@4.9.9)
       '@inkeep/agents-run-api':
         specifier: ^0.14.0
         version: 0.14.0(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
+      hono:
+        specifier: ^4.9.9
+        version: 4.9.9
     devDependencies:
       '@hono/vite-dev-server':
         specifier: ^0.21.0
@@ -83,9 +92,6 @@ importers:
       '@types/node':
         specifier: ^20.12.0
         version: 20.19.19
-      hono:
-        specifier: ^4.9.8
-        version: 4.9.9
       typescript:
         specifier: ^5.4.0
         version: 5.9.3
@@ -683,12 +689,6 @@ packages:
 
   '@hapi/topo@6.0.2':
     resolution: {integrity: sha512-KR3rD5inZbGMrHmgPxsJ9dbi6zEK+C3ZwUwTa+eMwWLz7oijWUTWD2pMSNNYJAU6Qq+65NkxXjqHr/7LM2Xkqg==}
-
-  '@hono/node-server@1.19.4':
-    resolution: {integrity: sha512-AWKQZ/YkHUBSHeL/5Ld8FWgUs6wFf4TxGYxqp9wLZxRdFuHBpXmgOq+CuDoL4vllkZLzovCf5HBJnypiy3EtHA==}
-    engines: {node: '>=18.14.1'}
-    peerDependencies:
-      hono: ^4
 
   '@hono/node-server@1.19.5':
     resolution: {integrity: sha512-iBuhh+uaaggeAuf+TftcjZyWh2GEgZcVGXkNtskLVoWaXhnJtC5HLHrU8W1KHDoucqO1MswwglmkWLFyiDn4WQ==}
@@ -6807,10 +6807,6 @@ snapshots:
     dependencies:
       '@hapi/hoek': 11.0.7
 
-  '@hono/node-server@1.19.4(hono@4.9.9)':
-    dependencies:
-      hono: 4.9.9
-
   '@hono/node-server@1.19.5(hono@4.9.9)':
     dependencies:
       hono: 4.9.9
@@ -6827,7 +6823,7 @@ snapshots:
 
   '@hono/vite-dev-server@0.21.1(hono@4.9.9)':
     dependencies:
-      '@hono/node-server': 1.19.4(hono@4.9.9)
+      '@hono/node-server': 1.19.5(hono@4.9.9)
       hono: 4.9.9
       minimatch: 9.0.5
 

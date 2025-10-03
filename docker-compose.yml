@@ -7,13 +7,16 @@ services:
       - ENVIRONMENT
       - LOG_LEVEL
       - INKEEP_AGENTS_MANAGE_API_URL=http://inkeep-agents-manage-api:3002
-      - INKEEP_AGENTS_RUN_API_URL=http://inkeep-agents-run-api:3003
+      - INKEEP_AGENTS_RUN_API_URL=http://localhost:3003
       - NANGO_SERVER_URL
       - NANGO_SECRET_KEY
       - SIGNOZ_URL
       - SIGNOZ_API_KEY
     ports:
       - "3000:3000"
+    depends_on:
+      inkeep-agents-migrate:
+        condition: service_completed_successfully
   inkeep-agents-manage-api:
     build:
       context: .
@@ -22,10 +25,15 @@ services:
       - ENVIRONMENT
       - LOG_LEVEL
       - DB_FILE_NAME=file:/inkeep-agents/db/local.db
+      - NANGO_SECRET_KEY
+      - NANGO_SERVER_URL
     volumes:
       - inkeep-agents-db:/inkeep-agents/db
     ports:
       - "3002:3002"
+    depends_on:
+      inkeep-agents-migrate:
+        condition: service_completed_successfully
   inkeep-agents-run-api:
     build:
       context: .
@@ -35,9 +43,29 @@ services:
       - LOG_LEVEL
       - DB_FILE_NAME=file:/inkeep-agents/db/local.db
       - ANTHROPIC_API_KEY
+      - OPENAI_API_KEY
+      - GOOGLE_GENERATIVE_AI_API_KEY
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT
+      - OTEL_EXPORTER_OTLP_TRACES_HEADERS
+      - NANGO_SERVER_URL
+      - NANGO_SECRET_KEY
     volumes:
       - inkeep-agents-db:/inkeep-agents/db
     ports:
       - "3003:3003"
+    depends_on:
+      inkeep-agents-migrate:
+        condition: service_completed_successfully
+  inkeep-agents-migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile.migrate
+    environment:
+      - ENVIRONMENT
+      - LOG_LEVEL
+      - DB_FILE_NAME=file:/inkeep-agents/db/local.db
+    volumes:
+      - inkeep-agents-db:/inkeep-agents/db
+    restart: "no"
 volumes:
   inkeep-agents-db:
