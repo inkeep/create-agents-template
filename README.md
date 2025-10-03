@@ -118,6 +118,8 @@ To run the Inkeep Agent Framework services:
 docker-compose up -d
 ```
 
+---
+
 ## Automated Dependency Updates
 
 This template uses **Renovate Bot** to automatically create PRs when new @inkeep packages are published.
