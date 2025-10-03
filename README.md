@@ -28,10 +28,6 @@ Sign up for a cloud hosted deployment for these services:
 > [!NOTE]  
 > Instructions coming soon.
 
-## Automated Dependency Updates
-
-This template uses **Renovate Bot** to automatically create PRs when new @inkeep packages are published.
-
 ## Deploy using Docker
 
 ### 1. Prerequisites
@@ -90,3 +86,8 @@ To run the Inkeep Agent Framework services:
 ```bash
 docker-compose up -d
 ```
+
+## Automated Dependency Updates
+
+This template uses **Renovate Bot** to automatically create PRs when new @inkeep packages are published.
+
