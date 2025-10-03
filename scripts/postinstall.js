@@ -8,6 +8,7 @@ if (isVercel && !skip) {
 	// Export the UI
 	execSync("inkeep dev --export --output-dir ./apps/manage-ui", {
 		stdio: "inherit",
+		shell: true,
 	});
 
 	// Install dependencies in manage-ui with SKIP_APP_INSTALL flag
@@ -15,6 +16,7 @@ if (isVercel && !skip) {
 		"pnpm -C apps/manage-ui install --no-frozen-lockfile --ignore-scripts",
 		{
 			stdio: "inherit",
+			shell: true,
 			env: { ...process.env, SKIP_APP_INSTALL: "1" },
 		},
 	);
