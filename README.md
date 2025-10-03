@@ -70,12 +70,15 @@ docker compose \
 
 ### 2. Setup Environment Variables
 
-To get started from scratch, generate a `.env` file from the example:
+If you followed the quickstart `npx @inkeep/create-agents`, you should already have a `.env` file with an LLM provider API key.
+
+But if you need to create one from scratch, generate a `.env` file from the example:
 ```bash
 cp .env.example .env
 ```
 Then update the `.env` file with values specific to your environment.
 
+At a minumum
 ### 3. Build and run the Inkeep Agent Framework locally
 This repostory contains a `docker-compose.yml` and template `Dockerfile` for each service:
 - `Dockerfile.manage-ui`
