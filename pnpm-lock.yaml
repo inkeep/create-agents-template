@@ -12,8 +12,8 @@ importers:
         specifier: ^0.14.6
         version: 0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@inkeep/agents-run-api':
-        specifier: 0.14.1
-        version: 0.14.1(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
+        specifier: 0.14.6
+        version: 0.14.6(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
       '@inkeep/agents-sdk':
         specifier: ^0.14.6
         version: 0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
@@ -889,10 +889,6 @@ packages:
 
   '@inkeep/agents-manage-ui@0.14.6':
     resolution: {integrity: sha512-cSl7b3N0ULjSVLaWkTCbumifpSm+LkQTlYtZSd08R32HteoDlByvn912XZCv85dvwswxpTNXycItL3I+bhpxBA==}
-    engines: {node: '>=22.0.0'}
-
-  '@inkeep/agents-run-api@0.14.1':
-    resolution: {integrity: sha512-ZEBv8QPLBpyxrcnPBjdttUw4SYaPG8oJaSBBIlTtsX1nPXGSD2s2kTGPrX67nQ7lErPWoP4hr0yVvG5nhKzjBw==}
     engines: {node: '>=22.0.0'}
 
   '@inkeep/agents-run-api@0.14.6':
@@ -3121,9 +3117,6 @@ packages:
 
   '@types/node@20.19.19':
     resolution: {integrity: sha512-pb1Uqj5WJP7wrcbLU7Ru4QtA0+3kAXrkutGiD26wUKzSMgNNaPARTUDQmElUXp64kh3cWdou3Q0C7qwwxqSFmg==}
-
-  '@types/node@24.6.1':
-    resolution: {integrity: sha512-ljvjjs3DNXummeIaooB4cLBKg2U6SPI6Hjra/9rRIy7CpM0HpLtG9HptkMKAb4HYWy5S7HUvJEuWgr/y0U8SHw==}
 
   '@types/node@24.6.2':
     resolution: {integrity: sha512-d2L25Y4j+W3ZlNAeMKcy7yDsK425ibcAOO2t7aPTz6gNMH0z2GThtwENCDc0d/Pw9wgyRqE5Px1wkV7naz8ang==}
@@ -7285,84 +7278,6 @@ snapshots:
       - use-sync-external-store
       - utf-8-validate
 
-  '@inkeep/agents-run-api@0.14.1(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)':
-    dependencies:
-      '@ai-sdk/anthropic': 2.0.2(zod@4.1.11)
-      '@ai-sdk/gateway': 1.0.33(zod@4.1.11)
-      '@ai-sdk/google': 2.0.17(zod@4.1.11)
-      '@ai-sdk/openai': 2.0.11(zod@4.1.11)
-      '@ai-sdk/react': 2.0.11(react@19.1.1)(zod@4.1.11)
-      '@hono/node-server': 1.19.5(hono@4.9.9)
-      '@hono/otel': 0.4.0(hono@4.9.9)
-      '@hono/swagger-ui': 0.5.2(hono@4.9.9)
-      '@hono/zod-openapi': 1.1.3(hono@4.9.9)(zod@4.1.11)
-      '@inkeep/agents-core': 0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
-      '@modelcontextprotocol/sdk': 1.19.1
-      '@openrouter/ai-sdk-provider': 1.2.0(ai@5.0.11(zod@4.1.11))(zod@4.1.11)
-      '@opentelemetry/api': 1.9.0
-      '@opentelemetry/auto-instrumentations-node': 0.64.6(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))
-      '@opentelemetry/baggage-span-processor': 0.4.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/context-async-hooks': 2.1.0(@opentelemetry/api@1.9.0)
-      '@opentelemetry/core': 2.1.0(@opentelemetry/api@1.9.0)
-      '@opentelemetry/exporter-trace-otlp-http': 0.205.0(@opentelemetry/api@1.9.0)
-      '@opentelemetry/resources': 2.1.0(@opentelemetry/api@1.9.0)
-      '@opentelemetry/sdk-node': 0.205.0(@opentelemetry/api@1.9.0)
-      '@opentelemetry/sdk-trace-base': 2.1.0(@opentelemetry/api@1.9.0)
-      '@opentelemetry/sdk-trace-node': 2.1.0(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.37.0
-      ai: 5.0.11(zod@4.1.11)
-      ajv: 8.17.1
-      ajv-formats: 3.0.1(ajv@8.17.1)
-      destr: 2.0.5
-      dotenv: 17.2.3
-      drizzle-orm: 0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
-      exit-hook: 4.0.0
-      fetch-to-node: 2.1.0
-      hono: 4.9.9
-      jmespath: 0.16.0
-      nanoid: 5.1.6
-      pino: 9.13.1
-      traverse: 0.6.11
-      ts-pattern: 5.8.0
-      zod: 4.1.11
-    optionalDependencies:
-      keytar: 7.9.0
-    transitivePeerDependencies:
-      - '@aws-sdk/client-rds-data'
-      - '@cloudflare/workers-types'
-      - '@electric-sql/pglite'
-      - '@libsql/client'
-      - '@libsql/client-wasm'
-      - '@neondatabase/serverless'
-      - '@op-engineering/op-sqlite'
-      - '@planetscale/database'
-      - '@prisma/client'
-      - '@tidbcloud/serverless'
-      - '@types/better-sqlite3'
-      - '@types/pg'
-      - '@types/sql.js'
-      - '@upstash/redis'
-      - '@vercel/postgres'
-      - '@xata.io/client'
-      - better-sqlite3
-      - bufferutil
-      - bun-types
-      - debug
-      - encoding
-      - expo-sqlite
-      - gel
-      - knex
-      - kysely
-      - mysql2
-      - pg
-      - postgres
-      - prisma
-      - react
-      - sql.js
-      - sqlite3
-      - supports-color
-      - utf-8-validate
-
   '@inkeep/agents-run-api@0.14.6(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.2(zod@4.1.11)
@@ -9956,11 +9871,11 @@ snapshots:
 
   '@types/bunyan@1.8.11':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 20.19.19
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 20.19.19
 
   '@types/d3-array@3.2.2': {}
 
@@ -10105,17 +10020,17 @@ snapshots:
 
   '@types/memcached@2.2.10':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 20.19.19
 
   '@types/ms@2.1.0': {}
 
   '@types/mysql@2.15.27':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 20.19.19
 
   '@types/node-fetch@2.6.13':
     dependencies:
-      '@types/node': 18.19.129
+      '@types/node': 20.19.19
       form-data: 4.0.4
 
   '@types/node@18.19.129':
@@ -10126,17 +10041,14 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  '@types/node@24.6.1':
-    dependencies:
-      undici-types: 7.13.0
-
   '@types/node@24.6.2':
     dependencies:
       undici-types: 7.13.0
+    optional: true
 
   '@types/oracledb@6.5.2':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 20.19.19
 
   '@types/pg-pool@2.0.6':
     dependencies:
@@ -10144,7 +10056,7 @@ snapshots:
 
   '@types/pg@8.15.5':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 20.19.19
       pg-protocol: 1.10.3
       pg-types: 2.2.0
 
@@ -10158,7 +10070,7 @@ snapshots:
 
   '@types/tedious@4.0.14':
     dependencies:
-      '@types/node': 24.6.1
+      '@types/node': 20.19.19
 
   '@types/trusted-types@2.0.7':
     optional: true
@@ -10169,7 +10081,7 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 24.6.2
+      '@types/node': 20.19.19
 
   '@uiw/codemirror-extensions-basic-setup@4.25.2(@codemirror/autocomplete@6.19.0)(@codemirror/commands@6.9.0)(@codemirror/language@6.11.3)(@codemirror/lint@6.9.0)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/view@6.38.4)':
     dependencies:
@@ -12747,7 +12659,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 24.6.1
+      '@types/node': 20.19.19
       long: 5.3.2
 
   proxy-addr@2.0.7:
@@ -13653,7 +13565,8 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  undici-types@7.13.0: {}
+  undici-types@7.13.0:
+    optional: true
 
   unicorn-magic@0.1.0: {}
 
