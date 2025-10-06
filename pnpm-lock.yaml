@@ -9,27 +9,27 @@ importers:
   .:
     dependencies:
       '@inkeep/agents-core':
-        specifier: ^0.14.6
-        version: 0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+        specifier: ^0.14.7
+        version: 0.14.7(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@inkeep/agents-run-api':
         specifier: 0.14.1
         version: 0.14.1(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
       '@inkeep/agents-sdk':
-        specifier: ^0.14.6
-        version: 0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+        specifier: ^0.14.7
+        version: 0.14.7(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       dotenv:
         specifier: ^16.0.0
         version: 16.6.1
       zod:
         specifier: ^4.1.5
-        version: 4.1.11
+        version: 4.1.12
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.8.0
         version: 1.9.4
       '@inkeep/agents-cli':
-        specifier: ^0.14.6
-        version: 0.14.6(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.6.2)(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.6.0(react@19.1.1))(zod@4.1.11)
+        specifier: ^0.14.7
+        version: 0.14.7(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.7.0)(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.6.0(react@19.1.1))(zod@4.1.12)
       concurrently:
         specifier: ^8.2.0
         version: 8.2.2
@@ -50,17 +50,17 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.5
-        version: 1.19.5(hono@4.9.9)
+        version: 1.19.5(hono@4.9.10)
       '@inkeep/agents-manage-api':
-        specifier: ^0.14.6
-        version: 0.14.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+        specifier: ^0.14.7
+        version: 0.14.7(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       hono:
         specifier: ^4.9.9
-        version: 4.9.9
+        version: 4.9.10
     devDependencies:
       '@hono/vite-dev-server':
         specifier: ^0.21.0
-        version: 0.21.1(hono@4.9.9)
+        version: 0.21.1(hono@4.9.10)
       '@types/node':
         specifier: ^20.12.0
         version: 20.19.19
@@ -81,17 +81,17 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.5
-        version: 1.19.5(hono@4.9.9)
+        version: 1.19.5(hono@4.9.10)
       '@inkeep/agents-run-api':
-        specifier: ^0.14.6
-        version: 0.14.6(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
+        specifier: ^0.14.7
+        version: 0.14.7(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
       hono:
         specifier: ^4.9.9
-        version: 4.9.9
+        version: 4.9.10
     devDependencies:
       '@hono/vite-dev-server':
         specifier: ^0.21.0
-        version: 0.21.1(hono@4.9.9)
+        version: 0.21.1(hono@4.9.10)
       '@types/node':
         specifier: ^20.12.0
         version: 20.19.19
@@ -207,8 +207,8 @@ packages:
   '@antfu/install-pkg@1.1.0':
     resolution: {integrity: sha512-MGQsmw10ZyI+EJo45CdSER4zEb+p31LpDAFp2Z3gkSd1yqVZGi0Ebx++YTEMonJy4oChEMLsxZ64j8FH6sSqtQ==}
 
-  '@antfu/utils@9.2.1':
-    resolution: {integrity: sha512-TMilPqXyii1AsiEii6l6ubRzbo76p6oshUSYPaKsmXDavyMLqjzVDkcp3pHp5ELMUNJHATcEOGxKTTsX9yYhGg==}
+  '@antfu/utils@9.3.0':
+    resolution: {integrity: sha512-9hFT4RauhcUzqOE4f1+frMKLZrgNog5b06I7VmZQV1BkvwvqrbC8EBZf3L1eEL2AKb6rNKjER0sEvJiSP1FXEA==}
 
   '@asteasolutions/zod-to-openapi@8.1.0':
     resolution: {integrity: sha512-tQFxVs05J/6QXXqIzj6rTRk3nj1HFs4pe+uThwE95jL5II2JfpVXkK+CqkO7aT0Do5AYqO6LDrKpleLUFXgY+g==}
@@ -872,35 +872,35 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@inkeep/agents-cli@0.14.6':
-    resolution: {integrity: sha512-9ls1CW2bvqeMSI9N02TUssiY5t7cTg6+pxoiN5esZXK21Gkra1f1Mp7d+az4ZshosGa991QS4at/Iyp5Sk99UQ==}
+  '@inkeep/agents-cli@0.14.7':
+    resolution: {integrity: sha512-V3mSpbnULyYNecCU6s966eHz44B3oLg3FXGa64iA4jRORCFG1WsEpQFzwnJPDEyqjVXdVGeZ7IfKY/cCYn+eGQ==}
     engines: {node: '>=22.0.0'}
     hasBin: true
     peerDependencies:
       zod: ^4.1.11
 
-  '@inkeep/agents-core@0.14.6':
-    resolution: {integrity: sha512-vG20ij54L6aPMMZI+Ace8y2sFZ9FoSEdMJZAxRUfVXQBbOI3mopZn67l8eWdOxPBtg8RjX1+X9pSI+t1VqhzTA==}
+  '@inkeep/agents-core@0.14.7':
+    resolution: {integrity: sha512-hYI4aiZfaAHZXLoGomI9suAe2ezdUuZfBNWdmGuKfZZoug0/0jb9VNhwcITAkJr9owhW+6Hg3r2ONo8DQKPHpA==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-manage-api@0.14.6':
-    resolution: {integrity: sha512-Bcrc+Evgl9MAOiO74pJkHEMN1w0QiRqheSyVrt8Q0+o24GN9/fZUPk08sEy+7jX8pqgtymnoVJVBU4clfhVYpA==}
+  '@inkeep/agents-manage-api@0.14.7':
+    resolution: {integrity: sha512-xCvUrpNDC87Re3m/9+vi6yIiTDnCc6X1PDAJmiH3RX3H33R81u9gIGjN9sfxvnUzXz9l1JCw3yPIa9hRfZm4jQ==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-manage-ui@0.14.6':
-    resolution: {integrity: sha512-cSl7b3N0ULjSVLaWkTCbumifpSm+LkQTlYtZSd08R32HteoDlByvn912XZCv85dvwswxpTNXycItL3I+bhpxBA==}
+  '@inkeep/agents-manage-ui@0.14.7':
+    resolution: {integrity: sha512-5N0AHlcQ/aVTcxeoQRchl3CGQ1HrCR/9e/DKdH6EKUZ39p8UvI4XliM6taGsygRu1Fb3pqJ9+WZpgNH27GNH8Q==}
     engines: {node: '>=22.0.0'}
 
   '@inkeep/agents-run-api@0.14.1':
     resolution: {integrity: sha512-ZEBv8QPLBpyxrcnPBjdttUw4SYaPG8oJaSBBIlTtsX1nPXGSD2s2kTGPrX67nQ7lErPWoP4hr0yVvG5nhKzjBw==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-run-api@0.14.6':
-    resolution: {integrity: sha512-ysdQXKYGevrBJRqzEQelbVHKpTKPGFqWoKCha1oV5D2RV99jVtkuvDQrQnX9Vn4Yfc6G2sDt5O8b/tRzpJ5UHA==}
+  '@inkeep/agents-run-api@0.14.7':
+    resolution: {integrity: sha512-SKRWgHKnqn/hTNDfj9mR4OuYXboKlEvaM0hF/O22xRwOwLufQogKqPZx4M7IXFUzUVoeXPk4u3lWWLosqwxDrA==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-sdk@0.14.6':
-    resolution: {integrity: sha512-6xYyTeIPaJJ+5sGM3NFCKjwTG7hpS7wAA/yjsU8cus97iv4Bbflt21u+3yqtPosgfvm9WLF+vLUJHFJdM1H1eA==}
+  '@inkeep/agents-sdk@0.14.7':
+    resolution: {integrity: sha512-gQ70Qd2S+YGhFej5aunS4/R5HFj8AuZpIS6cltYLEWBYuFoyiQv9EKVKoSi/ngZgxRxxNmyzoYrkLciygyr5Fg==}
     engines: {node: '>=22.0.0'}
 
   '@inkeep/cxkit-react-oss@0.5.107':
@@ -1155,6 +1155,7 @@ packages:
   '@opentelemetry/exporter-jaeger@2.1.0':
     resolution: {integrity: sha512-qtUMsp8061pQn6ZN9dngH6okiiF0NlHYBLWprzLeeCmNN7i5UHM+V8GmxvUH4L/zXlNBsySq7p3fZHIIbmK9xg==}
     engines: {node: ^18.19.0 || >=20.6.0}
+    deprecated: Jaeger now has native support for OTLP. Please use @opentelemetry/exporter-trace-otlp-proto instead.
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
 
@@ -3125,8 +3126,8 @@ packages:
   '@types/node@24.6.1':
     resolution: {integrity: sha512-ljvjjs3DNXummeIaooB4cLBKg2U6SPI6Hjra/9rRIy7CpM0HpLtG9HptkMKAb4HYWy5S7HUvJEuWgr/y0U8SHw==}
 
-  '@types/node@24.6.2':
-    resolution: {integrity: sha512-d2L25Y4j+W3ZlNAeMKcy7yDsK425ibcAOO2t7aPTz6gNMH0z2GThtwENCDc0d/Pw9wgyRqE5Px1wkV7naz8ang==}
+  '@types/node@24.7.0':
+    resolution: {integrity: sha512-IbKooQVqUBrlzWTi79E8Fw78l8k1RNtlDDNWsFZs7XonuQSJ8oNYfEeclhprUldXISRMLzBpILuKgPlIxm+/Yw==}
 
   '@types/oracledb@6.5.2':
     resolution: {integrity: sha512-kK1eBS/Adeyis+3OlBDMeQQuasIDLUYXsi2T15ccNJ0iyUpQ4xDF7svFu3+bGVrI0CMBUclPciz+lsQR3JX3TQ==}
@@ -3846,6 +3847,10 @@ packages:
     resolution: {integrity: sha512-ecqj/sy1jcK1uWrwpR67UhYrIFQ+5WlGxth34WquCbamhFA6hkkwiu37o6J5xCHdo1oixJRfVRw+ywV+Hq/0Aw==}
     engines: {node: '>=8'}
 
+  detect-libc@2.1.2:
+    resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
+    engines: {node: '>=8'}
+
   detect-node-es@1.1.0:
     resolution: {integrity: sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ==}
 
@@ -4370,15 +4375,15 @@ packages:
     engines: {node: '>= 0.10.x'}
     hasBin: true
 
-  hono-pino@0.10.2:
-    resolution: {integrity: sha512-h8h4jODUoWdY7n7J1GsOO5Szpf0KH0+bdh8inJVTFrud/R/cxNjKty/pEaJIYSY9+enP0dfAiY+gjXTEFkARYg==}
+  hono-pino@0.10.3:
+    resolution: {integrity: sha512-n0RNPIFOoq25Fg8b4D5gus4sVqI0z+8I17ibl96+p43d07UnZ0EMM/It0qSgfc7UtaC+XP5FkFmRHwBp6owsNA==}
     engines: {node: '>=18'}
     peerDependencies:
       hono: '>=4.0.0'
       pino: '>=7.1.0'
 
-  hono@4.9.9:
-    resolution: {integrity: sha512-Hxw4wT6zjJGZJdkJzAx9PyBdf7ZpxaTSA0NfxqjLghwMrLBX8p33hJBzoETRakF3UJu6OdNQBZAlNSkGqKFukw==}
+  hono@4.9.10:
+    resolution: {integrity: sha512-AlI15ijFyKTXR7eHo7QK7OR4RoKIedZvBuRjO8iy4zrxvlY5oFCdiRG/V/lFJHCNXJ0k72ATgnyzx8Yqa5arug==}
     engines: {node: '>=16.9.0'}
 
   html-url-attributes@3.0.1:
@@ -5010,8 +5015,8 @@ packages:
       sass:
         optional: true
 
-  node-abi@3.77.0:
-    resolution: {integrity: sha512-DSmt0OEcLoK4i3NuscSbGjOf3bqiDEutejqENSplMSFA/gmB8mkED9G4pKWnPl7MDU4rSHebKPHeitpDfyH0cQ==}
+  node-abi@3.78.0:
+    resolution: {integrity: sha512-E2wEyrgX/CqvicaQYU3Ze1PFGjc4QYPGsjUrlYkqAE0WjHEZwgOsGMPMzkMse4LjJbDmaEuDX3CM036j5K2DSQ==}
     engines: {node: '>=10'}
 
   node-addon-api@4.3.0:
@@ -5142,8 +5147,8 @@ packages:
     resolution: {integrity: sha512-wPrq66Llhl7/4AGC6I+cqxT07LhXvWL08LNXz1fENOw0Ap4sRZZ/gZpTTJ5jpurzzzfS2W/Ge9BY3LgLjCShcw==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  package-manager-detector@1.3.0:
-    resolution: {integrity: sha512-ZsEbbZORsyHuO00lY1kV3/t72yp6Ysay6Pd17ZAlNGuGwmWDLCJxFpRs0IzfXfj1o4icJOkUEioexFHzyPurSQ==}
+  package-manager-detector@1.4.0:
+    resolution: {integrity: sha512-rRZ+pR1Usc+ND9M2NkmCvE/LYJS+8ORVV9X0KuNSY/gFsp7RBHJM/ADh9LYq4Vvfq6QkKrW6/weuh8SMEtN5gw==}
 
   parse-entities@4.0.2:
     resolution: {integrity: sha512-GG2AQYWoLgL877gQIKeRPGO1xF9+eG1ujIb5soS5gPvLQ1y2o8FL90w2QWNdf9I361Mpp7726c+lj3U0qK1uGw==}
@@ -5605,8 +5610,8 @@ packages:
   secure-json-parse@2.7.0:
     resolution: {integrity: sha512-6aU+Rwsezw7VR8/nyvKTx8QpWH9FrcYiXXlqC4z5d5XQBDRqtbfsRjnwGyqbi3gddNtWHuEk9OANUotL26qKUw==}
 
-  secure-json-parse@4.0.0:
-    resolution: {integrity: sha512-dxtLJO6sc35jWidmLxo7ij+Eg48PM/kleBsxpC8QJE0qJICe+KawkDQmvCMZUr9u7WKVHgMW6vy3fQ7zMiFZMA==}
+  secure-json-parse@4.1.0:
+    resolution: {integrity: sha512-l4KnYfEyqYJxDwlNVyRfO2E4NTHfMKAWdUuA8J0yve2Dz/E/PdBepY03RvyJpssIpRFwJoCD55wA+mEDs6ByWA==}
 
   semver@7.7.2:
     resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
@@ -5996,6 +6001,9 @@ packages:
   undici-types@7.13.0:
     resolution: {integrity: sha512-Ov2Rr9Sx+fRgagJ5AX0qvItZG/JKKoBRAVITs1zk7IqZGTJUwgUr7qoYBpWwakpWilTZFM98rG/AFRocu10iIQ==}
 
+  undici-types@7.14.0:
+    resolution: {integrity: sha512-QQiYxHuyZ9gQUIrmPo3IA+hUl4KYk8uSA7cHrcKd/l3p1OTpZcM0Tbp9x7FAtXdAYhlasd60ncPpgu6ihG6TOA==}
+
   unicorn-magic@0.1.0:
     resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
     engines: {node: '>=18'}
@@ -6304,8 +6312,8 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.1.11:
-    resolution: {integrity: sha512-WPsqwxITS2tzx1bzhIKsEs19ABD5vmCVa4xBo2tq/SrV4RNZtfws1EnCWQXM6yh8bD08a1idvkB5MZSBiZsjwg==}
+  zod@4.1.12:
+    resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
 
   zustand@4.5.7:
     resolution: {integrity: sha512-CHOUy7mu3lbD6o6LJLfllpjkzhHXSBlX8B9+qPddUsIfeF5S/UZ5q0kmCsnRqT1UHFQZchNFDDzMbQsuesHWlw==}
@@ -6345,78 +6353,78 @@ packages:
 
 snapshots:
 
-  '@ai-sdk/anthropic@2.0.2(zod@4.1.11)':
+  '@ai-sdk/anthropic@2.0.2(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.2(zod@4.1.11)
-      zod: 4.1.11
+      '@ai-sdk/provider-utils': 3.0.2(zod@4.1.12)
+      zod: 4.1.12
 
-  '@ai-sdk/gateway@1.0.3(zod@4.1.11)':
+  '@ai-sdk/gateway@1.0.3(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.1(zod@4.1.11)
-      zod: 4.1.11
+      '@ai-sdk/provider-utils': 3.0.1(zod@4.1.12)
+      zod: 4.1.12
 
-  '@ai-sdk/gateway@1.0.33(zod@4.1.11)':
+  '@ai-sdk/gateway@1.0.33(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.10(zod@4.1.11)
+      '@ai-sdk/provider-utils': 3.0.10(zod@4.1.12)
       '@vercel/oidc': 3.0.1
-      zod: 4.1.11
+      zod: 4.1.12
 
-  '@ai-sdk/gateway@1.0.5(zod@4.1.11)':
+  '@ai-sdk/gateway@1.0.5(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.2(zod@4.1.11)
-      zod: 4.1.11
+      '@ai-sdk/provider-utils': 3.0.2(zod@4.1.12)
+      zod: 4.1.12
 
-  '@ai-sdk/google@2.0.17(zod@4.1.11)':
+  '@ai-sdk/google@2.0.17(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.10(zod@4.1.11)
-      zod: 4.1.11
+      '@ai-sdk/provider-utils': 3.0.10(zod@4.1.12)
+      zod: 4.1.12
 
-  '@ai-sdk/openai@2.0.11(zod@4.1.11)':
+  '@ai-sdk/openai@2.0.11(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.2(zod@4.1.11)
-      zod: 4.1.11
+      '@ai-sdk/provider-utils': 3.0.2(zod@4.1.12)
+      zod: 4.1.12
 
-  '@ai-sdk/openai@2.0.4(zod@4.1.11)':
+  '@ai-sdk/openai@2.0.4(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.1(zod@4.1.11)
-      zod: 4.1.11
+      '@ai-sdk/provider-utils': 3.0.1(zod@4.1.12)
+      zod: 4.1.12
 
-  '@ai-sdk/provider-utils@2.2.8(zod@4.1.11)':
+  '@ai-sdk/provider-utils@2.2.8(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 1.1.3
       nanoid: 3.3.11
       secure-json-parse: 2.7.0
-      zod: 4.1.11
+      zod: 4.1.12
 
-  '@ai-sdk/provider-utils@3.0.1(zod@4.1.11)':
+  '@ai-sdk/provider-utils@3.0.1(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@standard-schema/spec': 1.0.0
       eventsource-parser: 3.0.6
-      zod: 4.1.11
-      zod-to-json-schema: 3.24.6(zod@4.1.11)
+      zod: 4.1.12
+      zod-to-json-schema: 3.24.6(zod@4.1.12)
 
-  '@ai-sdk/provider-utils@3.0.10(zod@4.1.11)':
+  '@ai-sdk/provider-utils@3.0.10(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@standard-schema/spec': 1.0.0
       eventsource-parser: 3.0.6
-      zod: 4.1.11
+      zod: 4.1.12
 
-  '@ai-sdk/provider-utils@3.0.2(zod@4.1.11)':
+  '@ai-sdk/provider-utils@3.0.2(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@standard-schema/spec': 1.0.0
       eventsource-parser: 3.0.6
-      zod: 4.1.11
-      zod-to-json-schema: 3.24.6(zod@4.1.11)
+      zod: 4.1.12
+      zod-to-json-schema: 3.24.6(zod@4.1.12)
 
   '@ai-sdk/provider@1.1.3':
     dependencies:
@@ -6426,44 +6434,44 @@ snapshots:
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/react@2.0.11(react@19.1.1)(zod@4.1.11)':
+  '@ai-sdk/react@2.0.11(react@19.1.1)(zod@4.1.12)':
     dependencies:
-      '@ai-sdk/provider-utils': 3.0.2(zod@4.1.11)
-      ai: 5.0.11(zod@4.1.11)
+      '@ai-sdk/provider-utils': 3.0.2(zod@4.1.12)
+      ai: 5.0.11(zod@4.1.12)
       react: 19.1.1
       swr: 2.3.6(react@19.1.1)
       throttleit: 2.1.0
     optionalDependencies:
-      zod: 4.1.11
+      zod: 4.1.12
 
-  '@ai-sdk/react@2.0.5(react@19.1.1)(zod@4.1.11)':
+  '@ai-sdk/react@2.0.5(react@19.1.1)(zod@4.1.12)':
     dependencies:
-      '@ai-sdk/provider-utils': 3.0.1(zod@4.1.11)
-      ai: 5.0.5(zod@4.1.11)
+      '@ai-sdk/provider-utils': 3.0.1(zod@4.1.12)
+      ai: 5.0.5(zod@4.1.12)
       react: 19.1.1
       swr: 2.3.6(react@19.1.1)
       throttleit: 2.1.0
     optionalDependencies:
-      zod: 4.1.11
+      zod: 4.1.12
 
-  '@ai-sdk/ui-utils@1.2.11(zod@4.1.11)':
+  '@ai-sdk/ui-utils@1.2.11(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 1.1.3
-      '@ai-sdk/provider-utils': 2.2.8(zod@4.1.11)
-      zod: 4.1.11
-      zod-to-json-schema: 3.24.6(zod@4.1.11)
+      '@ai-sdk/provider-utils': 2.2.8(zod@4.1.12)
+      zod: 4.1.12
+      zod-to-json-schema: 3.24.6(zod@4.1.12)
 
   '@antfu/install-pkg@1.1.0':
     dependencies:
-      package-manager-detector: 1.3.0
+      package-manager-detector: 1.4.0
       tinyexec: 1.0.1
 
-  '@antfu/utils@9.2.1': {}
+  '@antfu/utils@9.3.0': {}
 
-  '@asteasolutions/zod-to-openapi@8.1.0(zod@4.1.11)':
+  '@asteasolutions/zod-to-openapi@8.1.0(zod@4.1.12)':
     dependencies:
       openapi3-ts: 4.5.0
-      zod: 4.1.11
+      zod: 4.1.12
 
   '@babel/helper-string-parser@7.27.1': {}
 
@@ -6814,38 +6822,38 @@ snapshots:
     dependencies:
       '@hapi/hoek': 11.0.7
 
-  '@hono/node-server@1.19.5(hono@4.9.9)':
+  '@hono/node-server@1.19.5(hono@4.9.10)':
     dependencies:
-      hono: 4.9.9
+      hono: 4.9.10
 
-  '@hono/otel@0.4.0(hono@4.9.9)':
+  '@hono/otel@0.4.0(hono@4.9.10)':
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/semantic-conventions': 1.37.0
-      hono: 4.9.9
+      hono: 4.9.10
 
-  '@hono/swagger-ui@0.5.2(hono@4.9.9)':
+  '@hono/swagger-ui@0.5.2(hono@4.9.10)':
     dependencies:
-      hono: 4.9.9
+      hono: 4.9.10
 
-  '@hono/vite-dev-server@0.21.1(hono@4.9.9)':
+  '@hono/vite-dev-server@0.21.1(hono@4.9.10)':
     dependencies:
-      '@hono/node-server': 1.19.5(hono@4.9.9)
-      hono: 4.9.9
+      '@hono/node-server': 1.19.5(hono@4.9.10)
+      hono: 4.9.10
       minimatch: 9.0.5
 
-  '@hono/zod-openapi@1.1.3(hono@4.9.9)(zod@4.1.11)':
+  '@hono/zod-openapi@1.1.3(hono@4.9.10)(zod@4.1.12)':
     dependencies:
-      '@asteasolutions/zod-to-openapi': 8.1.0(zod@4.1.11)
-      '@hono/zod-validator': 0.7.3(hono@4.9.9)(zod@4.1.11)
-      hono: 4.9.9
+      '@asteasolutions/zod-to-openapi': 8.1.0(zod@4.1.12)
+      '@hono/zod-validator': 0.7.3(hono@4.9.10)(zod@4.1.12)
+      hono: 4.9.10
       openapi3-ts: 4.5.0
-      zod: 4.1.11
+      zod: 4.1.12
 
-  '@hono/zod-validator@0.7.3(hono@4.9.9)(zod@4.1.11)':
+  '@hono/zod-validator@0.7.3(hono@4.9.10)(zod@4.1.12)':
     dependencies:
-      hono: 4.9.9
-      zod: 4.1.11
+      hono: 4.9.10
+      zod: 4.1.12
 
   '@hookform/resolvers@5.2.2(react-hook-form@7.64.0(react@19.1.1))':
     dependencies:
@@ -6857,7 +6865,7 @@ snapshots:
   '@iconify/utils@3.0.2':
     dependencies:
       '@antfu/install-pkg': 1.1.0
-      '@antfu/utils': 9.2.1
+      '@antfu/utils': 9.3.0
       '@iconify/types': 2.0.0
       debug: 4.4.3
       globals: 15.15.0
@@ -6956,17 +6964,17 @@ snapshots:
   '@img/sharp-win32-x64@0.34.4':
     optional: true
 
-  '@inkeep/agents-cli@0.14.6(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.6.2)(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.6.0(react@19.1.1))(zod@4.1.11)':
+  '@inkeep/agents-cli@0.14.7(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.7.0)(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.6.0(react@19.1.1))(zod@4.1.12)':
     dependencies:
-      '@ai-sdk/anthropic': 2.0.2(zod@4.1.11)
-      '@ai-sdk/openai': 2.0.11(zod@4.1.11)
+      '@ai-sdk/anthropic': 2.0.2(zod@4.1.12)
+      '@ai-sdk/openai': 2.0.11(zod@4.1.12)
       '@babel/parser': 7.28.4
       '@babel/types': 7.28.4
       '@clack/prompts': 0.11.0
-      '@inkeep/agents-core': 0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
-      '@inkeep/agents-manage-ui': 0.14.6(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.6.0(react@19.1.1))
+      '@inkeep/agents-core': 0.14.7(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-manage-ui': 0.14.7(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.6.0(react@19.1.1))
       '@libsql/client': 0.15.15
-      ai: 5.0.11(zod@4.1.11)
+      ai: 5.0.11(zod@4.1.12)
       ast-types: 0.14.2
       chalk: 5.6.2
       cli-table3: 0.6.5
@@ -6976,8 +6984,8 @@ snapshots:
       drizzle-orm: 0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
       find-up: 7.0.0
       fs-extra: 11.3.2
-      inquirer: 9.3.8(@types/node@24.6.2)
-      inquirer-autocomplete-prompt: 3.0.1(inquirer@9.3.8(@types/node@24.6.2))
+      inquirer: 9.3.8(@types/node@24.7.0)
+      inquirer-autocomplete-prompt: 3.0.1(inquirer@9.3.8(@types/node@24.7.0))
       ora: 8.2.0
       picocolors: 1.1.1
       pino: 9.13.1
@@ -6985,7 +6993,7 @@ snapshots:
       recast: 0.23.11
       ts-morph: 26.0.0
       tsx: 4.20.6
-      zod: 4.1.11
+      zod: 4.1.12
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@babel/core'
@@ -7042,10 +7050,10 @@ snapshots:
       - use-sync-external-store
       - utf-8-validate
 
-  '@inkeep/agents-core@0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
+  '@inkeep/agents-core@0.14.7(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
     dependencies:
-      '@hono/node-server': 1.19.5(hono@4.9.9)
-      '@hono/zod-openapi': 1.1.3(hono@4.9.9)(zod@4.1.11)
+      '@hono/node-server': 1.19.5(hono@4.9.10)
+      '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
       '@libsql/client': 0.15.15
       '@modelcontextprotocol/sdk': 1.19.1
       '@nangohq/node': 0.66.2
@@ -7059,22 +7067,22 @@ snapshots:
       '@opentelemetry/sdk-node': 0.203.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/sdk-trace-node': 2.1.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.37.0
-      ai: 5.0.11(zod@4.1.11)
+      ai: 5.0.11(zod@4.1.12)
       ajv: 8.17.1
       ajv-formats: 3.0.1(ajv@8.17.1)
       dotenv: 17.2.3
       dotenv-expand: 12.0.3
       drizzle-orm: 0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
-      drizzle-zod: 0.8.3(drizzle-orm@0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5))(zod@4.1.11)
+      drizzle-zod: 0.8.3(drizzle-orm@0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5))(zod@4.1.12)
       exit-hook: 4.0.0
       find-up: 7.0.0
-      hono: 4.9.9
+      hono: 4.9.10
       jmespath: 0.16.0
       nanoid: 5.1.6
       pino: 9.13.1
       pino-pretty: 13.1.1
       ts-pattern: 5.8.0
-      zod: 4.1.11
+      zod: 4.1.12
     optionalDependencies:
       keytar: 7.9.0
     transitivePeerDependencies:
@@ -7112,22 +7120,22 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-manage-api@0.14.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
+  '@inkeep/agents-manage-api@0.14.7(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
     dependencies:
-      '@hono/node-server': 1.19.5(hono@4.9.9)
-      '@hono/swagger-ui': 0.5.2(hono@4.9.9)
-      '@hono/zod-openapi': 1.1.3(hono@4.9.9)(zod@4.1.11)
-      '@inkeep/agents-core': 0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@hono/node-server': 1.19.5(hono@4.9.10)
+      '@hono/swagger-ui': 0.5.2(hono@4.9.10)
+      '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
+      '@inkeep/agents-core': 0.14.7(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@nangohq/node': 0.66.2
       '@nangohq/types': 0.66.2
       dotenv: 17.2.3
       drizzle-orm: 0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
-      hono: 4.9.9
-      hono-pino: 0.10.2(hono@4.9.9)(pino@9.13.1)
+      hono: 4.9.10
+      hono-pino: 0.10.3(hono@4.9.10)(pino@9.13.1)
       nanoid: 5.1.6
       openid-client: 6.8.1
       pino: 9.13.1
-      zod: 4.1.11
+      zod: 4.1.12
     optionalDependencies:
       keytar: 7.9.0
     transitivePeerDependencies:
@@ -7167,17 +7175,17 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-manage-ui@0.14.6(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.6.0(react@19.1.1))':
+  '@inkeep/agents-manage-ui@0.14.7(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react@19.1.13)(codemirror@6.0.2)(use-sync-external-store@1.6.0(react@19.1.1))':
     dependencies:
-      '@ai-sdk/react': 2.0.11(react@19.1.1)(zod@4.1.11)
+      '@ai-sdk/react': 2.0.11(react@19.1.1)(zod@4.1.12)
       '@codemirror/autocomplete': 6.19.0
       '@codemirror/lang-json': 6.0.2
       '@codemirror/lint': 6.9.0
       '@codemirror/view': 6.38.4
       '@hookform/resolvers': 5.2.2(react-hook-form@7.64.0(react@19.1.1))
-      '@inkeep/agents-core': 0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
-      '@inkeep/agents-manage-api': 0.14.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
-      '@inkeep/agents-run-api': 0.14.6(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
+      '@inkeep/agents-core': 0.14.7(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-manage-api': 0.14.7(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-run-api': 0.14.7(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
       '@inkeep/cxkit-react-oss': 0.5.107(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@lezer/highlight': 1.2.1
       '@nangohq/frontend': 0.66.2
@@ -7227,7 +7235,7 @@ snapshots:
       streamdown: 1.3.0(@types/react@19.1.13)(react@19.1.1)
       tailwind-merge: 3.3.1
       use-stick-to-bottom: 1.1.1(react@19.1.1)
-      zod: 4.1.11
+      zod: 4.1.12
       zustand: 5.0.8(@types/react@19.1.13)(react@19.1.1)(use-sync-external-store@1.6.0(react@19.1.1))
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
@@ -7287,18 +7295,18 @@ snapshots:
 
   '@inkeep/agents-run-api@0.14.1(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)':
     dependencies:
-      '@ai-sdk/anthropic': 2.0.2(zod@4.1.11)
-      '@ai-sdk/gateway': 1.0.33(zod@4.1.11)
-      '@ai-sdk/google': 2.0.17(zod@4.1.11)
-      '@ai-sdk/openai': 2.0.11(zod@4.1.11)
-      '@ai-sdk/react': 2.0.11(react@19.1.1)(zod@4.1.11)
-      '@hono/node-server': 1.19.5(hono@4.9.9)
-      '@hono/otel': 0.4.0(hono@4.9.9)
-      '@hono/swagger-ui': 0.5.2(hono@4.9.9)
-      '@hono/zod-openapi': 1.1.3(hono@4.9.9)(zod@4.1.11)
-      '@inkeep/agents-core': 0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@ai-sdk/anthropic': 2.0.2(zod@4.1.12)
+      '@ai-sdk/gateway': 1.0.33(zod@4.1.12)
+      '@ai-sdk/google': 2.0.17(zod@4.1.12)
+      '@ai-sdk/openai': 2.0.11(zod@4.1.12)
+      '@ai-sdk/react': 2.0.11(react@19.1.1)(zod@4.1.12)
+      '@hono/node-server': 1.19.5(hono@4.9.10)
+      '@hono/otel': 0.4.0(hono@4.9.10)
+      '@hono/swagger-ui': 0.5.2(hono@4.9.10)
+      '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
+      '@inkeep/agents-core': 0.14.7(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@modelcontextprotocol/sdk': 1.19.1
-      '@openrouter/ai-sdk-provider': 1.2.0(ai@5.0.11(zod@4.1.11))(zod@4.1.11)
+      '@openrouter/ai-sdk-provider': 1.2.0(ai@5.0.11(zod@4.1.12))(zod@4.1.12)
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/auto-instrumentations-node': 0.64.6(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))
       '@opentelemetry/baggage-span-processor': 0.4.2(@opentelemetry/api@1.9.0)
@@ -7310,7 +7318,7 @@ snapshots:
       '@opentelemetry/sdk-trace-base': 2.1.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/sdk-trace-node': 2.1.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.37.0
-      ai: 5.0.11(zod@4.1.11)
+      ai: 5.0.11(zod@4.1.12)
       ajv: 8.17.1
       ajv-formats: 3.0.1(ajv@8.17.1)
       destr: 2.0.5
@@ -7318,13 +7326,13 @@ snapshots:
       drizzle-orm: 0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
       exit-hook: 4.0.0
       fetch-to-node: 2.1.0
-      hono: 4.9.9
+      hono: 4.9.10
       jmespath: 0.16.0
       nanoid: 5.1.6
       pino: 9.13.1
       traverse: 0.6.11
       ts-pattern: 5.8.0
-      zod: 4.1.11
+      zod: 4.1.12
     optionalDependencies:
       keytar: 7.9.0
     transitivePeerDependencies:
@@ -7363,20 +7371,20 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-run-api@0.14.6(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)':
+  '@inkeep/agents-run-api@0.14.7(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)':
     dependencies:
-      '@ai-sdk/anthropic': 2.0.2(zod@4.1.11)
-      '@ai-sdk/gateway': 1.0.33(zod@4.1.11)
-      '@ai-sdk/google': 2.0.17(zod@4.1.11)
-      '@ai-sdk/openai': 2.0.11(zod@4.1.11)
-      '@ai-sdk/react': 2.0.11(react@19.1.1)(zod@4.1.11)
-      '@hono/node-server': 1.19.5(hono@4.9.9)
-      '@hono/otel': 0.4.0(hono@4.9.9)
-      '@hono/swagger-ui': 0.5.2(hono@4.9.9)
-      '@hono/zod-openapi': 1.1.3(hono@4.9.9)(zod@4.1.11)
-      '@inkeep/agents-core': 0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@ai-sdk/anthropic': 2.0.2(zod@4.1.12)
+      '@ai-sdk/gateway': 1.0.33(zod@4.1.12)
+      '@ai-sdk/google': 2.0.17(zod@4.1.12)
+      '@ai-sdk/openai': 2.0.11(zod@4.1.12)
+      '@ai-sdk/react': 2.0.11(react@19.1.1)(zod@4.1.12)
+      '@hono/node-server': 1.19.5(hono@4.9.10)
+      '@hono/otel': 0.4.0(hono@4.9.10)
+      '@hono/swagger-ui': 0.5.2(hono@4.9.10)
+      '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
+      '@inkeep/agents-core': 0.14.7(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@modelcontextprotocol/sdk': 1.19.1
-      '@openrouter/ai-sdk-provider': 1.2.0(ai@5.0.11(zod@4.1.11))(zod@4.1.11)
+      '@openrouter/ai-sdk-provider': 1.2.0(ai@5.0.11(zod@4.1.12))(zod@4.1.12)
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/auto-instrumentations-node': 0.64.6(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))
       '@opentelemetry/baggage-span-processor': 0.4.2(@opentelemetry/api@1.9.0)
@@ -7388,7 +7396,7 @@ snapshots:
       '@opentelemetry/sdk-trace-base': 2.1.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/sdk-trace-node': 2.1.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.37.0
-      ai: 5.0.11(zod@4.1.11)
+      ai: 5.0.11(zod@4.1.12)
       ajv: 8.17.1
       ajv-formats: 3.0.1(ajv@8.17.1)
       destr: 2.0.5
@@ -7396,13 +7404,13 @@ snapshots:
       drizzle-orm: 0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
       exit-hook: 4.0.0
       fetch-to-node: 2.1.0
-      hono: 4.9.9
+      hono: 4.9.10
       jmespath: 0.16.0
       nanoid: 5.1.6
       pino: 9.13.1
       traverse: 0.6.11
       ts-pattern: 5.8.0
-      zod: 4.1.11
+      zod: 4.1.12
     optionalDependencies:
       keytar: 7.9.0
     transitivePeerDependencies:
@@ -7441,11 +7449,11 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-sdk@0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
+  '@inkeep/agents-sdk@0.14.7(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
     dependencies:
-      '@inkeep/agents-core': 0.14.6(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-core': 0.14.7(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       nanoid: 5.1.6
-      zod: 4.1.11
+      zod: 4.1.12
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -7483,9 +7491,9 @@ snapshots:
 
   '@inkeep/cxkit-react-oss@0.5.107(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
-      '@ai-sdk/openai': 2.0.4(zod@4.1.11)
-      '@ai-sdk/react': 2.0.5(react@19.1.1)(zod@4.1.11)
-      '@ai-sdk/ui-utils': 1.2.11(zod@4.1.11)
+      '@ai-sdk/openai': 2.0.4(zod@4.1.12)
+      '@ai-sdk/react': 2.0.5(react@19.1.1)(zod@4.1.12)
+      '@ai-sdk/ui-utils': 1.2.11(zod@4.1.12)
       '@radix-ui/number': 1.1.1
       '@radix-ui/primitive': 1.1.3
       '@radix-ui/react-avatar': 1.1.2(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -7514,7 +7522,7 @@ snapshots:
       '@zag-js/focus-trap': 1.25.0
       '@zag-js/presence': 1.25.0
       '@zag-js/react': 1.25.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      ai: 5.0.5(zod@4.1.11)
+      ai: 5.0.5(zod@4.1.12)
       altcha-lib: 1.3.0
       aria-hidden: 1.2.6
       class-variance-authority: 0.7.1
@@ -7525,7 +7533,7 @@ snapshots:
       lucide-react: 0.503.0(react@19.1.1)
       marked: 15.0.12
       merge-anything: 5.1.7
-      openai: 4.78.1(zod@4.1.11)
+      openai: 4.78.1(zod@4.1.12)
       prism-react-renderer: 2.4.1(react@19.1.1)
       react-error-boundary: 6.0.0(react@19.1.1)
       react-hook-form: 7.54.2(react@19.1.1)
@@ -7539,7 +7547,7 @@ snapshots:
       tailwind-merge: 2.6.0
       unist-util-visit: 5.0.0
       use-sync-external-store: 1.6.0(react@19.1.1)
-      zod: 4.1.11
+      zod: 4.1.12
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
@@ -7548,12 +7556,12 @@ snapshots:
       - react-dom
       - supports-color
 
-  '@inquirer/external-editor@1.0.2(@types/node@24.6.2)':
+  '@inquirer/external-editor@1.0.2(@types/node@24.7.0)':
     dependencies:
       chardet: 2.1.0
       iconv-lite: 0.7.0
     optionalDependencies:
-      '@types/node': 24.6.2
+      '@types/node': 24.7.0
 
   '@inquirer/figures@1.0.13': {}
 
@@ -7727,10 +7735,10 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@openrouter/ai-sdk-provider@1.2.0(ai@5.0.11(zod@4.1.11))(zod@4.1.11)':
+  '@openrouter/ai-sdk-provider@1.2.0(ai@5.0.11(zod@4.1.12))(zod@4.1.12)':
     dependencies:
-      ai: 5.0.11(zod@4.1.11)
-      zod: 4.1.11
+      ai: 5.0.11(zod@4.1.12)
+      zod: 4.1.12
 
   '@opentelemetry/api-logs@0.203.0':
     dependencies:
@@ -10130,9 +10138,9 @@ snapshots:
     dependencies:
       undici-types: 7.13.0
 
-  '@types/node@24.6.2':
+  '@types/node@24.7.0':
     dependencies:
-      undici-types: 7.13.0
+      undici-types: 7.14.0
 
   '@types/oracledb@6.5.2':
     dependencies:
@@ -10169,7 +10177,7 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 24.6.2
+      '@types/node': 24.7.0
 
   '@uiw/codemirror-extensions-basic-setup@4.25.2(@codemirror/autocomplete@6.19.0)(@codemirror/commands@6.9.0)(@codemirror/language@6.11.3)(@codemirror/lint@6.9.0)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/view@6.38.4)':
     dependencies:
@@ -10298,21 +10306,21 @@ snapshots:
     dependencies:
       humanize-ms: 1.2.1
 
-  ai@5.0.11(zod@4.1.11):
+  ai@5.0.11(zod@4.1.12):
     dependencies:
-      '@ai-sdk/gateway': 1.0.5(zod@4.1.11)
+      '@ai-sdk/gateway': 1.0.5(zod@4.1.12)
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.2(zod@4.1.11)
+      '@ai-sdk/provider-utils': 3.0.2(zod@4.1.12)
       '@opentelemetry/api': 1.9.0
-      zod: 4.1.11
+      zod: 4.1.12
 
-  ai@5.0.5(zod@4.1.11):
+  ai@5.0.5(zod@4.1.12):
     dependencies:
-      '@ai-sdk/gateway': 1.0.3(zod@4.1.11)
+      '@ai-sdk/gateway': 1.0.3(zod@4.1.12)
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.1(zod@4.1.11)
+      '@ai-sdk/provider-utils': 3.0.1(zod@4.1.12)
       '@opentelemetry/api': 1.9.0
-      zod: 4.1.11
+      zod: 4.1.12
 
   ajv-formats@3.0.1(ajv@8.17.1):
     optionalDependencies:
@@ -10924,6 +10932,9 @@ snapshots:
   detect-libc@2.1.1:
     optional: true
 
+  detect-libc@2.1.2:
+    optional: true
+
   detect-node-es@1.1.0: {}
 
   devlop@1.1.0:
@@ -10962,10 +10973,10 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@types/pg': 8.15.5
 
-  drizzle-zod@0.8.3(drizzle-orm@0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5))(zod@4.1.11):
+  drizzle-zod@0.8.3(drizzle-orm@0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5))(zod@4.1.12):
     dependencies:
       drizzle-orm: 0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
-      zod: 4.1.11
+      zod: 4.1.12
 
   dunder-proto@1.0.1:
     dependencies:
@@ -11554,13 +11565,13 @@ snapshots:
       process: 0.10.1
       xtend: 4.0.2
 
-  hono-pino@0.10.2(hono@4.9.9)(pino@9.13.1):
+  hono-pino@0.10.3(hono@4.9.10)(pino@9.13.1):
     dependencies:
       defu: 6.1.4
-      hono: 4.9.9
+      hono: 4.9.10
       pino: 9.13.1
 
-  hono@4.9.9: {}
+  hono@4.9.10: {}
 
   html-url-attributes@3.0.1: {}
 
@@ -11611,18 +11622,18 @@ snapshots:
 
   inline-style-parser@0.2.4: {}
 
-  inquirer-autocomplete-prompt@3.0.1(inquirer@9.3.8(@types/node@24.6.2)):
+  inquirer-autocomplete-prompt@3.0.1(inquirer@9.3.8(@types/node@24.7.0)):
     dependencies:
       ansi-escapes: 6.2.1
       figures: 5.0.0
-      inquirer: 9.3.8(@types/node@24.6.2)
+      inquirer: 9.3.8(@types/node@24.7.0)
       picocolors: 1.1.1
       run-async: 2.4.1
       rxjs: 7.8.2
 
-  inquirer@9.3.8(@types/node@24.6.2):
+  inquirer@9.3.8(@types/node@24.7.0):
     dependencies:
-      '@inquirer/external-editor': 1.0.2(@types/node@24.6.2)
+      '@inquirer/external-editor': 1.0.2(@types/node@24.7.0)
       '@inquirer/figures': 1.0.13
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -12426,7 +12437,7 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  node-abi@3.77.0:
+  node-abi@3.78.0:
     dependencies:
       semver: 7.7.2
     optional: true
@@ -12498,7 +12509,7 @@ snapshots:
       regex: 6.0.1
       regex-recursion: 6.0.2
 
-  openai@4.78.1(zod@4.1.11):
+  openai@4.78.1(zod@4.1.12):
     dependencies:
       '@types/node': 18.19.129
       '@types/node-fetch': 2.6.13
@@ -12508,7 +12519,7 @@ snapshots:
       formdata-node: 4.4.1
       node-fetch: 2.7.0
     optionalDependencies:
-      zod: 4.1.11
+      zod: 4.1.12
     transitivePeerDependencies:
       - encoding
 
@@ -12561,7 +12572,7 @@ snapshots:
     dependencies:
       p-limit: 4.0.0
 
-  package-manager-detector@1.3.0: {}
+  package-manager-detector@1.4.0: {}
 
   parse-entities@4.0.2:
     dependencies:
@@ -12627,7 +12638,7 @@ snapshots:
       on-exit-leak-free: 2.1.2
       pino-abstract-transport: 2.0.0
       pump: 3.0.3
-      secure-json-parse: 4.0.0
+      secure-json-parse: 4.1.0
       sonic-boom: 4.2.0
       strip-json-comments: 5.0.3
 
@@ -12694,13 +12705,13 @@ snapshots:
 
   prebuild-install@7.1.3:
     dependencies:
-      detect-libc: 2.1.1
+      detect-libc: 2.1.2
       expand-template: 2.0.3
       github-from-package: 0.0.0
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 2.0.0
-      node-abi: 3.77.0
+      node-abi: 3.78.0
       pump: 3.0.3
       rc: 1.2.8
       simple-get: 4.0.1
@@ -13176,7 +13187,7 @@ snapshots:
 
   secure-json-parse@2.7.0: {}
 
-  secure-json-parse@4.0.0: {}
+  secure-json-parse@4.1.0: {}
 
   semver@7.7.2:
     optional: true
@@ -13655,6 +13666,8 @@ snapshots:
 
   undici-types@7.13.0: {}
 
+  undici-types@7.14.0: {}
+
   unicorn-magic@0.1.0: {}
 
   unified@11.0.5:
@@ -13956,13 +13969,13 @@ snapshots:
     dependencies:
       zod: 3.25.76
 
-  zod-to-json-schema@3.24.6(zod@4.1.11):
+  zod-to-json-schema@3.24.6(zod@4.1.12):
     dependencies:
-      zod: 4.1.11
+      zod: 4.1.12
 
   zod@3.25.76: {}
 
-  zod@4.1.11: {}
+  zod@4.1.12: {}
 
   zustand@4.5.7(@types/react@19.1.13)(react@19.1.1):
     dependencies:
