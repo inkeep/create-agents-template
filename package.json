@@ -10,6 +10,7 @@
 		"dev:ui": "inkeep dev",
 		"db:generate": "drizzle-kit generate",
 		"db:migrate": "drizzle-kit migrate",
+		"upgrade-agents": "node scripts/upgrade.js",
 		"postinstall": "node scripts/postinstall.js"
 	},
 	"dependencies": {
