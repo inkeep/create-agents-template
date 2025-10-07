@@ -41,14 +41,13 @@ runCommand(
 );
 
 runCommand(
-  'pnpm update @inkeep/agents-ui --latest',
-  'Upgrading manage-ui package',
-  { cwd: './apps/agents-ui' }
-);
+  'pnpm db:generate',
+  'Generating database schema',
+)
 
 runCommand(
   'pnpm db:migrate',
   'Migrating database schema',
-);
+)
 
 console.log('Done!');
