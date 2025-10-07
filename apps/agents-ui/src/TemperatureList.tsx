@@ -7,12 +7,13 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import type { TemperatureDataProps} from "../../../src/weather-project/schemas/temperature-schema";
+
+type TemperatureData = TemperatureDataProps['temperature_data'][number];
 
 export const TemperatureList = ({
   temperature_data,
-}: {
-  temperature_data: any;
-}) => {
+}: TemperatureDataProps) => {
   const getWeatherIcon = (weatherCode: number) => {
     switch (weatherCode) {
       case 0:
@@ -61,7 +62,7 @@ export const TemperatureList = ({
   };
 
   // Prepare data for the chart
-  const chartData = temperature_data.map((datapoint: any) => ({
+  const chartData = temperature_data.map((datapoint) => ({
     date: formatDate(datapoint.date),
     temperature: Math.round(datapoint.temperature),
     weather_code: datapoint.weather_code,
@@ -69,7 +70,11 @@ export const TemperatureList = ({
   }));
 
   // Custom tooltip component
-  const CustomTooltip = ({ active, payload, label }: any) => {
+  const CustomTooltip = ({ active, payload, label }: {
+    active?: boolean;
+    payload?: Array<{ payload: TemperatureData & { fullDate: string } }>;
+    label?: string;
+  }) => {
     if (active && payload && payload.length) {
       const data = payload[0].payload;
       return (
