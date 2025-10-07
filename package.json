@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@inkeep/agents-core": "^0.14.9",
-		"@inkeep/agents-manage-ui": "^0.14.8",
+		"@inkeep/agents-manage-ui": "^0.14.9",
 		"@inkeep/agents-sdk": "^0.14.9",
 		"@tailwindcss/vite": "^4.1.14",
 		"dotenv": "^16.0.0",
@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.0",
-		"@inkeep/agents-cli": "^0.14.8",
+		"@inkeep/agents-cli": "^0.14.9",
 		"concurrently": "^8.2.0",
 		"drizzle-kit": "^0.31.4",
 		"tsx": "^4.19.0",
