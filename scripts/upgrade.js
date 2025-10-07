@@ -18,7 +18,7 @@ function runCommand(command, description, options = {}) {
 
 // Usage
 runCommand(
-  'pnpm update @inkeep/agents-core @inkeep/agents-sdk --latest',
+  'pnpm update @inkeep/agents-core @inkeep/agents-sdk @inkeep/agents-manage-ui @inkeep/agents-cli --latest',
   'Upgrading core and sdk packages'
 );
 
