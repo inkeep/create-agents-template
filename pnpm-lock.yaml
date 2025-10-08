@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@inkeep/agents-core':
-        specifier: ^0.14.16
-        version: 0.14.16(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+        specifier: ^0.15.0
+        version: 0.15.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@inkeep/agents-manage-ui':
-        specifier: ^0.14.16
-        version: 0.14.16(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1))
+        specifier: ^0.15.0
+        version: 0.15.0(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1))
       '@inkeep/agents-sdk':
-        specifier: ^0.14.16
-        version: 0.14.16(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+        specifier: ^0.15.0
+        version: 0.15.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@tailwindcss/vite':
         specifier: ^4.1.14
         version: 4.1.14(vite@7.1.9(@types/node@24.7.0)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1))
@@ -34,8 +34,8 @@ importers:
         specifier: ^1.8.0
         version: 1.9.4
       '@inkeep/agents-cli':
-        specifier: ^0.14.16
-        version: 0.14.16(@inkeep/agents-manage-ui@0.14.16(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1)))(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.7.0)(@types/pg@8.15.5)(zod@4.1.12)
+        specifier: ^0.15.0
+        version: 0.15.0(@inkeep/agents-manage-ui@0.15.0(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1)))(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.7.0)(@types/pg@8.15.5)(zod@4.1.12)
       concurrently:
         specifier: ^8.2.0
         version: 8.2.2
@@ -110,8 +110,8 @@ importers:
         specifier: ^1.19.5
         version: 1.19.5(hono@4.9.10)
       '@inkeep/agents-manage-api':
-        specifier: ^0.14.16
-        version: 0.14.16(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+        specifier: ^0.15.0
+        version: 0.15.0(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       hono:
         specifier: ^4.9.9
         version: 4.9.10
@@ -141,8 +141,8 @@ importers:
         specifier: ^1.19.5
         version: 1.19.5(hono@4.9.10)
       '@inkeep/agents-run-api':
-        specifier: ^0.14.16
-        version: 0.14.16(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.2.0)
+        specifier: ^0.15.0
+        version: 0.15.0(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.2.0)
       hono:
         specifier: ^4.9.9
         version: 4.9.10
@@ -174,8 +174,8 @@ packages:
     peerDependencies:
       zod: ^3.25.76 || ^4
 
-  '@ai-sdk/gateway@1.0.33':
-    resolution: {integrity: sha512-v9i3GPEo4t3fGcSkQkc07xM6KJN75VUv7C1Mqmmsu2xD8lQwnQfsrgAXyNuWe20yGY0eHuheSPDZhiqsGKtH1g==}
+  '@ai-sdk/gateway@1.0.34':
+    resolution: {integrity: sha512-Vc/4fGlAW2uGmz6DnbRB9b7kdkbk4DQYNDYNdr/NHJxoaLsdNF3CE8i172rZ47+jEU2hGibcn5yivbgvjMi8Ig==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -1056,32 +1056,32 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@inkeep/agents-cli@0.14.16':
-    resolution: {integrity: sha512-j7HeFGVcdmCGprTWjxG7ExDWNMKZ/O0t4CR57SmZmd80yQfYiHLn99sMrCE/gNTQ/cbgwerG7LVg74Sdpy01Ww==}
+  '@inkeep/agents-cli@0.15.0':
+    resolution: {integrity: sha512-EeMBX9M4p1RECExn5wRs4Ha6n2TpING4SOlmtmmSZ8OER4k0rMx/qUFY0dLIPAj/TLPjUhKdsQTVubft6KBKEA==}
     engines: {node: '>=22.0.0'}
     hasBin: true
     peerDependencies:
       '@inkeep/agents-manage-ui': '*'
       zod: ^4.1.11
 
-  '@inkeep/agents-core@0.14.16':
-    resolution: {integrity: sha512-C7yIzLk8qqJBtikucxnsV6wz5W1X08sycjf0Fq/PD56XtooZkfZma+ZgC172nSCO3W7+iKywbzjrDyl0aGvQFw==}
+  '@inkeep/agents-core@0.15.0':
+    resolution: {integrity: sha512-Z8/XdCAJQlkaEN+knlF/aoA5OdqUDXlvzn12WWU3W/IK2MUpUg88KcJGnAWDy7ugz+ONqICuTtXJ3nV0QaRHdQ==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-manage-api@0.14.16':
-    resolution: {integrity: sha512-BV2u+HspKXFPYyENxzYUFE9KIzLgmu1VUnbjxro5BlAslt58g4Wg38BL/YWSBlFEf9xym8CzaheEs2UKkZd53g==}
+  '@inkeep/agents-manage-api@0.15.0':
+    resolution: {integrity: sha512-EhDzrgmSbMZvPVvTZjbDPe4g8QI0FUmwG7yZoHjqKAze7QjWiVCyVkwewcJKj4EmC0/PFB3EcAMv7Z9KGGP8gg==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-manage-ui@0.14.16':
-    resolution: {integrity: sha512-btluswApi83vPVhyw7arM5gQ3A+lG0q/0yakYnQFxZPfvPF+JzUX7CIsDkzHhYvzxS1dfKPkygHgTcIPvjf/cg==}
+  '@inkeep/agents-manage-ui@0.15.0':
+    resolution: {integrity: sha512-Mln/w4WmeIto3MU1vCSUdJOhao6B8gz1QKKPx3LR/FxWTWUEyBdAuCl0EdEiFQ2lXbMvJvsUYk6OAqirMzHDTA==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-run-api@0.14.16':
-    resolution: {integrity: sha512-lAHowHOwXqJfFTbXUqIxPW5yKbrKx8SSOKQX0iGfsB0F0NpnrRcRz2DvdgWPmQ+D8IjkgOfUUy/OCeg9Q+q2ng==}
+  '@inkeep/agents-run-api@0.15.0':
+    resolution: {integrity: sha512-4QUyivJP5g5nF9s0NNxBdtlp/cbag5V7dEdKiZc7Js/WJA3DNPHew2d+3N85XfVSrBGiCB0ZtUbltfqSVuhdPw==}
     engines: {node: '>=22.0.0'}
 
-  '@inkeep/agents-sdk@0.14.16':
-    resolution: {integrity: sha512-LdLQXXAp6nRevIM6839qWupV4QYl6EwWh80lz6qO3jMYqH2kbiPTzYDMkDHVkakuPgZ0hu1SGxTtxDXc/Y3PKw==}
+  '@inkeep/agents-sdk@0.15.0':
+    resolution: {integrity: sha512-TUMTX96BJBaudSxehiME8M+SBYNBbb97I5IzGC2zx3MI3iDaQO582FL6Prw1Iv0fE5SOYcgRDC1BbLIDjqKrpg==}
     engines: {node: '>=22.0.0'}
 
   '@inkeep/agents-ui@0.14.9':
@@ -3683,8 +3683,8 @@ packages:
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
 
-  '@vercel/oidc@3.0.1':
-    resolution: {integrity: sha512-V/YRVrJDqM6VaMBjRUrd6qRMrTKvZjHdVdEmdXsOZMulTa3iK98ijKTc3wldBmst6W5rHpqMoKllKcBAHgN7GQ==}
+  '@vercel/oidc@3.0.2':
+    resolution: {integrity: sha512-JekxQ0RApo4gS4un/iMGsIL1/k4KUBe3HmnGcDvzHuFBdQdudEJgTqcsJC7y6Ul4Yw5CeykgvQbX2XeEJd0+DA==}
     engines: {node: '>= 20'}
 
   '@vitejs/plugin-react@5.0.4':
@@ -6223,8 +6223,8 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  react-day-picker@9.11.0:
-    resolution: {integrity: sha512-L4FYOaPrr3+AEROeP6IG2mCORZZfxJDkJI2df8mv1jyPrNYeccgmFPZDaHyAuPCBCddQFozkxbikj2NhMEYfDQ==}
+  react-day-picker@9.11.1:
+    resolution: {integrity: sha512-l3ub6o8NlchqIjPKrRFUCkTUEq6KwemQlfv3XZzzwpUeGwmDJ+0u0Upmt38hJyd7D/vn2dQoOoLV/qAp0o3uUw==}
     engines: {node: '>=18'}
     peerDependencies:
       react: '>=16.8.0'
@@ -7404,11 +7404,11 @@ snapshots:
       '@ai-sdk/provider-utils': 3.0.1(zod@4.1.12)
       zod: 4.1.12
 
-  '@ai-sdk/gateway@1.0.33(zod@4.1.12)':
+  '@ai-sdk/gateway@1.0.34(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@ai-sdk/provider-utils': 3.0.10(zod@4.1.12)
-      '@vercel/oidc': 3.0.1
+      '@vercel/oidc': 3.0.2
       zod: 4.1.12
 
   '@ai-sdk/gateway@1.0.5(zod@4.1.12)':
@@ -8196,16 +8196,16 @@ snapshots:
   '@img/sharp-win32-x64@0.34.4':
     optional: true
 
-  '@inkeep/agents-cli@0.14.16(@inkeep/agents-manage-ui@0.14.16(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1)))(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.7.0)(@types/pg@8.15.5)(zod@4.1.12)':
+  '@inkeep/agents-cli@0.15.0(@inkeep/agents-manage-ui@0.15.0(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1)))(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.7.0)(@types/pg@8.15.5)(zod@4.1.12)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.2(zod@4.1.12)
       '@ai-sdk/openai': 2.0.11(zod@4.1.12)
       '@babel/parser': 7.28.4
       '@babel/types': 7.28.4
       '@clack/prompts': 0.11.0
-      '@inkeep/agents-core': 0.14.16(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
-      '@inkeep/agents-manage-ui': 0.14.16(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1))
-      '@inkeep/agents-sdk': 0.14.16(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-core': 0.15.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-manage-ui': 0.15.0(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1))
+      '@inkeep/agents-sdk': 0.15.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@libsql/client': 0.15.15
       ai: 5.0.11(zod@4.1.12)
       ast-types: 0.14.2
@@ -8264,7 +8264,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-core@0.14.16(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
+  '@inkeep/agents-core@0.15.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
     dependencies:
       '@hono/node-server': 1.19.5(hono@4.9.10)
       '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
@@ -8334,12 +8334,12 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-manage-api@0.14.16(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
+  '@inkeep/agents-manage-api@0.15.0(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
     dependencies:
       '@hono/node-server': 1.19.5(hono@4.9.10)
       '@hono/swagger-ui': 0.5.2(hono@4.9.10)
       '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
-      '@inkeep/agents-core': 0.14.16(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-core': 0.15.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@nangohq/node': 0.66.2
       '@nangohq/types': 0.66.2
       dotenv: 17.2.3
@@ -8389,7 +8389,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-manage-ui@0.14.16(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1))':
+  '@inkeep/agents-manage-ui@0.15.0(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1))':
     dependencies:
       '@ai-sdk/react': 2.0.11(react@19.1.1)(zod@4.1.12)
       '@codemirror/autocomplete': 6.19.0
@@ -8397,9 +8397,9 @@ snapshots:
       '@codemirror/lint': 6.9.0
       '@codemirror/view': 6.38.5
       '@hookform/resolvers': 5.2.2(react-hook-form@7.64.0(react@19.1.1))
-      '@inkeep/agents-core': 0.14.16(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
-      '@inkeep/agents-manage-api': 0.14.16(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
-      '@inkeep/agents-run-api': 0.14.16(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
+      '@inkeep/agents-core': 0.15.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-manage-api': 0.15.0(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-run-api': 0.15.0(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)
       '@inkeep/cxkit-react-oss': 0.5.107(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@lezer/highlight': 1.2.1
       '@nangohq/frontend': 0.66.2
@@ -8438,7 +8438,7 @@ snapshots:
       pino: 9.13.1
       pino-pretty: 13.1.1
       react: 19.1.1
-      react-day-picker: 9.11.0(react@19.1.1)
+      react-day-picker: 9.11.1(react@19.1.1)
       react-dom: 19.1.1(react@19.1.1)
       react-error-boundary: 6.0.0(react@19.1.1)
       react-hook-form: 7.64.0(react@19.1.1)
@@ -8507,10 +8507,10 @@ snapshots:
       - use-sync-external-store
       - utf-8-validate
 
-  '@inkeep/agents-run-api@0.14.16(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)':
+  '@inkeep/agents-run-api@0.15.0(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.1.1)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.2(zod@4.1.12)
-      '@ai-sdk/gateway': 1.0.33(zod@4.1.12)
+      '@ai-sdk/gateway': 1.0.34(zod@4.1.12)
       '@ai-sdk/google': 2.0.17(zod@4.1.12)
       '@ai-sdk/openai': 2.0.11(zod@4.1.12)
       '@ai-sdk/react': 2.0.11(react@19.1.1)(zod@4.1.12)
@@ -8518,7 +8518,7 @@ snapshots:
       '@hono/otel': 0.4.0(hono@4.9.10)
       '@hono/swagger-ui': 0.5.2(hono@4.9.10)
       '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
-      '@inkeep/agents-core': 0.14.16(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-core': 0.15.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@modelcontextprotocol/sdk': 1.19.1
       '@openrouter/ai-sdk-provider': 1.2.0(ai@5.0.11(zod@4.1.12))(zod@4.1.12)
       '@opentelemetry/api': 1.9.0
@@ -8585,10 +8585,10 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-run-api@0.14.16(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.2.0)':
+  '@inkeep/agents-run-api@0.15.0(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.2.0)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.2(zod@4.1.12)
-      '@ai-sdk/gateway': 1.0.33(zod@4.1.12)
+      '@ai-sdk/gateway': 1.0.34(zod@4.1.12)
       '@ai-sdk/google': 2.0.17(zod@4.1.12)
       '@ai-sdk/openai': 2.0.11(zod@4.1.12)
       '@ai-sdk/react': 2.0.11(react@19.2.0)(zod@4.1.12)
@@ -8596,7 +8596,7 @@ snapshots:
       '@hono/otel': 0.4.0(hono@4.9.10)
       '@hono/swagger-ui': 0.5.2(hono@4.9.10)
       '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
-      '@inkeep/agents-core': 0.14.16(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-core': 0.15.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@modelcontextprotocol/sdk': 1.19.1
       '@openrouter/ai-sdk-provider': 1.2.0(ai@5.0.11(zod@4.1.12))(zod@4.1.12)
       '@opentelemetry/api': 1.9.0
@@ -8663,9 +8663,9 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@inkeep/agents-sdk@0.14.16(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
+  '@inkeep/agents-sdk@0.15.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
     dependencies:
-      '@inkeep/agents-core': 0.14.16(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
+      '@inkeep/agents-core': 0.15.0(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       nanoid: 5.1.6
       zod: 4.1.12
     transitivePeerDependencies:
@@ -12389,7 +12389,7 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@vercel/oidc@3.0.1': {}
+  '@vercel/oidc@3.0.2': {}
 
   '@vitejs/plugin-react@5.0.4(rolldown-vite@7.1.14(@types/node@24.7.0)(esbuild@0.25.10)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1))':
     dependencies:
@@ -15363,7 +15363,7 @@ snapshots:
       strip-json-comments: 2.0.1
     optional: true
 
-  react-day-picker@9.11.0(react@19.1.1):
+  react-day-picker@9.11.1(react@19.1.1):
     dependencies:
       '@date-fns/tz': 1.4.1
       date-fns: 4.1.0
