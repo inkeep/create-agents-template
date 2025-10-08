@@ -41,11 +41,6 @@ runCommand(
 );
 
 runCommand(
-  'pnpm db:generate',
-  'Generating database schema',
-)
-
-runCommand(
   'pnpm db:migrate',
   'Migrating database schema',
 )
