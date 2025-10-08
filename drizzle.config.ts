@@ -23,5 +23,6 @@ const getDbConfig = () => {
 
 export default defineConfig({
 	schema: "node_modules/@inkeep/agents-core/dist/db/schema.js",
+	out: "node_modules/@inkeep/agents-core/drizzle",
 	...getDbConfig(),
 });
