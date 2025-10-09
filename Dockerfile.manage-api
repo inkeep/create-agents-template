@@ -5,8 +5,9 @@ WORKDIR /inkeep-agents
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY turbo.json drizzle.config.ts ./
 
-COPY apps/ ./apps/
 COPY scripts/ ./scripts/
+COPY apps/shared/ ./apps/shared/
+COPY apps/manage-api/ ./apps/manage-api/
 
 RUN npm install -g pnpm@10.17.0
 

@@ -5,13 +5,24 @@ WORKDIR /inkeep-agents
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY turbo.json drizzle.config.ts ./
 
-COPY apps/ ./apps/
 COPY scripts/ ./scripts/
+COPY apps/shared/ ./apps/shared/
+COPY apps/manage-ui/ ./apps/manage-ui/
 
 RUN npm install -g pnpm@10.17.0
 
 RUN pnpm install --frozen-lockfile
 
+ENV SKIP_APP_INSTALL="1"
+
+RUN pnpm inkeep dev --export --output-dir ./apps/manage-ui
+
+WORKDIR /inkeep-agents/apps/manage-ui
+
+RUN pnpm install --no-frozen-lockfile --ignore-scripts
+
+RUN pnpm next build
+
 EXPOSE 3000
 
-CMD ["pnpm", "dev:ui", "--host", "0.0.0.0"]
+CMD ["pnpm", "next", "start"]
