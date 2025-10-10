@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { createDatabaseClient, createProject, getProject } from '@inkeep/agents-core';
+import { createDatabaseClient, createProject, getProject, createArtifactComponent, getArtifactComponentById } from '@inkeep/agents-core';
 import dotenv from 'dotenv';
 
 // Load environment variables
@@ -11,6 +11,57 @@ const tenantId = 'default';
 const projectId = 'default';
 const projectName = 'default';
 const projectDescription = 'Generated Inkeep Agents project';
+
+async function createCitationArtifact(dbClient, tenantId, projectId) {
+  await createArtifactComponent(dbClient)({
+    id: 'citation',
+    tenantId: tenantId,
+    projectId: projectId,
+    name: 'citation',
+    description: 'Structured factual information extracted from search results',
+    props: {
+      type: 'object',
+      properties: {
+        title: {
+          description: 'Title of the source document',
+          type: 'string',
+          inPreview: true,
+        },
+        url: {
+          description: 'URL of the source document',
+          type: 'string',
+          inPreview: true,
+        },
+        record_type: {
+          description: 'Type of record (documentation, blog, guide, etc.)',
+          type: 'string',
+          inPreview: true,
+        },
+        content: {
+          description: 'Array of structured content blocks extracted from the document',
+          type: 'array',
+          items: {
+            type: 'object',
+            properties: {
+              type: {
+                description: 'Type of content (text, image, video, etc.)',
+                type: 'string',
+              },
+              text: {
+                description: 'The actual text content',
+                type: 'string',
+              },
+            },
+            required: ['type', 'text'],
+            additionalProperties: false,
+          },
+        },
+      },
+      required: ['title', 'url', 'record_type', 'content'],
+      additionalProperties: false,
+    },
+  });
+}
 
 async function setupProject() {
   console.log('🚀 Setting up your Inkeep Agents project...');
@@ -55,6 +106,11 @@ async function setupProject() {
   }
 },
     });
+    
+    // Create default citation artifact
+    console.log('📋 Creating default citation artifact...');
+    await createCitationArtifact(dbClient, tenantId, projectId);
+    console.log('✅ Citation artifact created successfully!');
     
     console.log('✅ Project created successfully!');
     console.log('🎯 Project ID:', projectId);
