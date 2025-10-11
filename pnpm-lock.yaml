@@ -19,7 +19,7 @@ importers:
         version: 0.18.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@tailwindcss/vite':
         specifier: ^4.1.14
-        version: 4.1.14(vite@7.1.9(@types/node@24.7.1)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1))
+        version: 4.1.14(vite@7.1.9(@types/node@24.7.2)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1))
       dotenv:
         specifier: ^16.0.0
         version: 16.6.1
@@ -35,7 +35,7 @@ importers:
         version: 1.9.4
       '@inkeep/agents-cli':
         specifier: ^0.18.1
-        version: 0.18.1(@inkeep/agents-manage-ui@0.18.1(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1)))(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.7.1)(@types/pg@8.15.5)(zod@4.1.12)
+        version: 0.18.1(@inkeep/agents-manage-ui@0.18.1(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1)))(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.7.2)(@types/pg@8.15.5)(zod@4.1.12)
       concurrently:
         specifier: ^8.2.0
         version: 8.2.2
@@ -72,7 +72,7 @@ importers:
         version: 9.37.0
       '@types/node':
         specifier: ^24.6.0
-        version: 24.7.1
+        version: 24.7.2
       '@types/react':
         specifier: ^19.1.16
         version: 19.2.2
@@ -81,7 +81,7 @@ importers:
         version: 19.2.1(@types/react@19.2.2)
       '@vitejs/plugin-react':
         specifier: ^5.0.4
-        version: 5.0.4(rolldown-vite@7.1.14(@types/node@24.7.1)(esbuild@0.25.10)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1))
+        version: 5.0.4(rolldown-vite@7.1.14(@types/node@24.7.2)(esbuild@0.25.10)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1))
       eslint:
         specifier: ^9.36.0
         version: 9.37.0(jiti@2.6.1)
@@ -102,32 +102,32 @@ importers:
         version: 8.46.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       vite:
         specifier: npm:rolldown-vite@7.1.14
-        version: rolldown-vite@7.1.14(@types/node@24.7.1)(esbuild@0.25.10)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1)
+        version: rolldown-vite@7.1.14(@types/node@24.7.2)(esbuild@0.25.10)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1)
 
   apps/manage-api:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.5
-        version: 1.19.5(hono@4.9.10)
+        version: 1.19.5(hono@4.9.11)
       '@inkeep/agents-manage-api':
         specifier: ^0.18.1
         version: 0.18.1(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       hono:
         specifier: ^4.9.9
-        version: 4.9.10
+        version: 4.9.11
     devDependencies:
       '@hono/vite-dev-server':
         specifier: ^0.21.0
-        version: 0.21.1(hono@4.9.10)
+        version: 0.21.1(hono@4.9.11)
       '@types/node':
         specifier: ^20.12.0
-        version: 20.19.20
+        version: 20.19.21
       typescript:
         specifier: ^5.4.0
         version: 5.9.3
       vite:
         specifier: ^7.1.7
-        version: 7.1.9(@types/node@20.19.20)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1)
+        version: 7.1.9(@types/node@20.19.21)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1)
 
   apps/manage-ui:
     devDependencies:
@@ -139,26 +139,26 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.5
-        version: 1.19.5(hono@4.9.10)
+        version: 1.19.5(hono@4.9.11)
       '@inkeep/agents-run-api':
         specifier: ^0.18.1
         version: 0.18.1(@libsql/client@0.15.15)(@types/pg@8.15.5)(react@19.2.0)
       hono:
         specifier: ^4.9.9
-        version: 4.9.10
+        version: 4.9.11
     devDependencies:
       '@hono/vite-dev-server':
         specifier: ^0.21.0
-        version: 0.21.1(hono@4.9.10)
+        version: 0.21.1(hono@4.9.11)
       '@types/node':
         specifier: ^20.12.0
-        version: 20.19.20
+        version: 20.19.21
       typescript:
         specifier: ^5.4.0
         version: 5.9.3
       vite:
         specifier: ^7.1.7
-        version: 7.1.9(@types/node@20.19.20)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1)
+        version: 7.1.9(@types/node@20.19.21)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1)
 
 packages:
 
@@ -3539,11 +3539,11 @@ packages:
   '@types/node@18.19.130':
     resolution: {integrity: sha512-GRaXQx6jGfL8sKfaIDD6OupbIHBr9jv7Jnaml9tB7l4v068PAOXqfcujMMo5PhbIs6ggR1XODELqahT2R8v0fg==}
 
-  '@types/node@20.19.20':
-    resolution: {integrity: sha512-2Q7WS25j4pS1cS8yw3d6buNCVJukOTeQ39bAnwR6sOJbaxvyCGebzTMypDFN82CxBLnl+lSWVdCCWbRY6y9yZQ==}
+  '@types/node@20.19.21':
+    resolution: {integrity: sha512-CsGG2P3I5y48RPMfprQGfy4JPRZ6csfC3ltBZSRItG3ngggmNY/qs2uZKp4p9VbrpqNNSMzUZNFZKzgOGnd/VA==}
 
-  '@types/node@24.7.1':
-    resolution: {integrity: sha512-CmyhGZanP88uuC5GpWU9q+fI61j2SkhO3UGMUdfYRE6Bcy0ccyzn1Rqj9YAB/ZY4kOXmNf0ocah5GtphmLMP6Q==}
+  '@types/node@24.7.2':
+    resolution: {integrity: sha512-/NbVmcGTP+lj5oa4yiYxxeBjRivKQ5Ns1eSZeB99ExsEQ6rX5XYU1Zy/gGxY/ilqtD4Etx9mKyrPxZRetiahhA==}
 
   '@types/oracledb@6.5.2':
     resolution: {integrity: sha512-kK1eBS/Adeyis+3OlBDMeQQuasIDLUYXsi2T15ccNJ0iyUpQ4xDF7svFu3+bGVrI0CMBUclPciz+lsQR3JX3TQ==}
@@ -5015,8 +5015,8 @@ packages:
       hono: '>=4.0.0'
       pino: '>=7.1.0'
 
-  hono@4.9.10:
-    resolution: {integrity: sha512-AlI15ijFyKTXR7eHo7QK7OR4RoKIedZvBuRjO8iy4zrxvlY5oFCdiRG/V/lFJHCNXJ0k72ATgnyzx8Yqa5arug==}
+  hono@4.9.11:
+    resolution: {integrity: sha512-MyJ4xop3boTyXl8bJBh4i20AAZTLM3AXUJphyrUb0CpgTKYb1N703z53XiKUKchGUpcPqiiYkiLOXA3kqK3icA==}
     engines: {node: '>=16.9.0'}
 
   html-url-attributes@3.0.1:
@@ -6680,8 +6680,8 @@ packages:
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
 
-  slow-redact@0.3.1:
-    resolution: {integrity: sha512-NvFvl1GuLZNW4U046Tfi8b26zXo8aBzgCAS2f7yVJR/fArN93mOqSA99cB9uITm92ajSz01bsu1K7SCVVjIMpQ==}
+  slow-redact@0.3.2:
+    resolution: {integrity: sha512-MseHyi2+E/hBRqdOi5COy6wZ7j7DxXRz9NkseavNYSvvWC06D8a5cidVZX3tcG5eCW3NIyVU4zT63hw0Q486jw==}
 
   sonic-boom@4.2.0:
     resolution: {integrity: sha512-INb7TM37/mAcsGmc9hyyI6+QR3rR1zVRu36B0NeGXKnOOLiZOfER5SA+N7X7k3yUYRzLWafduTDvJAfDswwEww==}
@@ -8045,37 +8045,37 @@ snapshots:
     dependencies:
       '@hapi/hoek': 11.0.7
 
-  '@hono/node-server@1.19.5(hono@4.9.10)':
+  '@hono/node-server@1.19.5(hono@4.9.11)':
     dependencies:
-      hono: 4.9.10
+      hono: 4.9.11
 
-  '@hono/otel@0.4.0(hono@4.9.10)':
+  '@hono/otel@0.4.0(hono@4.9.11)':
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/semantic-conventions': 1.37.0
-      hono: 4.9.10
+      hono: 4.9.11
 
-  '@hono/swagger-ui@0.5.2(hono@4.9.10)':
+  '@hono/swagger-ui@0.5.2(hono@4.9.11)':
     dependencies:
-      hono: 4.9.10
+      hono: 4.9.11
 
-  '@hono/vite-dev-server@0.21.1(hono@4.9.10)':
+  '@hono/vite-dev-server@0.21.1(hono@4.9.11)':
     dependencies:
-      '@hono/node-server': 1.19.5(hono@4.9.10)
-      hono: 4.9.10
+      '@hono/node-server': 1.19.5(hono@4.9.11)
+      hono: 4.9.11
       minimatch: 9.0.5
 
-  '@hono/zod-openapi@1.1.3(hono@4.9.10)(zod@4.1.12)':
+  '@hono/zod-openapi@1.1.3(hono@4.9.11)(zod@4.1.12)':
     dependencies:
       '@asteasolutions/zod-to-openapi': 8.1.0(zod@4.1.12)
-      '@hono/zod-validator': 0.7.4(hono@4.9.10)(zod@4.1.12)
-      hono: 4.9.10
+      '@hono/zod-validator': 0.7.4(hono@4.9.11)(zod@4.1.12)
+      hono: 4.9.11
       openapi3-ts: 4.5.0
       zod: 4.1.12
 
-  '@hono/zod-validator@0.7.4(hono@4.9.10)(zod@4.1.12)':
+  '@hono/zod-validator@0.7.4(hono@4.9.11)(zod@4.1.12)':
     dependencies:
-      hono: 4.9.10
+      hono: 4.9.11
       zod: 4.1.12
 
   '@hookform/resolvers@5.2.2(react-hook-form@7.65.0(react@19.1.1))':
@@ -8198,7 +8198,7 @@ snapshots:
   '@img/sharp-win32-x64@0.34.4':
     optional: true
 
-  '@inkeep/agents-cli@0.18.1(@inkeep/agents-manage-ui@0.18.1(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1)))(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.7.1)(@types/pg@8.15.5)(zod@4.1.12)':
+  '@inkeep/agents-cli@0.18.1(@inkeep/agents-manage-ui@0.18.1(@babel/runtime@7.28.4)(@codemirror/language@6.11.3)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.3)(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(codemirror@6.0.2)(immer@10.1.3)(use-sync-external-store@1.6.0(react@19.1.1)))(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/node@24.7.2)(@types/pg@8.15.5)(zod@4.1.12)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.2(zod@4.1.12)
       '@ai-sdk/openai': 2.0.11(zod@4.1.12)
@@ -8219,8 +8219,8 @@ snapshots:
       drizzle-orm: 0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
       find-up: 7.0.0
       fs-extra: 11.3.2
-      inquirer: 9.3.8(@types/node@24.7.1)
-      inquirer-autocomplete-prompt: 3.0.1(inquirer@9.3.8(@types/node@24.7.1))
+      inquirer: 9.3.8(@types/node@24.7.2)
+      inquirer-autocomplete-prompt: 3.0.1(inquirer@9.3.8(@types/node@24.7.2))
       json-schema-to-zod: 2.6.1
       ora: 8.2.0
       picocolors: 1.1.1
@@ -8269,8 +8269,8 @@ snapshots:
 
   '@inkeep/agents-core@0.18.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
     dependencies:
-      '@hono/node-server': 1.19.5(hono@4.9.10)
-      '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
+      '@hono/node-server': 1.19.5(hono@4.9.11)
+      '@hono/zod-openapi': 1.1.3(hono@4.9.11)(zod@4.1.12)
       '@libsql/client': 0.15.15
       '@modelcontextprotocol/sdk': 1.20.0
       '@nangohq/node': 0.66.2
@@ -8293,7 +8293,7 @@ snapshots:
       drizzle-zod: 0.8.3(drizzle-orm@0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5))(zod@4.1.12)
       exit-hook: 4.0.0
       find-up: 7.0.0
-      hono: 4.9.10
+      hono: 4.9.11
       jmespath: 0.16.0
       nanoid: 5.1.6
       pino: 9.13.1
@@ -8339,16 +8339,16 @@ snapshots:
 
   '@inkeep/agents-manage-api@0.18.1(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)':
     dependencies:
-      '@hono/node-server': 1.19.5(hono@4.9.10)
-      '@hono/swagger-ui': 0.5.2(hono@4.9.10)
-      '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
+      '@hono/node-server': 1.19.5(hono@4.9.11)
+      '@hono/swagger-ui': 0.5.2(hono@4.9.11)
+      '@hono/zod-openapi': 1.1.3(hono@4.9.11)(zod@4.1.12)
       '@inkeep/agents-core': 0.18.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@nangohq/node': 0.66.2
       '@nangohq/types': 0.66.2
       dotenv: 17.2.3
       drizzle-orm: 0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
-      hono: 4.9.10
-      hono-pino: 0.10.3(hono@4.9.10)(pino@9.13.1)
+      hono: 4.9.11
+      hono-pino: 0.10.3(hono@4.9.11)(pino@9.13.1)
       nanoid: 5.1.6
       openid-client: 6.8.1
       pino: 9.13.1
@@ -8518,10 +8518,10 @@ snapshots:
       '@ai-sdk/google': 2.0.20(zod@4.1.12)
       '@ai-sdk/openai': 2.0.11(zod@4.1.12)
       '@ai-sdk/react': 2.0.11(react@19.1.1)(zod@4.1.12)
-      '@hono/node-server': 1.19.5(hono@4.9.10)
-      '@hono/otel': 0.4.0(hono@4.9.10)
-      '@hono/swagger-ui': 0.5.2(hono@4.9.10)
-      '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
+      '@hono/node-server': 1.19.5(hono@4.9.11)
+      '@hono/otel': 0.4.0(hono@4.9.11)
+      '@hono/swagger-ui': 0.5.2(hono@4.9.11)
+      '@hono/zod-openapi': 1.1.3(hono@4.9.11)(zod@4.1.12)
       '@inkeep/agents-core': 0.18.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@modelcontextprotocol/sdk': 1.20.0
       '@openrouter/ai-sdk-provider': 1.2.0(ai@5.0.11(zod@4.1.12))(zod@4.1.12)
@@ -8544,7 +8544,7 @@ snapshots:
       drizzle-orm: 0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
       exit-hook: 4.0.0
       fetch-to-node: 2.1.0
-      hono: 4.9.10
+      hono: 4.9.11
       jmespath: 0.16.0
       nanoid: 5.1.6
       pino: 9.13.1
@@ -8596,10 +8596,10 @@ snapshots:
       '@ai-sdk/google': 2.0.20(zod@4.1.12)
       '@ai-sdk/openai': 2.0.11(zod@4.1.12)
       '@ai-sdk/react': 2.0.11(react@19.2.0)(zod@4.1.12)
-      '@hono/node-server': 1.19.5(hono@4.9.10)
-      '@hono/otel': 0.4.0(hono@4.9.10)
-      '@hono/swagger-ui': 0.5.2(hono@4.9.10)
-      '@hono/zod-openapi': 1.1.3(hono@4.9.10)(zod@4.1.12)
+      '@hono/node-server': 1.19.5(hono@4.9.11)
+      '@hono/otel': 0.4.0(hono@4.9.11)
+      '@hono/swagger-ui': 0.5.2(hono@4.9.11)
+      '@hono/zod-openapi': 1.1.3(hono@4.9.11)(zod@4.1.12)
       '@inkeep/agents-core': 0.18.1(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@types/pg@8.15.5)
       '@modelcontextprotocol/sdk': 1.20.0
       '@openrouter/ai-sdk-provider': 1.2.0(ai@5.0.11(zod@4.1.12))(zod@4.1.12)
@@ -8622,7 +8622,7 @@ snapshots:
       drizzle-orm: 0.44.6(@libsql/client@0.15.15)(@opentelemetry/api@1.9.0)(@types/pg@8.15.5)
       exit-hook: 4.0.0
       fetch-to-node: 2.1.0
-      hono: 4.9.10
+      hono: 4.9.11
       jmespath: 0.16.0
       nanoid: 5.1.6
       pino: 9.13.1
@@ -8845,12 +8845,12 @@ snapshots:
       - react-dom
       - supports-color
 
-  '@inquirer/external-editor@1.0.2(@types/node@24.7.1)':
+  '@inquirer/external-editor@1.0.2(@types/node@24.7.2)':
     dependencies:
       chardet: 2.1.0
       iconv-lite: 0.7.0
     optionalDependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
 
   '@inquirer/figures@1.0.13': {}
 
@@ -11993,12 +11993,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.14
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.14
 
-  '@tailwindcss/vite@4.1.14(vite@7.1.9(@types/node@24.7.1)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1))':
+  '@tailwindcss/vite@4.1.14(vite@7.1.9(@types/node@24.7.2)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1))':
     dependencies:
       '@tailwindcss/node': 4.1.14
       '@tailwindcss/oxide': 4.1.14
       tailwindcss: 4.1.14
-      vite: 7.1.9(@types/node@24.7.1)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1)
+      vite: 7.1.9(@types/node@24.7.2)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1)
 
   '@tanem/svg-injector@10.1.68':
     dependencies:
@@ -12042,11 +12042,11 @@ snapshots:
 
   '@types/bunyan@1.8.11':
     dependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
 
   '@types/d3-array@3.2.2': {}
 
@@ -12193,34 +12193,34 @@ snapshots:
 
   '@types/memcached@2.2.10':
     dependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
 
   '@types/ms@2.1.0': {}
 
   '@types/mysql@2.15.27':
     dependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
 
   '@types/node-fetch@2.6.13':
     dependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
       form-data: 4.0.4
 
   '@types/node@18.19.130':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@20.19.20':
+  '@types/node@20.19.21':
     dependencies:
       undici-types: 6.21.0
 
-  '@types/node@24.7.1':
+  '@types/node@24.7.2':
     dependencies:
       undici-types: 7.14.0
 
   '@types/oracledb@6.5.2':
     dependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
 
   '@types/pg-pool@2.0.6':
     dependencies:
@@ -12228,7 +12228,7 @@ snapshots:
 
   '@types/pg@8.15.5':
     dependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
       pg-protocol: 1.10.3
       pg-types: 2.2.0
 
@@ -12246,7 +12246,7 @@ snapshots:
 
   '@types/tedious@4.0.14':
     dependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
 
   '@types/trusted-types@2.0.7':
     optional: true
@@ -12259,7 +12259,7 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
 
   '@typescript-eslint/eslint-plugin@8.46.0(@typescript-eslint/parser@8.46.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
@@ -12399,7 +12399,7 @@ snapshots:
 
   '@vercel/oidc@3.0.2': {}
 
-  '@vitejs/plugin-react@5.0.4(rolldown-vite@7.1.14(@types/node@24.7.1)(esbuild@0.25.10)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1))':
+  '@vitejs/plugin-react@5.0.4(rolldown-vite@7.1.14(@types/node@24.7.2)(esbuild@0.25.10)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1))':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.4)
@@ -12407,7 +12407,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.38
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: rolldown-vite@7.1.14(@types/node@24.7.1)(esbuild@0.25.10)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1)
+      vite: rolldown-vite@7.1.14(@types/node@24.7.2)(esbuild@0.25.10)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -13908,13 +13908,13 @@ snapshots:
       process: 0.10.1
       xtend: 4.0.2
 
-  hono-pino@0.10.3(hono@4.9.10)(pino@9.13.1):
+  hono-pino@0.10.3(hono@4.9.11)(pino@9.13.1):
     dependencies:
       defu: 6.1.4
-      hono: 4.9.10
+      hono: 4.9.11
       pino: 9.13.1
 
-  hono@4.9.10: {}
+  hono@4.9.11: {}
 
   html-url-attributes@3.0.1: {}
 
@@ -13978,18 +13978,18 @@ snapshots:
 
   inline-style-parser@0.2.4: {}
 
-  inquirer-autocomplete-prompt@3.0.1(inquirer@9.3.8(@types/node@24.7.1)):
+  inquirer-autocomplete-prompt@3.0.1(inquirer@9.3.8(@types/node@24.7.2)):
     dependencies:
       ansi-escapes: 6.2.1
       figures: 5.0.0
-      inquirer: 9.3.8(@types/node@24.7.1)
+      inquirer: 9.3.8(@types/node@24.7.2)
       picocolors: 1.1.1
       run-async: 2.4.1
       rxjs: 7.8.2
 
-  inquirer@9.3.8(@types/node@24.7.1):
+  inquirer@9.3.8(@types/node@24.7.2):
     dependencies:
-      '@inquirer/external-editor': 1.0.2(@types/node@24.7.1)
+      '@inquirer/external-editor': 1.0.2(@types/node@24.7.2)
       '@inquirer/figures': 1.0.13
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -15215,7 +15215,7 @@ snapshots:
       quick-format-unescaped: 4.0.4
       real-require: 0.2.0
       safe-stable-stringify: 2.5.0
-      slow-redact: 0.3.1
+      slow-redact: 0.3.2
       sonic-boom: 4.2.0
       thread-stream: 3.1.0
 
@@ -15327,7 +15327,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
       long: 5.3.2
 
   proxy-addr@2.0.7:
@@ -15787,7 +15787,7 @@ snapshots:
 
   robust-predicates@3.0.2: {}
 
-  rolldown-vite@7.1.14(@types/node@24.7.1)(esbuild@0.25.10)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1):
+  rolldown-vite@7.1.14(@types/node@24.7.2)(esbuild@0.25.10)(jiti@2.6.1)(tsx@4.20.6)(yaml@2.8.1):
     dependencies:
       '@oxc-project/runtime': 0.92.0
       fdir: 6.5.0(picomatch@4.0.3)
@@ -15797,7 +15797,7 @@ snapshots:
       rolldown: 1.0.0-beta.41
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
       esbuild: 0.25.10
       fsevents: 2.3.3
       jiti: 2.6.1
@@ -16066,7 +16066,7 @@ snapshots:
 
   sisteransi@1.0.5: {}
 
-  slow-redact@0.3.1: {}
+  slow-redact@0.3.2: {}
 
   sonic-boom@4.2.0:
     dependencies:
@@ -16655,7 +16655,7 @@ snapshots:
       d3-time: 3.1.0
       d3-timer: 3.0.1
 
-  vite@7.1.9(@types/node@20.19.20)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1):
+  vite@7.1.9(@types/node@20.19.21)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.10
       fdir: 6.5.0(picomatch@4.0.3)
@@ -16664,14 +16664,14 @@ snapshots:
       rollup: 4.52.0
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 20.19.20
+      '@types/node': 20.19.21
       fsevents: 2.3.3
       jiti: 2.6.1
       lightningcss: 1.30.2
       tsx: 4.20.6
       yaml: 2.8.1
 
-  vite@7.1.9(@types/node@24.7.1)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1):
+  vite@7.1.9(@types/node@24.7.2)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.10
       fdir: 6.5.0(picomatch@4.0.3)
@@ -16680,7 +16680,7 @@ snapshots:
       rollup: 4.52.0
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.7.1
+      '@types/node': 24.7.2
       fsevents: 2.3.3
       jiti: 2.6.1
       lightningcss: 1.30.2
