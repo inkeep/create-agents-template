@@ -115,7 +115,7 @@ This repostory contains a `docker-compose.yml` and template `Dockerfile` for eac
   
 To run the Inkeep Agent Framework services:
 ```bash
-docker-compose up -d
+docker-compose -f docker-compose.local.yml up -d
 ```
 
 ---

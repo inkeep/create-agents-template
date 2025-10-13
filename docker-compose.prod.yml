@@ -1,0 +1,63 @@
+services:
+  inkeep-agents-manage-ui:
+    image: inkeep/agents-manage-ui:latest
+    environment:
+      - ENVIRONMENT
+      - LOG_LEVEL
+      - INKEEP_AGENTS_MANAGE_API_URL=${INKEEP_AGENTS_MANAGE_API_URL:-http://inkeep-agents-manage-api:3002}
+      - INKEEP_AGENTS_RUN_API_URL=${INKEEP_AGENTS_RUN_API_URL:-http://localhost:3003}
+      - INKEEP_AGENTS_MANAGE_API_BYPASS_SECRET
+      - INKEEP_AGENTS_RUN_API_BYPASS_SECRET
+      - NANGO_CONNECT_BASE_URL=${NANGO_CONNECT_BASE_URL:-https://connect.nango.dev}
+      - NANGO_SERVER_URL=${NANGO_SERVER_URL:-https://api.nango.dev}
+      - NANGO_SECRET_KEY
+      - SIGNOZ_URL
+      - SIGNOZ_API_KEY
+    ports:
+      - "3000:3000"
+    depends_on:
+      inkeep-agents-migrate:
+        condition: service_completed_successfully
+  inkeep-agents-manage-api:
+    image: inkeep/agents-manage-api:latest
+    environment:
+      - ENVIRONMENT
+      - LOG_LEVEL
+      - TURSO_DATABASE_URL
+      - TURSO_AUTH_TOKEN
+      - INKEEP_AGENTS_MANAGE_API_BYPASS_SECRET
+      - NANGO_SERVER_URL=${NANGO_SERVER_URL:-https://api.nango.dev}
+      - NANGO_SECRET_KEY
+    ports:
+      - "3002:3002"
+    depends_on:
+      inkeep-agents-migrate:
+        condition: service_completed_successfully
+  inkeep-agents-run-api:
+    image: inkeep/agents-run-api:latest
+    environment:
+      - ENVIRONMENT
+      - LOG_LEVEL
+      - TURSO_DATABASE_URL
+      - TURSO_AUTH_TOKEN
+      - INKEEP_AGENTS_RUN_API_BYPASS_SECRET
+      - ANTHROPIC_API_KEY
+      - OPENAI_API_KEY
+      - GOOGLE_GENERATIVE_AI_API_KEY
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT
+      - OTEL_EXPORTER_OTLP_TRACES_HEADERS
+      - NANGO_SERVER_URL=${NANGO_SERVER_URL:-https://api.nango.dev}
+      - NANGO_SECRET_KEY
+    ports:
+      - "3003:3003"
+    depends_on:
+      inkeep-agents-migrate:
+        condition: service_completed_successfully
+  inkeep-agents-migrate:
+    image: inkeep/agents-migrate:latest
+    environment:
+      - ENVIRONMENT
+      - LOG_LEVEL
+      - TURSO_DATABASE_URL
+      - TURSO_AUTH_TOKEN
+    restart: "no"
