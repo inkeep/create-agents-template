@@ -3,9 +3,6 @@ name: Build and Push inkeep/agents-manage-ui
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize, reopened]
 
 jobs:
   build-push-docker-manage-ui:
@@ -56,4 +53,5 @@ jobs:
           tags: |
             inkeep/agents-manage-ui:latest
             inkeep/agents-manage-ui:${{ steps.meta.outputs.SHORT_SHA }}
-          cache-from: type=local,dest=/tmp/.buildx-cache,mode=max
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
