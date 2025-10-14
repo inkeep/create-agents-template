@@ -1,12 +1,12 @@
-name: Build and Push inkeep/agents-manage-ui
+name: Docker inkeep/agents-manage-ui
 
 on:
   push:
     branches: [main]
 
 jobs:
-  build-push-docker-manage-ui:
-    name: Build and Push inkeep/agents-manage-ui
+  build-and-push:
+    name: Build and Push Docker Image inkeep/agents-manage-ui
     runs-on: ubuntu-latest
 
     steps:
