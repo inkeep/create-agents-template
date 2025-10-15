@@ -93,7 +93,8 @@ cp .env.example .env.docker
 ```
 Then update the `.env.docker` file with values specific to your environment.
 
-To run the Inkeep Agent Framework:
+### 3. Run the Inkeep Agent Framework
+
 ```bash
 docker-compose -f docker-compose.standalone.yml --env-file .env.docker up
 ```
