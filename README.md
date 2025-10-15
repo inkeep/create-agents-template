@@ -15,7 +15,7 @@ This project follows a workspace structure with the following services:
 
 ## Quick Start
 
-[Follow these steps in the docs to get started](https://docs.inkeep.com/quick-start/start-development) with the `npx @inkeep/create-agents` CLI command.
+[Follow these steps in the docs to get started](https://docs.inkeep.com/get-started/quick-start) with the `npx @inkeep/create-agents` CLI command.
 
 # Deploy using Vercel
 
@@ -27,27 +27,23 @@ Sign up for a cloud hosted deployment for these services:
 
 Follow this guide for how to [Deploy the Inkeep Agent Framework to Vercel](https://docs.inkeep.com/self-hosting/vercel)
 
-# Deploy using Docker
-> [!NOTE]  
-> Instructions coming soon.
-
-# Build and run using Docker locally
+# Deploy using Docker (development)
 
 ### 1. Complete the quickstart or clone this repository
-Follow the quickstart using `npx @inkeep/create-agents` or clone this repository `git clone git@github.com:inkeep/create-agents-template.git` 
+Follow the quickstart using `npx @inkeep/create-agents` or clone this repository `git clone git@github.com:inkeep/create-agents-template.git`
 
 ### 2. Prerequisites
 
 #### Required: Docker
 - [Install Docker Desktop](https://www.docker.com/)
 
-#### Optional: Self-host SigNoz and Nango
+#### SigNoz and Nango
 
 For full functionality, the **Inkeep Agent Framework** requires [**SigNoz**](https://signoz.io/) and [**Nango**](https://www.nango.dev/). You can sign up for a cloud hosted account with them directly, or you can self host them.
 
 Follow these instructions to self-host both **SigNoz** and **Nango**:
 
-1. Clone our repo with the optional docker files for the agent framework:
+1. Clone the `inkeep/agents-optional-local-dev` repo separately, with the docker files for SigNoz and Nango:
 ```bash
 git clone https://github.com/inkeep/agents-optional-local-dev.git
 cd agents-optional-local-dev
@@ -71,51 +67,51 @@ docker compose \
   up -d
 ```
 
-4. Complete environment variables setup
-Below are important environment variables to be aware of, with the defaults shown.
+4. SigNoz API Key    
 
-[Follow these steps to find the SIGNOZ_API_KEY for SigNoz](https://docs.inkeep.com/quick-start/traces#step-4-configure-environment-variables):
-```bash
-# SigNoz UI (for Manage UI)
-SIGNOZ_URL=http://localhost:3080
-SIGNOZ_API_KEY=
-```
+To get your SigNoz API key:
+- Open SigNoz at `http://localhost:3080`
+- Navigate to Settings → Account Settings → API Keys → New Key
+- Choose a role (Admin, Editor, or Viewer) - Viewer is sufficient for observability
+- Set the expiration field to "No Expiry" to prevent the key from expiring
 
-[Follow these steps to find the NANGO_SECRET_KEY for Nango](https://docs.inkeep.com/quick-start/credentials#step-3-configure-environment-variables):
-```bash
-# Nango Configuration (for Run API, Manage API, and Manage UI)
-NANGO_SECRET_KEY=
-NANGO_SERVER_URL=http://localhost:3050
-NANGO_CONNECT_BASE_URL=http://localhost:3051
-```
-
-In addition to the SigNoz and Nango, an OTEL Collector container is also running.
-```bash
-# OTEL Collector (for Run API)
-OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://localhost:14318/v1/traces
-```
+5. Nango Secret Key
+   
+To get your Nango secret key:
+- Open Nango at `http://localhost:3050`
+- Navigate to Environment Settings and copy the secret key
 
 > [!NOTE]  
 > SigNoz and Nango run separately. You can get them running before proceeding with running the Inkeep Agent Framework   
 
-### 2. Setup Environment Variables
-If you followed the quickstart `npx @inkeep/create-agents`, you will already have a `.env`.
+### 2. Setup Environment Variables   
 
-But if you need to create one from scratch, generate a `.env` file from the example:
+In your agent project directory, generate a `.env.docker` file from the example:
 ```bash
-cp .env.example .env
+cp .env.example .env.docker
 ```
-Then update the `.env` file with values specific to your environment.
+Then update the `.env.docker` file with values specific to your environment.
 
-### 3. Build and run the Inkeep Agent Framework locally
-This repostory contains a `docker-compose.yml` and template `Dockerfile` for each service:
-- `Dockerfile.manage-ui`
-- `Dockerfile.manage-api`
-- `Dockerfile.run-ui`
-  
-To run the Inkeep Agent Framework services:
+### 3. Run the Inkeep Agent Framework
+
 ```bash
-docker-compose -f docker-compose.local.yml up -d
+docker-compose -f docker-compose.standalone.yml --env-file .env.docker up -d
+```
+
+Confirm all services are running with `docker ps`:
+```
+inkeep/agents-run-api:latest
+inkeep/agents-manage-api:latest
+inkeep/agents-manage-ui:latest
+signoz/signoz-otel-collector:v0.129.6
+signoz/signoz:v0.96.1
+clickhouse/clickhouse-server:25.5.6
+nangohq/nango-server:hosted-0.68.0
+redis:7.2.4
+postgres:16.0-alpine
+jaegertracing/all-in-one:1.73.0
+otel/opentelemetry-collector:0.135.0
+signoz/zookeeper:3.7.1
 ```
 
 ---
