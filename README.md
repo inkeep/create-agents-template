@@ -37,7 +37,7 @@ Follow the quickstart using `npx @inkeep/create-agents` or clone this repository
 #### Required: Docker
 - [Install Docker Desktop](https://www.docker.com/)
 
-#### Optional: Self-host SigNoz and Nango
+#### SigNoz and Nango
 
 For full functionality, the **Inkeep Agent Framework** requires [**SigNoz**](https://signoz.io/) and [**Nango**](https://www.nango.dev/). You can sign up for a cloud hosted account with them directly, or you can self host them.
 
@@ -99,7 +99,7 @@ Then update the `.env.docker` file with values specific to your environment.
 docker-compose -f docker-compose.standalone.yml --env-file .env.docker up
 ```
 
-If you're self hosting SigNoz and Nango, confirm all services are running with `docker ps`:
+Confirm all services are running with `docker ps`:
 ```
 inkeep/agents-run-api:latest
 inkeep/agents-manage-api:latest
