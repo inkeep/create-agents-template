@@ -53,7 +53,7 @@ cd agents-optional-local-dev
 ```bash
 cp .env.example .env && \
   encryption_key=$(openssl rand -base64 32) && \
-  sed -i '' "s|<REPLACE_WITH_BASE64_256BIT_ENCRYPTION_KEY>|$encryption_key|" .env && \
+  sed -i'' "s|<REPLACE_WITH_BASE64_256BIT_ENCRYPTION_KEY>|$encryption_key|" .env && \
   echo "Docker environment file created with auto-generated encryption key"
 ```
 
