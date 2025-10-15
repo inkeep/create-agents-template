@@ -7,6 +7,7 @@ import { createExecutionApp } from "@inkeep/agents-run-api";
 import { credentialStores } from "../../shared/credential-stores.js";
 
 import type { Hono } from "hono";
+import { sandboxConfig } from "./sandbox.js";
 
 const inkeep_run_api_port = 3003;
 
@@ -21,6 +22,7 @@ const app: Hono = createExecutionApp({
 		},
 	},
 	credentialStores,
+	sandboxConfig,
 });
 
 export default app;
