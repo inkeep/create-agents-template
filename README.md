@@ -98,6 +98,22 @@ To run the Inkeep Agent Framework:
 docker-compose -f docker-compose.standalone.yml --env-file .env.docker up
 ```
 
+If you're self hosting SigNoz and Nango, confirm all services are running with `docker ps`:
+```
+inkeep/agents-run-api:latest
+inkeep/agents-manage-api:latest
+inkeep/agents-manage-ui:latest
+signoz/signoz-otel-collector:v0.129.6
+signoz/signoz:v0.96.1
+clickhouse/clickhouse-server:25.5.6
+nangohq/nango-server:hosted-0.68.0
+redis:7.2.4
+postgres:16.0-alpine
+jaegertracing/all-in-one:1.73.0
+otel/opentelemetry-collector:0.135.0
+signoz/zookeeper:3.7.1
+```
+
 ---
 
 ## Automated Dependency Updates
