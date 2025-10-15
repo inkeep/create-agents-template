@@ -70,13 +70,21 @@ docker compose \
 4. Complete environment variables setup
 Below are important environment variables to be aware of, with the defaults shown.
 
-[Follow these steps to find the SIGNOZ_API_KEY for SigNoz](https://docs.inkeep.com/quick-start/traces#step-4-configure-environment-variables):
+To get your SigNoz API key:
+- Open SigNoz at `http://localhost:3080`
+- Navigate to Settings → Account Settings → API Keys → New Key
+- Choose a role (Admin, Editor, or Viewer) - Viewer is sufficient for observability
+- Set the expiration field to "No Expiry" to prevent the key from expiring
+
 ```bash
 # SigNoz UI (for Manage UI)
 SIGNOZ_API_KEY=
 ```
 
-[Follow these steps to find the NANGO_SECRET_KEY for Nango](https://docs.inkeep.com/quick-start/credentials#step-3-configure-environment-variables):
+To get your Nango secret key:
+- Open Nango at `http://localhost:3050`
+- Navigate to Environment Settings and copy the secret key
+
 ```bash
 # Nango Configuration (for Run API, Manage API, and Manage UI)
 NANGO_SECRET_KEY=
