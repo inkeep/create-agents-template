@@ -15,7 +15,7 @@ This project follows a workspace structure with the following services:
 
 ## Quick Start
 
-[Follow these steps in the docs to get started](https://docs.inkeep.com/quick-start/start-development) with the `npx @inkeep/create-agents` CLI command.
+[Follow these steps in the docs to get started](https://docs.inkeep.com/get-started/quick-start) with the `npx @inkeep/create-agents` CLI command.
 
 # Deploy using Vercel
 
