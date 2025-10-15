@@ -14,9 +14,9 @@
 		"postinstall": "node scripts/postinstall.js"
 	},
 	"dependencies": {
-		"@inkeep/agents-core": "^0.22.4",
-		"@inkeep/agents-manage-ui": "^0.22.4",
-		"@inkeep/agents-sdk": "^0.22.4",
+		"@inkeep/agents-core": "^0.22.5",
+		"@inkeep/agents-manage-ui": "^0.22.5",
+		"@inkeep/agents-sdk": "^0.22.5",
 		"@tailwindcss/vite": "^4.1.14",
 		"dotenv": "^16.0.0",
 		"tailwindcss": "^4.1.14",
@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.0",
-		"@inkeep/agents-cli": "^0.22.4",
+		"@inkeep/agents-cli": "^0.22.5",
 		"concurrently": "^8.2.0",
 		"drizzle-kit": "^0.31.4",
 		"open-cli": "^8.0.0",
