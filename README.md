@@ -67,7 +67,7 @@ docker compose \
   up -d
 ```
 
-3. SigNoz API Key    
+4. SigNoz API Key    
 
 To get your SigNoz API key:
 - Open SigNoz at `http://localhost:3080`
@@ -75,7 +75,7 @@ To get your SigNoz API key:
 - Choose a role (Admin, Editor, or Viewer) - Viewer is sufficient for observability
 - Set the expiration field to "No Expiry" to prevent the key from expiring
 
-3. Nango Secret Key
+5. Nango Secret Key
    
 To get your Nango secret key:
 - Open Nango at `http://localhost:3050`
