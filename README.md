@@ -27,10 +27,10 @@ Sign up for a cloud hosted deployment for these services:
 
 Follow this guide for how to [Deploy the Inkeep Agent Framework to Vercel](https://docs.inkeep.com/self-hosting/vercel)
 
-# Deploy using Docker (development)
+# Deploy using Docker (local development)
 
-### 1. Complete the quickstart or clone this repository
-Follow the quickstart using `npx @inkeep/create-agents` or clone this repository `git clone git@github.com:inkeep/create-agents-template.git`
+### 1. Clone this repository or complete the quickstart
+Clone this repository `git clone https://github.com/inkeep/create-agents-template.git` or follow the quickstart using `npx @inkeep/create-agents`.
 
 ### 2. Prerequisites
 
@@ -67,6 +67,9 @@ docker compose \
   up -d
 ```
 
+> [!NOTE]
+> This may take up to 5 minutes to start.
+
 4. SigNoz API Key    
 
 To get your SigNoz API key:
@@ -82,7 +85,7 @@ To get your Nango secret key:
 - Navigate to Environment Settings and copy the secret key
 
 > [!NOTE]  
-> SigNoz and Nango run separately. You can get them running before proceeding with running the Inkeep Agent Framework   
+> SigNoz and Nango run separately. You can get them running before proceeding with running the Inkeep Agent Framework and you will need the SigNoz and Nango API keys in the next step.
 
 ### 2. Setup Environment Variables   
 
@@ -90,15 +93,13 @@ In your agent project directory, generate a `.env.docker` file from the example:
 ```bash
 cp .env.example .env.docker
 ```
-Then update the `.env.docker` file with values specific to your environment.
+Then update the `.env.docker` file with the values specific to your environment.
 
 ### 3. Run the Inkeep Agent Framework
 
 ```bash
 docker-compose -f docker-compose.standalone.yml --env-file .env.docker up -d
 ```
-> [!NOTE]  
-> This may take up to 5 minutes to start.
 
 Confirm all services are running with `docker ps`:
 ```
