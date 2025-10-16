@@ -97,6 +97,8 @@ Then update the `.env.docker` file with values specific to your environment.
 ```bash
 docker-compose -f docker-compose.standalone.yml --env-file .env.docker up -d
 ```
+> [!NOTE]  
+> This may take up to 5 minutes to start.
 
 Confirm all services are running with `docker ps`:
 ```
