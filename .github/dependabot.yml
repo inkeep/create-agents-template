@@ -15,7 +15,6 @@ updates:
           - "patch"
     labels:
       - "dependencies"
-      - "inkeep"
 
   # manage-api workspace
   - package-ecosystem: "npm"
@@ -32,7 +31,6 @@ updates:
           - "patch"
     labels:
       - "dependencies"
-      - "inkeep"
 
   # run-api workspace
   - package-ecosystem: "npm"
@@ -49,7 +47,6 @@ updates:
           - "patch"
     labels:
       - "dependencies"
-      - "inkeep"
 
   # mcp workspace
   - package-ecosystem: "npm"
@@ -66,7 +63,6 @@ updates:
           - "patch"
     labels:
       - "dependencies"
-      - "inkeep"
 
   # agents-ui workspace
   - package-ecosystem: "npm"
@@ -83,7 +79,6 @@ updates:
           - "patch"
     labels:
       - "dependencies"
-      - "inkeep"
 
   # manage-ui workspace
   - package-ecosystem: "npm"
@@ -100,4 +95,3 @@ updates:
           - "patch"
     labels:
       - "dependencies"
-      - "inkeep"
