@@ -1,0 +1,103 @@
+version: 2
+updates:
+  # Root package dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    groups:
+      inkeep:
+        patterns:
+          - "@inkeep/*"
+        update-types:
+          - "minor"
+          - "patch"
+    labels:
+      - "dependencies"
+      - "inkeep"
+
+  # manage-api workspace
+  - package-ecosystem: "npm"
+    directory: "/apps/manage-api"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    groups:
+      inkeep:
+        patterns:
+          - "@inkeep/*"
+        update-types:
+          - "minor"
+          - "patch"
+    labels:
+      - "dependencies"
+      - "inkeep"
+
+  # run-api workspace
+  - package-ecosystem: "npm"
+    directory: "/apps/run-api"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    groups:
+      inkeep:
+        patterns:
+          - "@inkeep/*"
+        update-types:
+          - "minor"
+          - "patch"
+    labels:
+      - "dependencies"
+      - "inkeep"
+
+  # mcp workspace
+  - package-ecosystem: "npm"
+    directory: "/apps/mcp"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    groups:
+      inkeep:
+        patterns:
+          - "@inkeep/*"
+        update-types:
+          - "minor"
+          - "patch"
+    labels:
+      - "dependencies"
+      - "inkeep"
+
+  # agents-ui workspace
+  - package-ecosystem: "npm"
+    directory: "/apps/agents-ui"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    groups:
+      inkeep:
+        patterns:
+          - "@inkeep/*"
+        update-types:
+          - "minor"
+          - "patch"
+    labels:
+      - "dependencies"
+      - "inkeep"
+
+  # manage-ui workspace
+  - package-ecosystem: "npm"
+    directory: "/apps/manage-ui"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    groups:
+      inkeep:
+        patterns:
+          - "@inkeep/*"
+        update-types:
+          - "minor"
+          - "patch"
+    labels:
+      - "dependencies"
+      - "inkeep"
