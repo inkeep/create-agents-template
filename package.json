@@ -6,6 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "concurrently \"turbo dev --filter manage-api-quickstart --filter run-api-quickstart --filter mcp-quickstart\" \"inkeep dev\" \"wait-on http://localhost:3000 && open-cli http://localhost:3000\" --names \"APIs,UI,Browser\" --prefix-colors \"blue,green,yellow\" --success first",
+		"dev:all": "concurrently \"turbo dev --filter manage-api-quickstart --filter run-api-quickstart --filter mcp-quickstart\" \"inkeep dev\"  --names \"APIs,UI\" --prefix-colors \"blue,green\" --success first",
 		"dev:apis": "turbo dev --filter manage-api-quickstart --filter run-api-quickstart",
 		"dev:ui": "inkeep dev",
 		"dev:mcp": "turbo dev --filter mcp-quickstart",
