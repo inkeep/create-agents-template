@@ -21,8 +21,8 @@ importers:
         specifier: ^4.1.14
         version: 4.1.16(vite@7.1.12(@types/node@24.9.2)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.20.6)(yaml@2.8.1))
       dotenv:
-        specifier: ^16.0.0
-        version: 16.6.1
+        specifier: ^17.2.3
+        version: 17.2.3
       tailwindcss:
         specifier: ^4.1.14
         version: 4.1.16
