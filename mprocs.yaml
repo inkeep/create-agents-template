@@ -1,5 +1,5 @@
 procs:
-  info: 
+  service-info: 
     shell: "node scripts/show-services.js --watch"
     dependencies:
       - manage-api
@@ -12,7 +12,6 @@ procs:
     shell: "pnpm dev"
     cwd: "apps/run-api"
   mcp:
-    shell: "pnpm dev"
-    cwd: "apps/mcp"
+    shell: "node scripts/start-mcp-conditionally.js"
   dashboard:
-    shell: "inkeep dev"
+    shell: "inkeep dev --open-browser"

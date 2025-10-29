@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import http from 'node:http';
-import { setTimeout } from 'node:timers/promises';
+import { checkForRoutes } from './check-mcps.js';
 
 const colors = {
   green: '\x1b[32m',
@@ -37,16 +37,7 @@ const services = [
     healthEndpoint: '/health'
   },
   {
-    name: 'MCP Service',
-    emoji: '🔗',
-    color: magenta,
-    url: 'http://localhost:3006',
-    port: 3006,
-    description: 'Custom MCP Servers',
-    healthEndpoint: '/'
-  },
-  {
-    name: 'Management UI',
+    name: 'Management Dashboard',
     emoji: '🎨',
     color: green,
     url: 'http://localhost:3000',
@@ -55,6 +46,18 @@ const services = [
     healthEndpoint: '/'
   }
 ];
+
+if (await checkForRoutes()) {
+  services.push({
+    name: 'MCP Service',
+    emoji: '🔗',
+    color: magenta,
+    url: 'http://localhost:3006',
+    port: 3006,
+    description: 'Custom MCP Servers',
+    healthEndpoint: '/'
+  });
+}
 
 async function checkServiceHealth(service) {
   return new Promise((resolve) => {
@@ -212,26 +215,35 @@ async function showServicesWithHealthCheck(clearScreen = true) {
   
   // Show legend
   console.log(`${dim}  Status: ${green}● HEALTHY${reset}${dim}  ${yellow}● TIMEOUT${reset}${dim}  ${red}● DOWN${reset}`);
-  console.log(`${dim}  💡 Tip: Press ${reset}${cyan}q${reset} then ${cyan}Ctrl+C${reset}${dim} to exit${reset}`);
+  console.log(`${dim}  💡 Tip: Press ${cyan}q${reset} then ${cyan}Ctrl+C${reset}${dim} to exit${reset}`);
   console.log('');
 }
 
 // Check for watch mode flag
 const args = process.argv.slice(2);
 const watchMode = args.includes('--watch') || args.includes('-w');
-const updateInterval = 1000; // Update every 5 seconds
+const rapidInterval = 1000; // Check every second initially
+const normalInterval = 300000; // Update every 5 minutes after startup
+const rapidCheckDuration = 5000; // Do rapid checks for first 5 seconds
 
 if (watchMode) {
   console.log(`${cyan}${bold}Starting continuous monitoring mode...${reset}`);
-  console.log(`${dim}Updating every ${updateInterval / 1000} seconds. Press Ctrl+C to exit.${reset}\n`);
   
   // Initial display
   showServicesWithHealthCheck().catch(console.error);
   
-  // Set up interval for continuous updates
-  setInterval(() => {
+  // Set up rapid interval for first 5 seconds
+  const rapidIntervalId = setInterval(() => {
     showServicesWithHealthCheck().catch(console.error);
-  }, updateInterval);
+  }, rapidInterval);
+  
+  // After 5 seconds, switch to normal interval
+  setTimeout(() => {
+    clearInterval(rapidIntervalId);
+    setInterval(() => {
+      showServicesWithHealthCheck().catch(console.error);
+    }, normalInterval);
+  }, rapidCheckDuration);
 } else {
   // Single check mode
   showServicesWithHealthCheck(false).catch(console.error);
