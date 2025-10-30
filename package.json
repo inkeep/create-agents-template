@@ -5,8 +5,8 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "concurrently \"turbo dev --filter manage-api-quickstart --filter run-api-quickstart --filter mcp-quickstart\" \"inkeep dev\" \"wait-on http://localhost:3000 && open-cli http://localhost:3000\" --names \"APIs,UI,Browser\" --prefix-colors \"blue,green,yellow\" --success first",
-		"dev:all": "concurrently \"turbo dev --filter manage-api-quickstart --filter run-api-quickstart --filter mcp-quickstart\" \"inkeep dev\"  --names \"APIs,UI\" --prefix-colors \"blue,green\" --success first",
+		"dev": "mprocs",
+		"dev:all": "concurrently \"turbo dev --filter manage-api-quickstart --filter run-api-quickstart --filter mcp-quickstart\" \"inkeep dev\" \"wait-on http://localhost:3000 && node scripts/show-services.js\" --names \"APIs,Dashboard,Info\" --prefix-colors \"blue,green,magenta\" --success first",
 		"dev:apis": "turbo dev --filter manage-api-quickstart --filter run-api-quickstart",
 		"dev:ui": "inkeep dev",
 		"dev:mcp": "turbo dev --filter mcp-quickstart",
@@ -15,9 +15,9 @@
 		"postinstall": "node scripts/postinstall.js"
 	},
 	"dependencies": {
-		"@inkeep/agents-core": "^0.29.9",
-		"@inkeep/agents-manage-ui": "^0.29.9",
-		"@inkeep/agents-sdk": "^0.29.9",
+		"@inkeep/agents-core": "^0.29.10",
+		"@inkeep/agents-manage-ui": "^0.29.10",
+		"@inkeep/agents-sdk": "^0.29.10",
 		"@tailwindcss/vite": "^4.1.14",
 		"dotenv": "^17.2.3",
 		"tailwindcss": "^4.1.14",
@@ -25,13 +25,12 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.3.2",
-		"@inkeep/agents-cli": "^0.29.9",
+		"@inkeep/agents-cli": "^0.29.10",
 		"concurrently": "^9.2.1",
 		"drizzle-kit": "^0.31.4",
-		"open-cli": "^8.0.0",
+		"mprocs": "^0.7.3",
 		"tsx": "^4.19.0",
-		"turbo": "^2.5.5",
-		"wait-on": "^9.0.1"
+		"turbo": "^2.5.5"
 	},
 	"engines": {
 		"node": ">=22.x"
