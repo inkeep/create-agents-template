@@ -11,7 +11,7 @@
 	"dependencies": {
 		"@hono/node-server": "^1.19.5",
 		"@inkeep/agents-manage-api": "^0.29.9",
-		"hono": "^4.9.9"
+		"hono": "^4.10.4"
 	},
 	"devDependencies": {
 		"@hono/vite-dev-server": "^0.23.0",
