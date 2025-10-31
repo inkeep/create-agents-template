@@ -9,7 +9,7 @@
 		"start": "node dist/run-api/src/server.js"
 	},
 	"dependencies": {
-		"@hono/node-server": "^1.19.5",
+		"@hono/node-server": "^1.19.6",
 		"@inkeep/agents-run-api": "^0.29.10",
 		"hono": "^4.10.4"
 	},
